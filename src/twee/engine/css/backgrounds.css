@@ -1,0 +1,106 @@
+/* Story Styles (using passage tags) */
+
+body[data-tags~="vore"] {
+  --background: #400;
+  --light: #fff4;
+  --color: #fdd;
+}
+
+body[data-tags~="morning"] {
+  --background: #ffe;
+  --color: #320;
+}
+
+body[data-tags~="gore"] {
+  --background: #b00;
+  --color: #fff;
+  --light: #fff4;
+}
+
+/* Drunk effect (for Nikki/Nox route) */
+
+[data-tags~="drunk"] tw-story {
+  animation: rock 5s ease-in-out infinite, blur 3s ease-in-out infinite;
+}
+
+@keyframes rock {
+  0% {
+    transform: rotateY(-1deg);
+  }
+
+  50% {
+    transform: rotateZ(1deg);
+  }
+
+  100% {
+    transform: rotateY(-1deg);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0);
+  }
+
+  50% {
+    filter: blur (40px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+/* Kaia and Faith's perspective */
+
+[data-tags~="mousestory"] {
+  font-size: 150%;
+  font-family: 'Trebuchet MS', var(--font-stack);
+  --color: #E6D1AB !important;
+  --background: #1d1103 !important;
+  --light: #D8B370 !important;
+  --accent: #D8B370 !important;
+}
+
+:root {
+  --mirror-graphic-opacity: 5%;
+}
+body[data-tags~="mirror"]::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: mirror-fadein 3s forwards;
+  filter: blur(10px);
+  opacity: var(--mirror-graphic-opacity);
+  transition: all 2s ease-in-out;
+  background-image: url("assets/images/mirror.svg");
+  opacity: var(--opacity);
+  background-position-x: center;
+  background-position-y: -30%;
+  background-repeat: no-repeat;
+  background-size: auto 130vh;
+  background-attachment: fixed;
+}
+
+body[data-tags~="mirror_middle"]::before {
+  filter: blur(5px);
+  background-size: auto 120vh;
+  background-position-y: 0%;
+}
+body[data-tags~="mirror_bottom"]::before {
+  filter: blur(0px);
+  background-size: auto 100vh;
+  background-position-y: 0%;
+}
+
+@keyframes mirror-fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: var(--mirror-graphic-opacity);
+  }
+}

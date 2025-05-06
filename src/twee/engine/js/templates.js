@@ -1,0 +1,97 @@
+const Templates = (window.Templates = window.T = {});
+{
+  const contentWarningInline = (...warnings) =>
+    `<em>(<abbr title="Content Warning">CW</abbr>: ` +
+    warnings
+      .sort()
+      .map((w) => `<span style="white-space:nowrap;">${w}.</span>`)
+      .join(" ") +
+    `)</em>`;
+
+  const contentWarningParagraph = (...warnings) =>
+    `<p class="content-warning"><b>Content warning</b>: ` +
+    warnings
+      .sort()
+      .map((w) => `<span style="white-space:nowrap;">${w}.</span>`)
+      .join(" ") +
+    `</p>`;
+
+  const infoMessage = (msg) =>
+  `ⓘ <i>${msg}</i>`;
+  const infoMessageBox = (msg) => 
+  `<p class="content-warning">${infoMessage(msg)}</p>`;
+
+  const restart = () => passage.render(`<a0 onclick="setup.restart()">Restart.</a>`);
+
+  const rewind = () => passage.render(`<a0 onclick="setup.rewind()">Rewind.</a>`);
+
+  // Templates for Hazel Epilogue
+
+  const socialMediaComment = ([username, comment]) =>
+    `<p><b>${username}</b> ${comment}</p>`;
+
+  const hashtag = (tag) => `<span aria-label="hashtag">#</span>${tag}`;
+
+  const likes = (likes) =>
+    `<p class="social-card__likes"><span aria-label="${+likes | 0} likes">♡ ${
+      +likes | 0
+    }</span></p>`;
+
+  const hoursAgo = (hours) =>
+    `${+hours | 0}<span aria-label="hours">h</span> ago`;
+  const minutesAgo = (mins) =>
+    `${+mins | 0}<span aria-label="minutes">m</span> ago`;
+
+  const socialMediaCard = ({
+    name,
+    username,
+    time,
+    body,
+    hashtags,
+    likeCount,
+    comments,
+  }) =>
+    `<div class="social-card">
+    <p>${name} <small>${username} – ${time}</small></p>
+    <div class="social-card__body">${body}</div>
+    <p><small>${(hashtags || []).map(hashtag).join(" ")}</small>
+    ${likes(likeCount)}
+    ${
+      comments
+        ? `<div.social-card__comments>${(comments || [])
+            .map(socialMediaComment)
+            .join("\n")}</div>`
+        : ``
+    }
+</div>`;
+
+const manyCommands = (passages, finalPassage) => {
+  let output = '';
+
+  const passagesToShow = passages.filter(p => !visited(p));
+  for (const p of passagesToShow) {
+    output += `* [[${p}]]\n`;
+  }
+  if (passagesToShow.length == 0 && finalPassage) {
+    output += `* [[${finalPassage}]]\n`;
+  }
+  
+  return passage.render(output);
+}
+
+  Object.assign(window.Templates, {
+    CWI: contentWarningInline,
+    contentWarningInline,
+    CWP: contentWarningParagraph,
+    contentWarningParagraph,
+    infoMessage,
+    infoMessageBox,
+    restart,
+    rewind,
+    hoursAgo,
+    hashtag,
+    minutesAgo,
+    socialMediaCard,
+    manyCommands
+  });
+}

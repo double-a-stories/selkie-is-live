@@ -1,0 +1,45 @@
+:: Chapter 1
+
+After work, you log into Grindar, which, in this universe, is a vore site. Your favorite streamer XenaExotix, a cute older trans hyena girl clearly struggling with rent. She reminds you of your ex-girlfriend, a thought you try to ignore. She eats a volunteer live on cam, and talks through the whole process.
+
+### Have a drink.
+
+You chat with her. You get interaction, and, if you donate, she says your name and flirts with you. (**MINIGAME:** Put in your credit card information with one hand.)
+
+You masturbate your bits as her prey slowly dies. Cum. Hah. Holy fuck. That was hot. There's no way this is legal.
+
+:: Self-introduction
+
+Your name is Jess Aster (they/them). You are a white rabbit with dull green eyes. Your shoulders are slumped and your suit is wrinkled. You're back in your apartment after another long day at the office.
+
+Thank the gods it's Friday.
+
+What will you do?
+
+<%= story.render("Ch1 Living room commands") %>
+
+:: Ch1 Living room commands
+
+<%= T.manyCommands([
+    "Strip naked.",
+    "Have a drink."
+], "Use the internet.") %>
+
+:: Strip naked.
+
+About time.
+
+In your bedroom, you peel your business attire from your body and toss it in a hamper to be dry cleaned. You smell musky and gross. Your T is probably way too high. You rack your brain trying to remember if you did your shot last night.
+
+At least your tits are finally actually coming in, you think.
+
+<%= story.render("Ch1 Living room commands") %>
+
+:: Have a drink.
+
+TODO: Depression depressed.
+
+<%= story.render("Ch1 Living room commands") %>
+
+:: Use the internet
+

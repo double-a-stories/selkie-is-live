@@ -1,0 +1,17 @@
+:: StoryTitle
+Untitled
+
+:: StoryData
+{
+    "ifid": "EAFB5AF2-E29E-4EAE-84DB-1BAB53F7D79F",
+    "format": "Snowman",
+    "format-version": "2.0.2",
+    "start": "Start",
+    "tag-colors": {
+        "TODO": "red",
+        "hide": "blue",
+        "morning": "yellow",
+        "todo": "orange",
+        "vore": "red"
+    }
+}

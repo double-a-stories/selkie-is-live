@@ -1,0 +1,39 @@
+:: Help [no_checkpoint]
+### Keyboard controls
+
+<%= keybinds.KEYBINDS_DOCS %>
+
+### Play offline
+
+* [Download latest release](https://github.com/double-a-stories/life-of-the-party/releases)
+
+### Credits
+
+<%= story.render("Credits") %>
+
+:: Credits [dark]
+*Life of the Party* was written and developed by me, [▽ Double-A ▽](https://aryion.com/g4/user/DoubleA). If you liked it, leave me feedback at [Eka's Portal](https://aryion.com/forum/viewtopic.php?f=79&t=59177) or [textadventures.co.uk](http://textadventures.co.uk/games/view/fcvdqsoz7u2edrju9wb6ba/life-of-the-party-a-furry-vore-adventure-18)!
+
+If you really enjoyed this, and want me to spend more time making things like it, consider supporting me at [☕ Ko-fi](https://ko-fi.com/doublea).
+
+#### Software
+
+This project utilizes open-source code and/or utilities from the following open source projects.
+
+* 📖 [Twine and Twee](https://github.com/tweecode) by Chris Klimas and the IFTF
+* 😃 [Twemoji](https://github.com/twitter/twemoji) – Open source Emoji set by Twitter.
+* 🏍️ [Tweego](https://github.com/tmedwards/tweego) – Compiler for Twee 3 by T.M. Edwards
+* ⛄️ [Snowman](https://github.com/videlais/snowman) – Story format by Videlais
+* 🐺 [Howler](https://github.com/goldfire/howler.js) - Web audio library by GoldFireStudios
+* 🔒 [Lockr](https://github.com/tsironis/lockr) – localStorage API wrapper by tsironis
+
+#### Music
+
+* 🎵 "[Invasion](https://vyletpony.bandcamp.com/track/invasion-ft-l-m)" and "[Dance of the Macabre](https://vyletpony.bandcamp.com/track/dance-of-the-macabre)" by Vylet Pony.
+
+### License
+
+<%= story.render("License") %>
+
+:: License
+Copyright © 2021 Double-A. The [content of this story](https://github.com/double-a-stories/life-of-the-party) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt this text in any medium **with attribution** for **non-commercial purposes** under **the same license**.
