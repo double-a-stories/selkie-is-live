@@ -127,6 +127,12 @@ const AmbientSounds = window.AmbientSounds = {
     volume: 0.2,
     loop: true
   }),
+  stream: new Howl({
+    ...howlDefaults,
+    src: [`${MUSIC_PATH}/only-in-the-milky-way/dreams.mp3`],
+    volume: 0.2,
+    loop: true
+  }),
 };
 
 const SoundEffects = window.SoundEffects = {
@@ -144,6 +150,7 @@ ambienceOnPassageTag(AmbientSounds.zenMusic, "zen");
 ambienceOnPassageTag(AmbientSounds.crowdChatterClose, "party", "dubstep");
 ambienceOnPassageTag(AmbientSounds.crowdChatterQuiet, "party_far", "drunk");
 ambienceOnPassageTag(AmbientSounds.dubstep, "dubstep");
+ambienceOnPassageTag(AmbientSounds.stream, "stream");
 
 
 setup.playAchievementSound = () => {

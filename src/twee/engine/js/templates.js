@@ -65,18 +65,67 @@ const Templates = (window.Templates = window.T = {});
     }
 </div>`;
 
-const manyCommands = (passages, finalPassage) => {
+const manyCommands = (passages, finalText) => {
   let output = '';
 
   const passagesToShow = passages.filter(p => !visited(p));
   for (const p of passagesToShow) {
     output += `* [[${p}]]\n`;
   }
-  if (passagesToShow.length == 0 && finalPassage) {
-    output += `* [[${finalPassage}]]\n`;
+  if (passagesToShow.length == 0 && finalText) {
+    // output += `* [[${finalPassage}]]\n`;
+    output += finalText
   }
   
   return passage.render(output);
+}
+
+const getChatParams = (name) => {
+  if (name.toLowerCase() == "disasterpiece") {
+    return {color: "#EEE", ornament: "🐇"}
+  }
+  if (name.toLowerCase() == "xenaexotix") {
+    return {color: "#FF0000", ornament: "👑"}
+  }
+  const range = function(hash, min, max) {
+      var diff = max - min;
+      var x = ((hash % diff) + diff) % diff;
+      return x + min;
+  }
+
+  let hash = 0;
+  if (name.length === 0) return hash;
+  for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+      hash = hash & hash;
+  }
+
+  const h = range(hash, 0, 361);
+  const s = range(hash, 100, 101);
+  const l = range(hash, 60, 90);
+
+  const color = `hsl(${h}, ${s}%, ${l}%)`;;
+
+  const ornaments = ["💎", "♦️", "🫧", "💩", "🚽", "☠️"];
+  let ornament = "";
+  if (hash > 0) {
+    ornament = ornaments[Math.abs(hash) % ornaments.length];
+  }
+
+  return { color, ornament };
+}
+
+
+const chat = (messages) => {
+  let output = '<div class="pesterlog">';
+  
+  for (const [name, message] of messages) {
+    const {color, ornament} = getChatParams(name);
+    output += `<p class="pesterlog_entry">${ornament}
+    <span class="pesterlog_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span>: <span class="pesterlog_entry_text">${message}</span></p>`;
+  }
+  output += '</div>';
+  return output;
 }
 
   Object.assign(window.Templates, {
@@ -92,6 +141,7 @@ const manyCommands = (passages, finalPassage) => {
     hashtag,
     minutesAgo,
     socialMediaCard,
-    manyCommands
+    manyCommands,
+    chat
   });
 }

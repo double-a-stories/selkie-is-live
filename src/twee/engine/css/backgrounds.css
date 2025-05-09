@@ -104,3 +104,9 @@ body[data-tags~="mirror_bottom"]::before {
     opacity: var(--mirror-graphic-opacity);
   }
 }
+
+body[data-tags~="stream"] {
+  --background: rgb(43, 0, 52);
+  /* --light: rgba(0, 0, 255, 0.267);; */
+  --color: rgba(255, 255, 255, 0.9);
+}

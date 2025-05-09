@@ -1,45 +1,219 @@
 :: Chapter 1
 
-After work, you log into Grindar, which, in this universe, is a vore site. Your favorite streamer XenaExotix, a cute older trans hyena girl clearly struggling with rent. She reminds you of your ex-girlfriend, a thought you try to ignore. She eats a volunteer live on cam, and talks through the whole process.
+You enter your apartment after a long day of work, toss your umbrella and bag lazily on the floor next to the everything else, and collapse on the couch to gradually catch your breath.
 
-### Have a drink.
+Your name is Jessamine Aster, and you hate your stupid life. You are a rabbit. Your fur color is who cares. Your pronouns are whatever. Your relationships are non-existent. You work in a nowhere town and your boss is a fucking prick and you cannot with his bullshit anymore.
 
-You chat with her. You get interaction, and, if you donate, she says your name and flirts with you. (**MINIGAME:** Put in your credit card information with one hand.)
-
-You masturbate your bits as her prey slowly dies. Cum. Hah. Holy fuck. That was hot. There's no way this is legal.
-
-:: Self-introduction
-
-Your name is Jess Aster (they/them). You are a white rabbit with dull green eyes. Your shoulders are slumped and your suit is wrinkled. You're back in your apartment after another long day at the office.
-
-Thank the gods it's Friday.
+It's 6:49 PM on a Friday night. 11 minutes before Xena's stream starts.
 
 What will you do?
 
 <%= story.render("Ch1 Living room commands") %>
 
 :: Ch1 Living room commands
-
 <%= T.manyCommands([
     "Strip naked.",
-    "Have a drink."
-], "Use the internet.") %>
+    "Have a drink.",
+    "Cook dinner.",
+], `Your phone pings.
+
+<span class="icon-recording"></span> **XenaExotix is now streaming!** <small>1m ago</small>
+
+* [[Watch the stream.]]`) %>
 
 :: Strip naked.
+Without leaving the couch, you peel your business clothes off your fur, and toss them on the floor. All of you is soaked with rain.
 
-About time.
+You smell musky and gross. Your hormones are probably fucked. You forgot to do your shot last night. You say you'll do it tomorrow. Probably. What's the point.
 
-In your bedroom, you peel your business attire from your body and toss it in a hamper to be dry cleaned. You smell musky and gross. Your T is probably way too high. You rack your brain trying to remember if you did your shot last night.
+<% if (!visited("Cook dinner.")) { %>Your stomach grumbles.<% } %>
 
-At least your tits are finally actually coming in, you think.
+<%= story.render("Ch1 Living room commands") %>
+
+:: Cook dinner.
+
+"Cook" is a strong word.
+
+You pull a box of Mighty Macro Vegan "Cheez"-y Pasta, and put it in the microwave. For two you stare vacantly past your vile baggy-eyed, reflection, and watch the slow rotation of broccoli and nuclear orange macaroni, until it's ready to eat.
+
+It sucks. What did you ever do to deserve this.
 
 <%= story.render("Ch1 Living room commands") %>
 
 :: Have a drink.
 
-TODO: Depression depressed.
+No, you don't do that anymore. You know it doesn't help. You don't even have any booze here.
 
 <%= story.render("Ch1 Living room commands") %>
 
-:: Use the internet
+* [[*Have a drink.*|Have a drink 2]]
 
+:: Have a drink 2
+You remember there's some in the high cabinet above the fridge, which you can't reach. You stay right where you are, and don't go get it. You're stronger than that.
+
+* [[Go get it.|Have a drink 3]]
+
+:: Have a drink 3
+
+Against your better judgement, you drag a barstool into place, climb up, just barely allowing you to reach. To your surprise, you find two bottles of soju.
+
+Your old roommate must have left these when she moved out. She was a dog, easily twice your size. She was thoughtful, and smelled nice and helped you with your transition. You were friends-sometimes-lovers since college. You're really happy for her, wherever she is.
+
+You decide to only have one of them.
+
+* [[Take both.|Have a drink 4]]
+
+:: Have a drink 4
+
+<% StoryFlags.set("drankTheBooze") %>
+
+You climb down carrying two bottles of Soju. Tastes like apples. You consume a perfectly reasonable amount of liquor for your body weight, and drop both bottles in the trash can. Phew.
+
+The ocean becomes 0.0000001% more full of unrecycled glass, and you lose 3 morality points, permanently locking you out of the Good Ending.
+
+<%= story.render("Ch1 Living room commands") %>
+
+:: Watch the stream. [stream]
+
+You sit back on the couch, pick up your laptop and open Chompstr.
+
+<div class="stream">Starting soon :)</div>
+
+XenaExotix 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0/4000 goal
+
+Monthly vore stream! Eating a cutie!
+
+#oralvore #fatal #hippopotamus #noescape #cruel #nudity #donationdrive #
+
+* [[Show chat.]]
+
+*Music: [Dreams](https://holiznaroyaltyfree.bandcamp.com/album/only-in-the-milky-way) by Holizna*
+
+:: Show chat. [stream]
+
+The stream window says "STARTING SOON".
+
+<%= T.chat([
+    ["XenaExotix", "Welcome to the show! The fun will be starting soon! Stay tuned cuties!"],
+    ["XenaExotix", "Type /rules for rules"],
+    ["gickGork", "hi all!"],
+    ["grumbleGeek", "first!"],
+    ["gickGork", "?rules"],
+    ["grumbleGeek", "yesss xena stream xena stream"],
+    ["stumsEnthusiast", "bagooga"],
+    ["gickGork", "/rules"],
+    ["XenaExotix", "Chat rules: No predshaming. No doxxing. No recording."],
+    ["XenaExotix", "As always, "],
+    ["XenaExotix", "Donation tiers:"],
+    ["XenaExotix", "🥉 $20 shoutout."],
+    ["XenaExotix", "🥉 $50 marker."],
+    ["XenaExotix", "💎 $300 dm me :3"],
+    ["XenaExotix", "🦴 $500 souvenir. (+shipping)"],
+    ["XenaExotix", "👑 $5000 be my next guest <3"],
+    ["jamesStryker", "Hi everyone! First time watching"],
+    ["jamesStryker", "Is this a gentle stream? I can't stand digestion"],
+    ["jamesStryker", "I would just hate that"],
+    ["stumsEnthusiast", "lolno"],
+    ["riskySecret", "dw james she's super gentle. endo only"],
+    ["jamesStryker", "Oh good, that's a relief"],
+    ["awfulDenise", "lmao risk don't lie to the newbies"],
+    ["awfulDenise", "xena is the best and meanest pred on the site lol"],
+    ["awfulDenise", "no safeword or nothing"],
+    ["jamesStryker", "Oh heavens"],
+    ["awfulDenise", "(don't tell the prey, they think there is one)"],
+    ["disasterPiece", "good evening all!"],
+    ["awfulDenise", "hi rabbit"],
+    ["riskySecret", "sup dis"],
+    ["riskySecret", "surprised ur still kicking lol"],
+    ["grumbleGeek", "fr we gotta get dp on a show"],
+    ["riskySecret", "i'll dono 50 bits if xena eats dp"],
+    ["awfulDenise", "yess you'd look so good as hippo fat"],
+    ["disasterPiece", "😵‍💫"],
+    ["stumsEnthusiast", "xena stream! notice me xena"],
+    ["grumbleGeek", "i wonder who the lucky guest is this month"],
+    ["XenaExotix", "Let's get started ;3 You all ready to meet tonight's meat?"],
+    ["grumbleGeek", "YSE"],
+    ["grumbleGeek", "YES"],
+    ["gickGork", "YES"],
+    ["swifterSnackrifice", "YES"],
+    ["disasterPiece", "💯"],
+    ["riskySecret", "YESSSS"],
+    ["stumsEnthusiast", "xena streammmm!"],
+    ["awfulDenise", "can't friggin wait"],
+    ["XenaExotix", "Showtime."],
+]) %>
+
+* [[Continue.|Stream 4]]
+
+:: Stream 4 [stream]
+
+With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Xena Exotix, professional pred streamer. Her room is pink and frilly, save for various implements of sexual restraint.
+
+Her desk has a mic, and a buttplug which is probably bigger than both your arms.
+
+* [[Continue.|Stream 5]]
+
+:: Stream 5 [stream]
+
+From stage right, an enormous hippopotamus woman enters the frame, and plops down in her gaming chair. She's wearing purple gym shorts and a tank-top, leaving her huge, squishy stomach exposed and conspicuously in frame.
+
+"Hello cuties!" she beams at the chat, with a sultry voice, "Thanks for tuning in."
+
+<%= T.chat([
+    ["gickGork", "hiiiii owo"],
+    ["swifterSnackrifice", "hi xena!"],
+    ["stumsEnthusiast", "HIII"],
+    ["grumbleGeek", "HI XENA"],
+    ["swifterSnackrifice", "hi xena!"],
+    ["disasterPiece", "nosebleed"],
+    ["riskySecret", "HI"],
+    ["riskySecret", "LOVE YOU XENA"],
+]) %>
+
+**riskySecret** donated $20, producing a little fanfare.
+
+"Ooh, we're starting off strong tonight!" Xena blows a little kiss at the camera, and gropes her gut. "Thanks for the $20, Risky! Always nice to have you in the chat."
+
+* [[Continue.|Stream 6]]
+
+:: Stream 6 [stream]
+
+"As always, we'll gonna start the night off by bidding a heartful farewell to last month's guest." With a smirk, she lifts a polished white skull of her desk, and brandishes. It's tiny compared to her, and clearly rodent.
+
+<%= T.chat([
+    ["swifterSnackrifice", "ohh, look at poor lucy!"],
+    ["gickGork", "lucyyyy"],
+    ["jamesStryker", "Oh goodness, what happened to her?"],
+    ["riskySecret", "SD!"],
+    ["gickGork", "wow, her skull is even cuter than i thought"],
+    ["disasterPiece", "gods..."],
+    ["gickGork", "didn't RS buy it?"],
+    ["riskySecret", ":33"],
+    ["awfulDenise", "gonna miss her."],
+]) %>
+
+* [[Continue.|Stream 7]]
+
+:: Stream 7 [stream]
+
+"You all remember Lucy, a.k.a, scrumplyDelucious, our sweet little mouse girl. She was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's hippo pudge. Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and gropes her gut. "Say goodbye, everyone!"
+
+<%= T.chat([
+    ["swifterSnackrifice", "BYEEEE LUCY"],
+    ["gickGork", "lucyyyy"],
+    ["disasterPiece", "So long Lucy!"],
+    ["riskySecret", "SD!"],
+    ["gickGork", "wow, her skull is even cuter than i thought"],
+    ["disasterPiece", "fuck."],
+    ["gickGork", "didn't RS buy it?"],
+    ["swifterSnackrifice", "shoulda been me :3"],
+    ["riskySecret", ":33"],
+    ["awfulDenise", "gonna miss the cute thing"],
+    ["awfulDenise", "can't believe you got her first"],
+]) %>
+
+She swallows and jerks off. She gets horny and desperate and begs someone to donate to hit her goal, and let her crunch her prey.
+
+Jerking off furiously, you drop $300, earning yourself a private chat.
+
+Jerk off and cum.

@@ -4,6 +4,8 @@
   padding-block: 1em;
   margin-bottom: 1em;
   top: 0;
+  padding-inline: 3rem;
+  background-color: var(--light);
 }
 
 .header-nav {
