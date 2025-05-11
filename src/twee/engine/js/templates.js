@@ -84,7 +84,7 @@ const getChatParams = (name) => {
   if (name.toLowerCase() == "disasterpiece") {
     return {color: "#EEE", ornament: "🐇"}
   }
-  if (name.toLowerCase() == "xenaexotix") {
+  if (name.toLowerCase() == "selkieslurps") {
     return {color: "#FF0000", ornament: "👑"}
   }
   const range = function(hash, min, max) {
