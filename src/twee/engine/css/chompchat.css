@@ -1,22 +1,22 @@
-.pesterlog {
+.chompchat {
     font-size: 1rem;
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
 }
-.pesterlog_entry {
+.chompchat_entry {
     margin-block: 0;
     padding-inline: 1rem;
 }
 
-.pesterlog_entry:nth-child(odd) {
+.chompchat_entry:nth-child(odd) {
     background: rgba(255, 255, 255, 0.05)
 }
 
-.pesterlog_entry_name {
+.chompchat_entry_name {
     /* font-weight: 700; */
 }
-.pesterlog_entry_text {}
+.chompchat_entry_text {}
 
 .icon-recording::before {
     content: " ● ";
@@ -33,9 +33,4 @@
     justify-content: center;
 }
 
-.disasterpiece {
-    font-weight: bold;
-}
-.selkieslurps {
-}
-
+.disasterPiece { font-weight: bold; }

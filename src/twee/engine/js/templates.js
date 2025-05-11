@@ -80,13 +80,17 @@ const manyCommands = (passages, finalText) => {
   return passage.render(output);
 }
 
+const chatOverrides = {
+  "disasterPiece": { color: "#EEE", ornament: "🐰" },
+  "SelkieSlurps": { color: "#FF0000", ornament: "👑" },
+  "riskySecret": { color: "hsl(254, 100%, 76%)", ornament: "☠️" },
+  "awfulDenise": { color: "hsl(113, 100%, 83%)", ornament: "💩" },
+  "jamesStryker": { color: "white", ornament: "🌱" },
+}
+
 const getChatParams = (name) => {
-  if (name.toLowerCase() == "disasterpiece") {
-    return {color: "#EEE", ornament: "🐇"}
-  }
-  if (name.toLowerCase() == "selkieslurps") {
-    return {color: "#FF0000", ornament: "👑"}
-  }
+  let params = chatOverrides[name] ?? {};
+
   const range = function(hash, min, max) {
       var diff = max - min;
       var x = ((hash % diff) + diff) % diff;
@@ -104,29 +108,37 @@ const getChatParams = (name) => {
   const s = range(hash, 100, 101);
   const l = range(hash, 60, 90);
 
-  const color = `hsl(${h}, ${s}%, ${l}%)`;;
+  params.color ??= `hsl(${h}, ${s}%, ${l}%)`;
 
-  const ornaments = ["💎", "♦️", "🫧", "💩", "🚽", "☠️"];
-  let ornament = "";
-  if (hash > 0) {
-    ornament = ornaments[Math.abs(hash) % ornaments.length];
-  }
+  const ornaments = ["", "", "", "", "", "🚽", "🫧", "🧻", "🧴"];
+  params.ornament ??= ornaments[Math.abs(hash) % ornaments.length]
 
-  return { color, ornament };
+  return params;
 }
 
 
 const chat = (messages) => {
-  let output = '<div class="pesterlog">';
+  let output = '<div class="chompchat">';
   
-  for (const [name, message] of messages) {
-    const {color, ornament} = getChatParams(name);
-    output += `<p class="pesterlog_entry">${ornament}
-    <span class="pesterlog_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span>: <span class="pesterlog_entry_text">${message}</span></p>`;
+  for (const [name, message, isAction, emoji] of messages) {
+    output += `<p class="chompchat_entry">`;
+    output += chatEntry(name, message, isAction, emoji);
+    output += `</p>`;
   }
   output += '</div>';
   return output;
 }
+  
+const chatEntry = (name, message, isAction, emoji) => {
+  const {color, ornament} = getChatParams(name);
+  emoji = emoji ?? ornament;
+  if (isAction) {
+    return `<i>${emoji} <span class="chompchat_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span> ${message}</i>`;
+  } else {
+    return `${emoji} <span class="chompchat_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span>: ${message}`;
+  }
+}
+
 
   Object.assign(window.Templates, {
     CWI: contentWarningInline,

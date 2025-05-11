@@ -2,9 +2,9 @@
 
 You enter your apartment after a long day of work, toss your umbrella and bag lazily on the floor next to the everything else, and collapse on the couch to gradually catch your breath.
 
-Your name is Jessamine Aster, and you hate your stupid life. You are a rabbit. Your fur color is who cares. Your pronouns are whatever. Your relationships are non-existent. You work in a nowhere town and your boss is a fucking prick and you cannot with his bullshit anymore.
+Your name is Jess, and you hate your stupid life. You are a rabbit. Your pronouns are whatever. Your fur color is who cares. Your relationships are non-existent. You work in a nowhere town and your boss is a fucking prick and you cannot with his bullshit anymore.
 
-It's 6:49 PM on a Friday night. 11 minutes before Selkie's stream starts.
+It's 6:49 PM on a Monday night. 11 minutes before Selkie's stream starts.
 
 What will you do?
 
@@ -34,9 +34,7 @@ You smell musky and gross. Your hormones are probably fucked. You forgot to do y
 
 "Cook" is a strong word.
 
-You pull a box of Mighty Macro Vegan "Cheez"-y Pasta, and put it in the microwave. For two you stare vacantly past your vile baggy-eyed, reflection, and watch the slow rotation of broccoli and nuclear orange macaroni, until it's ready to eat.
-
-It sucks. What did you ever do to deserve this.
+You pull a box of Mighty Macro Vegan "Cheez"-y Pasta, and put it in the microwave. For two you stare vacantly past your vile baggy-eyed, reflection, and watch the slow rotation of broccoli and nuclear orange macaroni, until it's ready to eat. It sucks. What did you ever do to deserve this.
 
 <%= story.render("Ch1 Living room commands") %>
 
@@ -67,9 +65,9 @@ You decide to only have one of them.
 
 <% StoryFlags.set("drankTheBooze") %>
 
-You climb down carrying two bottles of Soju. Tastes like apples. You consume a perfectly reasonable amount of liquor for your body weight, and drop both bottles in the trash can. Phew.
+You climb down carrying two bottles of Soju. Tastes like apples. You consume a perfectly reasonable amount of liquor for your body weight, and drop both bottles in the trash can. Oh god. Stupid stupid stupid.
 
-The ocean becomes 0.0000001% more full of unrecycled glass, and you lose 3 morality points, permanently locking you out of the Good Ending.
+Your drunkness has increased to +60 points. The ocean now contains +1.4 more pounds of unrecycled glass.
 
 <%= story.render("Ch1 Living room commands") %>
 
@@ -77,13 +75,11 @@ The ocean becomes 0.0000001% more full of unrecycled glass, and you lose 3 moral
 
 You sit back on the couch, pick up your laptop and open Chompstr.
 
-<div class="stream">Starting soon :)</div>
+<span class="icon-recording"></span> **Monthly vore stream! Eating a cutie!**
 
 SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0/4000 goal
 
-Monthly vore stream! Eating a cutie!
-
-#oralvore #fatal #hippopotamus #noescape #cruel #nudity #donationdrive #
+<small>#oralvore #fatal #noescape #cruel #nudity #donationdrive</small>
 
 * [[Show chat.]]
 
@@ -94,25 +90,25 @@ Monthly vore stream! Eating a cutie!
 The stream window says "STARTING SOON".
 
 <%= T.chat([
-    ["SelkieSlurps", "Welcome to the show! The fun will be starting soon! Stay tuned cuties!"],
+    ["SelkieSlurps", "The fun will be starting soon! Stay tuned cuties!"],
     ["SelkieSlurps", "Type /rules for rules"],
-    ["gickGork", "hi all!"],
+    ["gickSwallower", "hi all!"],
     ["grumbleGeek", "first!"],
-    ["gickGork", "?rules"],
+    ["gickSwallower", "?rules"],
     ["grumbleGeek", "yesss selkie stream selkie stream"],
+    ["stumsEnthusiast", "selkie streammmm!"],
     ["stumsEnthusiast", "bagooga"],
-    ["gickGork", "/rules"],
+    ["gickSwallower", "/rules"],
     ["SelkieSlurps", "Chat rules: No predshaming. No doxxing. No recording."],
     ["SelkieSlurps", "As always, "],
     ["SelkieSlurps", "Donation tiers:"],
-    ["SelkieSlurps", "🥉 $20 shoutout."],
-    ["SelkieSlurps", "🥉 $50 marker."],
-    ["SelkieSlurps", "💎 $300 dm me :3"],
-    ["SelkieSlurps", "🦴 $500 souvenir. (+shipping)"],
-    ["SelkieSlurps", "👑 $5000 be my next guest <3"],
+    ["SelkieSlurps", "🥉 $20 = shoutout."],
+    ["SelkieSlurps", "🥈 $50 = name written on gut."],
+    ["SelkieSlurps", "🥇 $300 = private dm :3"],
+    ["SelkieSlurps", "🦴 first $500 = souvenir. (+shipping)"],
+    ["SelkieSlurps", "👑 $5000 = be my next guest <3"],
     ["jamesStryker", "Hi everyone! First time watching"],
     ["jamesStryker", "Is this a gentle stream? I can't stand digestion"],
-    ["jamesStryker", "I would just hate that"],
     ["stumsEnthusiast", "lolno"],
     ["riskySecret", "dw james she's super gentle. endo only"],
     ["jamesStryker", "Oh good, that's a relief"],
@@ -129,38 +125,39 @@ The stream window says "STARTING SOON".
     ["riskySecret", "i'll dono 50 bits if selkie eats dp"],
     ["awfulDenise", "yess you'd look so good as hippo fat"],
     ["disasterPiece", "😵‍💫"],
-    ["stumsEnthusiast", "selkie stream! notice me selkie"],
+    ["stumsEnthusiast", "notice me selkie"],
     ["grumbleGeek", "i wonder who the lucky guest is this month"],
     ["SelkieSlurps", "Let's get started ;3 You all ready to meet tonight's meat?"],
     ["grumbleGeek", "YSE"],
     ["grumbleGeek", "YES"],
-    ["gickGork", "YES"],
+    ["gickSwallower", "YES"],
     ["swifterSnackrifice", "YES"],
     ["disasterPiece", "💯"],
     ["riskySecret", "YESSSS"],
-    ["stumsEnthusiast", "selkie streammmm!"],
     ["awfulDenise", "can't friggin wait"],
     ["SelkieSlurps", "Showtime."],
 ]) %>
 
-* [[Continue.|Stream 4]]
+* [[Start stream.]]
 
-:: Stream 4 [stream]
+:: Start stream. [stream]
 
-With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer. Her room is pink and frilly, save for various implements of sexual restraint.
+With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer.
 
-Her desk has a mic, and a buttplug which is probably bigger than both your arms.
+Her bedroom is pink and frilly, save for various implements of sexual restraint. Various silicone toys and leather straps decorate the walls, between some redbubble posters. A bookshelf of eight or nine skulls is marked the "Hall of Fame" with glittery marker.
 
-* [[Continue.|Stream 5]]
+Her desk has a mic, a keyboard, and a dildo which is probably bigger than both your arms.
 
-:: Stream 5 [stream]
+* [[Selkie: Enter.]]
 
-From stage right, an enormous hippopotamus woman enters the frame, and plops down in her gaming chair. She's wearing purple gym shorts and a tank-top, leaving her huge, squishy stomach exposed and conspicuously in frame.
+:: Selkie: Enter. [stream]
+
+From the right of the frame, a hippo woman enters and plops down in her gaming chair. She's wearing purple gym shorts and a tank-top, leaving her huge, squishy stomach exposed and conspicuously in frame.
 
 "Hello cuties!" she beams at the chat, with a sultry voice, "Thanks for tuning in."
 
 <%= T.chat([
-    ["gickGork", "hiiiii owo"],
+    ["gickSwallower", "hiiiii owo"],
     ["swifterSnackrifice", "hi selkie!"],
     ["stumsEnthusiast", "HIII"],
     ["grumbleGeek", "HI SELKIE"],
@@ -168,52 +165,77 @@ From stage right, an enormous hippopotamus woman enters the frame, and plops dow
     ["disasterPiece", "nosebleed"],
     ["riskySecret", "HI"],
     ["riskySecret", "LOVE YOU SELKIE"],
+    ["riskySecret", "donated $20!", true, "🥉"],
 ]) %>
-
-**riskySecret** donated $20, producing a little fanfare.
 
 "Ooh, we're starting off strong tonight!" Selkie blows a little kiss at the camera, and gropes her gut. "Thanks for the $20, Risky! Always nice to have you in the chat."
 
-* [[Continue.|Stream 6]]
+With a smirk, She lifts a polished white skull of her desk.
 
-:: Stream 6 [stream]
+* [[Show off skull.]]
 
-"As always, we'll gonna start the night off by bidding a heartful farewell to last month's guest." With a smirk, she lifts a polished white skull of her desk, and brandishes. It's tiny compared to her, and clearly rodent.
+:: Show off skull. [stream]
+
+"As always, we'll gonna start the night off by bidding a heartful farewell to last month's guest." She brandishes the skull to the camera. You recognize it as a whitetail deer, mostly because you watched that deer die last week.
+
+"You regulars will surely remember Lucy, a.k.a, scrumplyDelucious, our sweet little deer girl, a long time platinum subscriber to the channel.."
+
+<%= T.chat([
+    ["jamesStryker", "oh goodness, what happened to her?"],
+    ["kalimeraRodentia", "lol"],
+    ["riskySecret", "nooo, not scrumply! lol"],
+    ["snackSpear", "hot"],
+]) %>
+
+"Last month, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!"
+
+* [[Goodbye, Lucy.]]
+
+:: Goodbye, Lucy. [stream]
 
 <%= T.chat([
     ["swifterSnackrifice", "ohh, look at poor lucy!"],
-    ["gickGork", "lucyyyy"],
-    ["jamesStryker", "Oh goodness, what happened to her?"],
-    ["riskySecret", "SD!"],
-    ["gickGork", "wow, her skull is even cuter than i thought"],
-    ["disasterPiece", "gods..."],
-    ["gickGork", "didn't RS buy it?"],
+    ["gickSwallower", "lucyyyy"],
+    ["disasterPiece", "goodbye, Lucy."],
     ["riskySecret", ":33"],
+    ["kalimeraRodentia", "byeeee x3"],
+    ["awfulDenise", "lucy was such a kind soul and a great rp partner"],
     ["awfulDenise", "gonna miss her."],
+    ["swifterSnackrifice", "BYEEEE LUCY"],
+    ["skippyFeline", "bye lucy!"],
+    ["skippyFeline", "i met her at deceptacon, and had so much fun!"],
+    ["astralAdviser", "poor SD ;w;"],
+    ["astralAdviser", "i didn't really know her but i saw her in chat a lot"],
+    ["astralAdviser", "she seemed cool"],
+    ["gickSwallower", "didn't RS buy it?"],
+    ["bellicoseDinosaur", "bye lucy!"],
+    ["snackSpear", "me next!!"],
+    ["adiposeAccumulator", "bye bye mousie!! ur so hot selkie"],
+    ["narrowPantheon", "wow, her skull is even cuter than i thought"],
+    ["disasterPiece", "fuck thqt's so hot"],
 ]) %>
 
-* [[Continue.|Stream 7]]
+"Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's just more hippo pudge. Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and wiggles her gut.
 
-:: Stream 7 [stream]
+* [[Package souvenir.]]
 
-"You all remember Lucy, a.k.a, scrumplyDelucious, our sweet little mouse girl. She was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's hippo pudge. Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and gropes her gut. "Say goodbye, everyone!"
+:: Package souvenir. [stream]
+
+She, then places inside a small cardboard box.
+
+"As the first $500 donor from last stream, this beautiful skull of hers will be once again adding to the collection of riskySecret! Thanks risky! It's fans like you who make this show possible."
 
 <%= T.chat([
-    ["swifterSnackrifice", "BYEEEE LUCY"],
-    ["gickGork", "lucyyyy"],
-    ["disasterPiece", "So long Lucy!"],
-    ["riskySecret", "SD!"],
-    ["gickGork", "wow, her skull is even cuter than i thought"],
-    ["disasterPiece", "fuck."],
-    ["gickGork", "didn't RS buy it?"],
-    ["swifterSnackrifice", "shoulda been me :3"],
     ["riskySecret", ":33"],
+    ["riskySecret", "got myself a nice bathroom decoration"],
     ["awfulDenise", "gonna miss the cute thing"],
+    ["carneusCalcified", "she definitely had it coming"],
+    ["swifterSnackrifice", "shoulda been me :3"],
     ["awfulDenise", "can't believe you got her first"],
+    ["awfulDenise", "i love crushing them"],
 ]) %>
 
-She swallows and jerks off. She gets horny and desperate and begs someone to donate to hit her goal, and let her crunch her prey.
+Continue:
 
-Jerking off furiously, you drop $300, earning yourself a private chat.
+She introduces Matt, a dog boy
 
-Jerk off and cum.
