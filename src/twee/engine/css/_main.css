@@ -4,9 +4,9 @@
 
 :root {
   /* Body text color */
-  --color: #eee;
+  --color: rgba(255, 255, 255, 0.9);
   /* Body background gradient color */
-  --background: #11172a;
+  --background: #442663;
   /* Semi-transparent decoration color */
   --light: rgba(255, 255, 255, 20%);
   /* Link hover color */
@@ -24,12 +24,7 @@ html {
 }
 
 body {
-  background: /* linear-gradient(
-      var(--bg-rotation, 0deg),
-      rgba(0, 0, 0, 0.1),
-      rgba(255, 255, 255, 0.1)
-    ) */
-    var(--background) fixed;
+  background: var(--background) fixed;
   box-sizing: border-box;
   color: var(--color);
   font-smooth: never;

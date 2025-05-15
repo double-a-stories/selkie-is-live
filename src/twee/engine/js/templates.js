@@ -106,7 +106,7 @@ const getChatParams = (name) => {
 
   const h = range(hash, 0, 361);
   const s = range(hash, 100, 101);
-  const l = range(hash, 60, 90);
+  const l = range(hash, 30, 45);
 
   params.color ??= `hsl(${h}, ${s}%, ${l}%)`;
 
