@@ -110,7 +110,7 @@ const getChatParams = (name) => {
 
   params.color ??= `hsl(${h}, ${s}%, ${l}%)`;
 
-  const ornaments = ["", "", "", "", "", "🚽", "🫧", "🧻", "🧴"];
+  const ornaments = ["", "", "", "", "", "", "", "", "🚽", "🫧", "🧻"];
   params.ornament ??= ornaments[Math.abs(hash) % ornaments.length]
 
   return params;
