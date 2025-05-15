@@ -19,4 +19,4 @@ All ***non-prose source code*** (i.e. config files, scripts, stylesheets, file s
 1. Install [Tweego](http://www.motoslave.net/tweego/) and [NodeJS](https://nodejs.org/).
 2. `npm start` - Launch live server for development
 3. `npm run build` - Generates game HTML in `dist`
-4. `npm run proof` – Builds proof-reading/analysis tools in `proofing`
+4. `npm run proof` – Builds proof-reading/analysis tools in `proofing`# night-of-your-life
