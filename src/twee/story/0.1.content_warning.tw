@@ -13,19 +13,18 @@
 <div class="content-warning">
 <h3>Content Warning</h3>
 
-The following is an interactive fetish story **FOR ADULTS ONLY.** It contains potentially distressing content, including **perma-vore, graphic digestion, ssnuff, dubious consent, rape, and suicide**.
+The following is an interactive fetish story **FOR ADULTS ONLY.** It contains potentially distressing content, including **perma-vore, graphic digestion, snuff, dubious consent, rape, and suicide**.
 
 Please think carefully before continuing.
 
 </div>
 
-<label><input type="checkbox"> I agree.</label>
-<!-- TODO: actually require this to be checked. -->
-
 * [[Continue.|Community guidelines]]
 
 :: Community guidelines [no_command]
 
+
+<div.legalese>
 [banner: Welcome to Chompstr.tv!]
 
 Chompstr.tv is a video streaming service for vore enthusiasts and performers to meet and share their original content. By using it, you agree to the following guidelines:
@@ -37,9 +36,14 @@ Chompstr.tv is a video streaming service for vore enthusiasts and performers to 
 
 <label><input type="checkbox"> I agree.</label>
 
+
+</div>
+
 * [[Continue.|End user license agreement]]
 
 :: End user license agreement [no_command]
+
+<div.legalese>
 
 Chompstr.tv (henceforth "the service") is licensed to you by Excruciating Ventures Ltd. (henceforth "the company") for use only under the terms of this agreement. By continuing to access the service, you indicate that you agree to be bound by all of the terms and conditions of this license agreement, and that you accept this license agreement.
 
@@ -48,10 +52,14 @@ The company operates the service in Houston, TZ, and complies with all applicabl
 User interactions **MAY BE RECORDED** and used by the company in perpetuity for any purpose, including advertisement, engagement analytics, and law enforcement.
 
 <label><input type="checkbox"> I agree.</label>
+</div>
+
 <!-- TODO: actually require this to be checked. -->
 * [[Continue.|Warranty disclaimer]]
 
 :: Warranty disclaimer [no_command]
+
+<div.legalese>
 
 The service is provided with **NO WARRANTY** of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and validity of patent rights claims, issued or pending.
 
@@ -59,11 +67,16 @@ The service is provided with **NO WARRANTY** of any kind, either express or impl
 The service contains **GRAPHIC ACTS** which may be offensive to some viewers, including sex, oral vore, anal vore, vaginal vore, penile vore, digestion, hypnotism, urination, scat, and predator assisted suicide. Should you choose to interact with the service, the company provides **NO GUARANTEE** of your mental or physical wellbeing, privacy, following interactions with other users on the service.
 
 <label><input type="checkbox"> I agree.</label>
+
+</div>
+
 <!-- TODO: actually require this to be checked. -->
 
 * [[Continue.|Non-disclosure agreement]]
 
 :: Non-disclosure agreement [no_command]
+
+<div.legalese>
 
 You may find people you know on Chompstr.tv.
 
@@ -72,11 +85,18 @@ By signing your full legal name, you are legally bound to a perpetual agreement 
 <!-- TODO: polish -->
 <label><input type="checkbox"> <span style="font-family: cursive">Jessamine Dogwood Aster</span></label>
 
+</div>
+
+
 * [[Continue.|Age verification]]
 
 :: Age verification
 
+<div.legalese>
+
 <%= story.render("Age verification inner") %>
+
+</div>
 
 * [[Attach file.]]
 
@@ -88,14 +108,20 @@ Under state law, we are required to validate that you are older than 21. If you 
 
 Please verify your age by attaching a photo of your national ID card, driver's license, or PredaTrac® insoluble identity wristband.
 
+
 :: Attach file.
+
+<div.legalese>
 
 <%= story.render("Age verification inner") %>
 
-<p class="content-warning"><b>Preview:</b><br>
+
+<p class="legalese"><b>Preview:</b><br>
 
 <img src="assets/img/driverslicense.jpg" alt="The driver's license of Jessamine Dogwood Aster" style="width: 300px">
 </p>
+
+</div>
 
 * [[Continue.|Welcome to Chompstr.tv]]
 

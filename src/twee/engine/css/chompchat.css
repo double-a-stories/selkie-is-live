@@ -3,6 +3,7 @@
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
+    max-width: 30rem;
 }
 .chompchat_entry {
     margin-block: 0;
@@ -10,7 +11,7 @@
 }
 
 .chompchat_entry:nth-child(odd) {
-    background: rgba(255, 255, 255, 0.05)
+    background: #AB6EB420
 }
 
 .chompchat_entry_name {

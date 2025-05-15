@@ -81,11 +81,11 @@ const manyCommands = (passages, finalText) => {
 }
 
 const chatOverrides = {
-  "disasterPiece": { color: "#EEE", ornament: "🐰" },
+  "disasterPiece": { color: "unset", ornament: "🐰" },
   "SelkieSlurps": { color: "#FF0000", ornament: "👑" },
-  "riskySecret": { color: "hsl(254, 100%, 76%)", ornament: "☠️" },
-  "awfulDenise": { color: "hsl(113, 100%, 83%)", ornament: "💩" },
-  "jamesStryker": { color: "white", ornament: "🌱" },
+  "riskySecret": { color: "hsl(260, 100%, 40%)", ornament: "☠️" },
+  "awfulDenise": { color: "hsl(113, 100%, 30%)", ornament: "💩" },
+  "jamesStryker": { color: "unset", ornament: "🌱" },
 }
 
 const getChatParams = (name) => {
@@ -104,7 +104,7 @@ const getChatParams = (name) => {
       hash = hash & hash;
   }
 
-  const h = range(hash, 0, 361);
+  const h = range(hash, 20, 341);
   const s = range(hash, 100, 101);
   const l = range(hash, 30, 45);
 

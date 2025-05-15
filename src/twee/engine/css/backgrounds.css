@@ -107,6 +107,6 @@ body[data-tags~="mirror_bottom"]::before {
 
 body[data-tags~="stream"] {
   --background: #fff;
-  --light: rgba(0, 0, 0, 0.2);;
-  --color: #333;
+  --light: #AB6EB440;
+  --color: hsl(270, 45%, 20%);
 }
