@@ -3,7 +3,6 @@
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
-    max-width: 30rem;
 }
 .chompchat_entry {
     margin-block: 0;

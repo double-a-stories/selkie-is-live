@@ -5,7 +5,7 @@
     "build": "run-s build:*",
     "get_modules": "mkdir -p modules/; cp -f node_modules/lockr/lockr.min.js node_modules/howler/dist/howler.min.js node_modules/twemoji/dist/twemoji.min.js modules/",
     "build:twee": "tweego -m modules/ --head=src/head.html -o dist/index.html src/twee",
-    "build:package": "zip -r \"life-of-the-party-v\"$npm_package_version\"-dist.zip\" dist",
+    "build:package": "zip -r \"v\"$npm_package_version\"-dist.zip\" dist",
     "proof": "run-s proof:*",
     "proof:mk": "mkdir -p proofing",
     "proof:poof": "npm run build:twee -- -f poof -o proofing/poof.html",

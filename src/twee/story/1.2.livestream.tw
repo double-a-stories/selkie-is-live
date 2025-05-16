@@ -19,13 +19,15 @@ The stream window says "STARTING SOON".
 <%= T.chat([
     ["SelkieSlurps", "The fun will be starting soon! Stay tuned cuties!"],
     ["SelkieSlurps", "Type /rules for rules"],
-    ["exelenciaRodentia", "hi all!"],
+    ["SelkieSlurps", "Goal: Crush the cutie! ($0/2000)"],
+    ["excelenciaRodentia", "hi all!"],
     ["grumbleGeek", "first!"],
     ["exelenciaRodentia", "?rules"],
     ["grumbleGeek", "yesss selkie stream selkie stream"],
     ["stummyLiker", "selkie streammmm!"],
     ["stummyLiker", "bagooga"],
-    ["exelenciaRodentia", "/rules"],
+    ["bellicoseDinosaur", "yayy! selkie's live!"],
+    ["excelenciaRodentia", "/rules"],
     ["SelkieSlurps", "Chat rules: No predshaming. No doxxing. No recording."],
     ["SelkieSlurps", "Donation tiers:"],
     ["SelkieSlurps", "🥉 $20 = shoutout."],
@@ -33,9 +35,9 @@ The stream window says "STARTING SOON".
     ["SelkieSlurps", "🥇 $300 = private dm :3"],
     ["SelkieSlurps", "🦴 first $500 = souvenir. (+shipping)"],
     ["SelkieSlurps", "👑 $5000 = be my next guest <3"],
-    ["awfulDenise", "(don't tell the prey, they think there is one)"],
     ["disasterPiece", "good evening all!"],
     ["awfulDenise", "hi disasterpiece!"],
+    ["skippableFeline", "purr, hi!"],
     ["riskySecret", "sup DP"],
     ["riskySecret", "surprised ur still kicking lol"],
     ["grumbleGeek", "fr we gotta get dp on a show"],
@@ -43,31 +45,40 @@ The stream window says "STARTING SOON".
     ["awfulDenise", "yess they'd look so good as hippo fat"],
     ["disasterPiece", "😵‍💫"],
     ["stummyLiker", "notice me selkie"],
+    ["carneusCalcified", "greetings, pitiful morsels"],
     ["grumbleGeek", "i wonder who the lucky guest is this month"],
+    ["ginnyTonic", "eeehehehehe"],
     ["jamesStryker", "Hi everyone! First time watching"],
+    ["pleadingPeristalsis", "welcome james! ur in for a great show!"],
     ["jamesStryker", "Is this a gentle stream? I can't stand digestion"],
     ["stummyLiker", "lolno"],
     ["riskySecret", "dw james she's super gentle. endo only"],
     ["jamesStryker", "Oh good, that's a relief"],
+    ["narrowPantheon", "riskyyy!"],
     ["awfulDenise", "lmao risk don't lie to the newbies"],
     ["awfulDenise", "selkie is the best and meanest pred on the site lol"],
     ["awfulDenise", "no safeword or nothing"],
-    ["jamesStryker", "Oh heavens"],
+    ["awfulDenise", "(don't tell the prey, they think there is one)"],
+    ["jamesStryker", "Oh heavens"]
+])
+%>
+
+* [[Start stream.]]
+
+:: Start stream. [stream]
+
+<%= T.chat([
     ["SelkieSlurps", "Let's get started ;3 You all ready to meet tonight's meat?"],
     ["grumbleGeek", "YSE"],
     ["grumbleGeek", "YES"],
     ["narrowPantheon", "YA!"],
-    ["exelenciaRodentia", "YES"],
+    ["excelenciaRodentia", "YES"],
     ["swifterSnackrifice", "YES"],
     ["disasterPiece", "💯"],
     ["riskySecret", "YESSSS"],
     ["awfulDenise", "can't friggin wait"],
     ["SelkieSlurps", "Showtime."],
 ]) %>
-
-* [[Start stream.]]
-
-:: Start stream. [stream]
 
 With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer.
 
@@ -107,17 +118,16 @@ With a smirk, She lifts a polished white skull of her desk.
 "As always, we'll start the night off by bidding a heartful farewell to last month's guest." The hippo brandishes the skull to the camera. You recognize it as a whitetail deer, mostly because you watched one die last week.
 
 <%= T.chat([
-    ["excelenciaRodentia", "skull!!"],
-    ["riskySecret", "oh nooo, it's scrumply! }:)"],
+    ["riskySecret", "oh nooo, scrumply! }:)"],
     ["swifterSnackrifice", "SKULL"],
     ["skippableFeline", "owo!"],
-    ["exelenciaRodentia", "skull!"],
+    ["excelenciaRodentia", "skull!!"],
     ["bellicoseDinosaur", "dfjksdfjk"],
     ["jamesStryker", "oh goodness, what happened to her?"],
     ["bellicoseDinosaur", "just bones now..."],
     ["grumbleGeek", "pudge and bones"],
     ["excelenciaRodentia", "btw is CM in chat?"],
-    ["snackSpear", "hot"],
+    ["ginnyTonic", "hot"],
     ["disasterPiece", "ER u mean caliMath? nah haven't seen him"],
     ["skippableFeline", "bonezzzzz :3"],
 ]) %>
@@ -132,7 +142,7 @@ With a smirk, She lifts a polished white skull of her desk.
 
 <%= T.chat([
     ["swifterSnackrifice", "poor little lucy!"],
-    ["exelenciaRodentia", "lucyyyy"],
+    ["excelenciaRodentia", "lucyyyy"],
     ["disasterPiece", "goodbye, Lucy."],
     ["awfulDenise", "lucy was such a kind soul and a great rp partner"],
     ["riskySecret", ":33"],
@@ -143,15 +153,15 @@ With a smirk, She lifts a polished white skull of her desk.
     ["awfulDenise", "bye hon~"],
     ["skippableFeline", "i met her at deceptacon, and had so much fun!"],
     ["skippableFeline", "bye lucy!"],
-    ["pleadingPeristalsis", "poor SD ;w;"],
-    ["pleadingPeristalsis", "i didn't really know her but i saw her in chat a lot"],
-    ["pleadingPeristalsis", "she seemed cool"],
-    ["exelenciaRodentia", "didn't RS buy it?"],
-    ["bellicoseDinosaur", "bye lucy!"],
-    ["snackSpear", "me next!!"],
+    ["bellicoseDinosaur", "poor SD ;w;"],
+    ["bellicoseDinosaur", "i didn't really know her but i saw her in chat a lot"],
+    ["bellicoseDinosaur", "she seemed cool"],
+    ["excelenciaRodentia", "didn't RS buy it?"],
+    ["pleadingPeristalsis", "bye lucy!"],
+    ["disasterPiece", "fuck thqt's so hot"],
+    ["ginnyTonic", "me next!!"],
     ["adiposeAccumulator", "bye bye mousie!! ur so hot selkie"],
     ["narrowPantheon", "wow, her skull is even cuter than i thought"],
-    ["disasterPiece", "fuck thqt's so hot"],
     ["jamesStryker", "wait is she like dead for real?"],
 ]) %>
 
@@ -166,15 +176,34 @@ Selkie places the skull inside a small cardboard box.
 <%= T.chat([
     ["riskySecret", ":33"],
     ["riskySecret", "got myself a nice bathroom decoration"],
+    ["ginnyTonic", "shoulda been me :3"],
     ["awfulDenise", "gonna miss the cute thing"],
     ["carneusCalcified", "she definitely had it coming"],
-    ["swifterSnackrifice", "shoulda been me :3"],
-    ["awfulDenise", "can't believe you got her first"],
+    ["awfulDenise", "lucky you got her first"],
     ["awfulDenise", "i love crushing them"],
-    ["swifterSnackrifice", "donated $50 for <b>please write my name (junie) on ur gut!</b>", true] 
+    ["ginnyTonic", "donated $50 for <b>plz write my name (junie) on ur gut!</b>", true]
 ]) %>
 
-todo: she accepts the dono and writes "Junie" on her belly.
+"Oh, thanks for the fifty, GT!" Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. "It's perfectly natural to feel envious of Lucy, but there's plenty of room in this gut! Hlaaaaaaaah!" She opens wide and flashes her uvula.
+
+
+<%= T.chat([
+    ["ginnyTonic", "ashdkfahsdfkjh"],
+    ["ginnyTonic", "NOO WTF THAT'S MY FULL NAME hfalkdsfhjasdhf"],
+    ["skippableFeline", "awww hehe"],
+    ["carneusCalcified", "y'know GT selkie isn't the only pred..."],
+    ["bellicoseDinosaur", ";3"],
+    ["carneusCalcified", "you can dm me if you need to get churned"],
+    ["ginnyTonic", "zvbmnxcvbmn"]
+])
+%>
+
+She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. "Getting pretty hungry too..."
+
+<%= T.chat([
+    ["awfulDenise", "hungry hungry hippo!"],
+    ["riskySecret", "bring out this week's bowel movement!"],
+]) %>
 
 * [[Welcome tonight's guest.]]
 

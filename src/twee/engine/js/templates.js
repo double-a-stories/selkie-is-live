@@ -81,11 +81,15 @@ const manyCommands = (passages, finalText) => {
 }
 
 const chatOverrides = {
-  "disasterPiece": { color: "unset", ornament: "🐰" },
+  "disasterPiece": { color: "#888", ornament: "🐰" },
   "SelkieSlurps": { color: "#FF0000", ornament: "👑" },
-  "riskySecret": { color: "hsl(260, 100%, 40%)", ornament: "☠️" },
-  "awfulDenise": { color: "hsl(113, 100%, 30%)", ornament: "💩" },
-  "jamesStryker": { color: "unset", ornament: "🌱" },
+  "riskySecret": { color: "#005682", ornament: "🫐" },
+  "excelenciaRodentia": { color: "#848", ornament: "" },
+  "bellicoseDinosaur": { color: "orange", ornament: "" },
+  "awfulDenise": { color: "hsl(113, 100%, 20%)", ornament: "🐉" },
+  "jamesStryker": { color: "#8B4", ornament: "🌱" },
+  "carneusCalcified": { color: "#C22", ornament: "" },
+  "ginnyTonic": { color: "#C22", ornament: "🍸" },
 }
 
 const getChatParams = (name) => {
@@ -110,8 +114,7 @@ const getChatParams = (name) => {
 
   params.color ??= `hsl(${h}, ${s}%, ${l}%)`;
 
-  const ornaments = ["", "", "", "", "", "", "", "", "🚽", "🫧", "🧻"];
-  params.ornament ??= ornaments[Math.abs(hash) % ornaments.length]
+  params.ornament ??= "";
 
   return params;
 }
