@@ -1,0 +1,31 @@
+.topbar {
+  font-size: 0.75em;
+  border-bottom: 1px solid var(--light);
+  padding-block: 1em;
+  margin-bottom: 1em;
+  top: 0;
+  padding-inline: 3rem;
+  background-color: var(--light);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav-group {
+  list-style: none;
+  padding-inline-start: unset;
+  display: flex;
+  margin: 0;
+}
+
+.header-nav-group > * + * {
+  margin-left: 0.5rem;
+}
+
+.header-nav-group > * + *::before {
+  content: "|";
+  color: var(--light);
+  margin-right: 0.5rem;
+}

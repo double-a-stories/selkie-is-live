@@ -1,0 +1,37 @@
+.chompchat {
+    font-size: 1rem;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    max-width: 30rem;
+}
+.chompchat_entry {
+    margin-block: 0;
+    padding-inline: 1rem;
+}
+
+.chompchat_entry:nth-child(odd) {
+    background: #AB6EB420
+}
+
+.chompchat_entry_name {
+    /* font-weight: 700; */
+}
+.chompchat_entry_text {}
+
+.icon-recording::before {
+    content: " ● ";
+    color: red;
+}
+
+.stream {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    font-size: 1rem;
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.disasterPiece { font-weight: bold; }

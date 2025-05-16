@@ -1,0 +1,22 @@
+/* LICENSE: MIT-0 */
+
+.logo__img {
+  max-width: 100%;
+  display: block;
+  
+}
+.logo__title {
+  margin-bottom: 0.5em;
+}
+.logo__title {
+  white-space: nowrap;
+}
+.logo__subtitle {
+  font-weight: 100;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+.logo__shapes {
+  max-width: 100%;
+}

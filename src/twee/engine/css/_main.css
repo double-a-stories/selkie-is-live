@@ -1,0 +1,145 @@
+/* LICENSE: MIT-0 */
+
+/* Style variables */
+
+:root {
+  /* Body text color */
+  --color: rgba(255, 255, 255, 0.9);
+  /* Body background gradient color */
+  --background: #442663;
+  /* Semi-transparent decoration color */
+  --light: rgba(255, 255, 255, 20%);
+  /* Link hover color */
+  --accent: #d93;
+  /* Body font */
+  --font-stack: var(--font-family-sans-serif);
+  --font-family-sans-serif: "IBM Plex Sans", sans-serif;
+  --font-family-monospace: ui-monospace, Menlo, Monaco, "Courier New", monospace;
+  --font-family-serif: "Times New Roman", "Tinos", "Times", serif;
+  --bg-rotation: 0deg;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: var(--background) fixed;
+  box-sizing: border-box;
+  color: var(--color);
+  font-smooth: never;
+  font: clamp(1rem, 3vw, 1.2rem) / 1.6 var(--font-stack);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: opacity 1s, background-color 2s;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: min(4vw, 1.2rem);
+  }
+}
+
+tw-story {
+  max-width: unset;
+}
+
+tw-passage {
+  line-height: inherit;
+  margin: 0 auto;
+  /* padding-bottom: 4rem; */
+  max-width: 35em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*  Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/* Links */
+a[href] {
+  color: var(--color, #111);
+  text-decoration-color: var(--light, rgba(0, 0, 0, 20%));
+}
+
+a[href]:hover,
+a[href]:focus,
+a[href]:active {
+  color: var(--accent, #d93);
+  text-decoration-color: var(--accent, #d93);
+}
+
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+/* Tag: no_heading: hides the passage name */
+[data-tags~="no_heading"] #recent-command {
+  display: none;
+}
+
+.center-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+/* Mobile mode */
+@media screen and (max-width: 500px) {
+  .commands-list a {
+    padding: 1rem;
+  }
+}
+
+/* Twemoji images */
+.emoji {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+  font-size: 1.2em;
+}
+
+.content-warning {
+  border-radius: 0.5rem;
+  border: 1px solid var(--light);
+  padding: 1rem;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+abbr[title]:hover {
+  text-decoration: underline dotted;
+}
+
+.legalese {
+  border: 1px solid #888;
+  background-color: white;
+  color: #000;
+  /* --color: #000; */
+  font: Verdana, sans-serif;
+  padding: 1rem;
+  font-size: 16px;
+}
