@@ -57,9 +57,9 @@ The stream window says "STARTING SOON".
     ["narrowPantheon", "riskyyy!"],
     ["awfulDenise", "lmao risk don't lie to the newbies"],
     ["awfulDenise", "selkie is the best and meanest pred on the site lol"],
+    ["jamesStryker", "Oh heavens :S"],
     ["awfulDenise", "no safeword or nothing"],
     ["awfulDenise", "(don't tell the prey, they think there is one)"],
-    ["jamesStryker", "Oh heavens"]
 ])
 %>
 
@@ -98,6 +98,7 @@ From the right of the frame, a hippo woman enters and plops down in her gaming c
     ["excelenciaRodentia", "hiiiii owo"],
     ["swifterSnackrifice", "hi selkie!"],
     ["stummyLiker", "HIII"],
+    ["ginnyTonic", "hi!"],
     ["bellicoseDinosaur", "hell-o! :)"],
     ["narrowPantheon", "hiya!"],
     ["disasterPiece", "good evening!"],
@@ -184,7 +185,7 @@ Selkie places the skull inside a small cardboard box.
     ["ginnyTonic", "donated $50 for <b>plz write my name (junie) on ur gut!</b>", true]
 ]) %>
 
-"Oh, thanks for the fifty, GT!" Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. "It's perfectly natural to feel envious of Lucy, but there's plenty of room in this gut! Hlaaaaaaaah!" She opens wide and flashes her uvula.
+"Oh, thanks for the fifty, GT! You've earned a spot riiiiiiight here!" Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. "It's perfectly natural to feel envious of Lucy, but there's plenty of room in this gut! Hlaaaaaaaah!" She opens wide and flashes her uvula.
 
 
 <%= T.chat([
@@ -198,16 +199,18 @@ Selkie places the skull inside a small cardboard box.
 ])
 %>
 
-She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. "Getting pretty hungry too..."
+"Fufufu." She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. "Getting pretty hungry too..."
 
 <%= T.chat([
     ["awfulDenise", "hungry hungry hippo!"],
+    ["grumbleGeek", "love the tummy mic!"],
+    ["bellicoseDinosaur", ":S"],
     ["riskySecret", "bring out this week's bowel movement!"],
 ]) %>
 
 * [[Welcome tonight's guest.]]
 
-:: Welcome tonight's guest.
+:: Welcome tonight's guest. [stream]
 
 "You all know him as calorimeterMathematic.  You'll soon know him as "more of Selkie's ass. Please put paws, hooves, and claws together, and welcome to the stream... Matty!"
 
@@ -223,13 +226,13 @@ He stammers, "Hi Selkie, hi chat! I'm.... ohgods... I'm so excited to be hippo f
 
 * [[Hi Matty!]]
 
-:: Hi Matty!
+:: Hi Matty! [stream]
 
 Chat says hi.
 
 * [[Declare consent.]]
 
-:: Declare consent.
+:: Declare consent. [stream]
 
 She hands him a card, "And, what would you like to say the nice people of Chompstr.tv's Moderation and Legal Team?"
 
@@ -239,7 +242,7 @@ He reads off the card, "Um, I, Matthew Kurtis, being of sound mind, declare excl
 
 * [[Cuddle him.]]
 
-:: Cuddle him.
+:: Cuddle him. [stream]
 they cuddle in bed. matty humps her gut gently, then resigns to hump her thigh while sniffing her sweaty gut and dickbulge. chat thinks this is very cute.
 
 She mugs to camera, "Ready to get started, pudge?"
@@ -250,7 +253,7 @@ Her tummy growls and he visibly shudders.
 
 * [[Pressure him.]]
 
-:: Pressure him.
+:: Pressure him. [stream]
 
 "We don't wanna keep the nice audience waiting now, do we?"
 
@@ -328,7 +331,7 @@ with your ham in your sandwich also eager to watch what happens, you do somethin
 
 * [[Donate $300]]
 
-:: Donate $300.
+:: Donate $300. [stream]
 
 You donate to push selkie over.
 
