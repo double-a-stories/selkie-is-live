@@ -348,7 +348,6 @@ body[data-tags~="stream"] {
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
-    max-width: 30rem;
 }
 .chompchat_entry {
     margin-block: 0;
@@ -1935,11 +1934,15 @@ const manyCommands = (passages, finalText) => {
 }
 
 const chatOverrides = {
-  "disasterPiece": { color: "unset", ornament: "🐰" },
+  "disasterPiece": { color: "#888", ornament: "🐰" },
   "SelkieSlurps": { color: "#FF0000", ornament: "👑" },
-  "riskySecret": { color: "hsl(260, 100%, 40%)", ornament: "☠️" },
-  "awfulDenise": { color: "hsl(113, 100%, 30%)", ornament: "💩" },
-  "jamesStryker": { color: "unset", ornament: "🌱" },
+  "riskySecret": { color: "#005682", ornament: "🫐" },
+  "excelenciaRodentia": { color: "#848", ornament: "" },
+  "bellicoseDinosaur": { color: "orange", ornament: "" },
+  "awfulDenise": { color: "hsl(113, 100%, 20%)", ornament: "🐉" },
+  "jamesStryker": { color: "#8B4", ornament: "🌱" },
+  "carneusCalcified": { color: "#C22", ornament: "" },
+  "ginnyTonic": { color: "#C22", ornament: "🍸" },
 }
 
 const getChatParams = (name) => {
@@ -1964,8 +1967,7 @@ const getChatParams = (name) => {
 
   params.color ??= `hsl(${h}, ${s}%, ${l}%)`;
 
-  const ornaments = ["", "", "", "", "", "", "", "", "🚽", "🫧", "🧻"];
-  params.ornament ??= ornaments[Math.abs(hash) % ornaments.length]
+  params.ornament ??= "";
 
   return params;
 }
@@ -2108,7 +2110,9 @@ $(window).on("sm.passage.shown", (ev, { passage }) => {
   }
 });
 /* twine-user-script #17: "Test" */
-window.TestChar = Rule63.defaultMale;</script><tw-tag name="TODO" color="red"></tw-tag><tw-tag name="hide" color="blue"></tw-tag><tw-tag name="morning" color="yellow"></tw-tag><tw-tag name="todo" color="orange"></tw-tag><tw-tag name="vore" color="red"></tw-tag><tw-passagedata pid="1" name="Header" tags="hide header" position="100,100" size="100,100">&lt;header.topbar.header-nav id=&quot;header&quot;&gt;
+window.TestChar = Rule63.defaultMale;
+/* twine-user-script #18: "Version" */
+story.version = "v0.0.1"</script><tw-tag name="TODO" color="red"></tw-tag><tw-tag name="hide" color="blue"></tw-tag><tw-tag name="morning" color="yellow"></tw-tag><tw-tag name="todo" color="orange"></tw-tag><tw-tag name="vore" color="red"></tw-tag><tw-passagedata pid="1" name="Header" tags="hide header" position="100,100" size="100,100">&lt;header.topbar.header-nav id=&quot;header&quot;&gt;
 &lt;%= story.render(&quot;Topbar controls&quot;) %&gt;
 &lt;/header&gt;</tw-passagedata><tw-passagedata pid="2" name="Topbar controls" tags="" position="225,100" size="100,100">&lt;% const muted = !StoryFlags.isSet(&#39;enableSound&#39;); %&gt;
 &lt;% const helpShown = window.passage &amp;&amp; window.passage.name === &quot;Help&quot;; %&gt;
@@ -2372,13 +2376,15 @@ SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0
 &lt;%= T.chat([
     [&quot;SelkieSlurps&quot;, &quot;The fun will be starting soon! Stay tuned cuties!&quot;],
     [&quot;SelkieSlurps&quot;, &quot;Type /rules for rules&quot;],
-    [&quot;exelenciaRodentia&quot;, &quot;hi all!&quot;],
+    [&quot;SelkieSlurps&quot;, &quot;Goal: Crush the cutie! ($0/2000)&quot;],
+    [&quot;excelenciaRodentia&quot;, &quot;hi all!&quot;],
     [&quot;grumbleGeek&quot;, &quot;first!&quot;],
     [&quot;exelenciaRodentia&quot;, &quot;?rules&quot;],
     [&quot;grumbleGeek&quot;, &quot;yesss selkie stream selkie stream&quot;],
     [&quot;stummyLiker&quot;, &quot;selkie streammmm!&quot;],
     [&quot;stummyLiker&quot;, &quot;bagooga&quot;],
-    [&quot;exelenciaRodentia&quot;, &quot;/rules&quot;],
+    [&quot;bellicoseDinosaur&quot;, &quot;yayy! selkie&#39;s live!&quot;],
+    [&quot;excelenciaRodentia&quot;, &quot;/rules&quot;],
     [&quot;SelkieSlurps&quot;, &quot;Chat rules: No predshaming. No doxxing. No recording.&quot;],
     [&quot;SelkieSlurps&quot;, &quot;Donation tiers:&quot;],
     [&quot;SelkieSlurps&quot;, &quot;🥉 $20 = shoutout.&quot;],
@@ -2386,9 +2392,9 @@ SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0
     [&quot;SelkieSlurps&quot;, &quot;🥇 $300 = private dm :3&quot;],
     [&quot;SelkieSlurps&quot;, &quot;🦴 first $500 = souvenir. (+shipping)&quot;],
     [&quot;SelkieSlurps&quot;, &quot;👑 $5000 = be my next guest &lt;3&quot;],
-    [&quot;awfulDenise&quot;, &quot;(don&#39;t tell the prey, they think there is one)&quot;],
     [&quot;disasterPiece&quot;, &quot;good evening all!&quot;],
     [&quot;awfulDenise&quot;, &quot;hi disasterpiece!&quot;],
+    [&quot;skippableFeline&quot;, &quot;purr, hi!&quot;],
     [&quot;riskySecret&quot;, &quot;sup DP&quot;],
     [&quot;riskySecret&quot;, &quot;surprised ur still kicking lol&quot;],
     [&quot;grumbleGeek&quot;, &quot;fr we gotta get dp on a show&quot;],
@@ -2396,21 +2402,30 @@ SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0
     [&quot;awfulDenise&quot;, &quot;yess they&#39;d look so good as hippo fat&quot;],
     [&quot;disasterPiece&quot;, &quot;😵‍💫&quot;],
     [&quot;stummyLiker&quot;, &quot;notice me selkie&quot;],
+    [&quot;carneusCalcified&quot;, &quot;greetings, pitiful morsels&quot;],
     [&quot;grumbleGeek&quot;, &quot;i wonder who the lucky guest is this month&quot;],
+    [&quot;ginnyTonic&quot;, &quot;eeehehehehe&quot;],
     [&quot;jamesStryker&quot;, &quot;Hi everyone! First time watching&quot;],
+    [&quot;pleadingPeristalsis&quot;, &quot;welcome james! ur in for a great show!&quot;],
     [&quot;jamesStryker&quot;, &quot;Is this a gentle stream? I can&#39;t stand digestion&quot;],
     [&quot;stummyLiker&quot;, &quot;lolno&quot;],
     [&quot;riskySecret&quot;, &quot;dw james she&#39;s super gentle. endo only&quot;],
     [&quot;jamesStryker&quot;, &quot;Oh good, that&#39;s a relief&quot;],
+    [&quot;narrowPantheon&quot;, &quot;riskyyy!&quot;],
     [&quot;awfulDenise&quot;, &quot;lmao risk don&#39;t lie to the newbies&quot;],
     [&quot;awfulDenise&quot;, &quot;selkie is the best and meanest pred on the site lol&quot;],
+    [&quot;jamesStryker&quot;, &quot;Oh heavens :S&quot;],
     [&quot;awfulDenise&quot;, &quot;no safeword or nothing&quot;],
-    [&quot;jamesStryker&quot;, &quot;Oh heavens&quot;],
+    [&quot;awfulDenise&quot;, &quot;(don&#39;t tell the prey, they think there is one)&quot;],
+])
+%&gt;
+
+* [[Start stream.]]</tw-passagedata><tw-passagedata pid="30" name="Start stream." tags="stream" position="1225,350" size="100,100">&lt;%= T.chat([
     [&quot;SelkieSlurps&quot;, &quot;Let&#39;s get started ;3 You all ready to meet tonight&#39;s meat?&quot;],
     [&quot;grumbleGeek&quot;, &quot;YSE&quot;],
     [&quot;grumbleGeek&quot;, &quot;YES&quot;],
     [&quot;narrowPantheon&quot;, &quot;YA!&quot;],
-    [&quot;exelenciaRodentia&quot;, &quot;YES&quot;],
+    [&quot;excelenciaRodentia&quot;, &quot;YES&quot;],
     [&quot;swifterSnackrifice&quot;, &quot;YES&quot;],
     [&quot;disasterPiece&quot;, &quot;💯&quot;],
     [&quot;riskySecret&quot;, &quot;YESSSS&quot;],
@@ -2418,7 +2433,7 @@ SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0
     [&quot;SelkieSlurps&quot;, &quot;Showtime.&quot;],
 ]) %&gt;
 
-* [[Start stream.]]</tw-passagedata><tw-passagedata pid="30" name="Start stream." tags="stream" position="1225,350" size="100,100">With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer.
+With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer.
 
 Her bedroom is pink and frilly, save for various implements of sexual restraint. Various silicone toys and leather straps decorate the walls, between some redbubble posters. A bookshelf of eight or nine skulls is marked the &quot;Hall of Fame&quot; with glittery marker.
 
@@ -2432,6 +2447,7 @@ Her desk has a mic, a keyboard, and a dildo which is probably bigger than both y
     [&quot;excelenciaRodentia&quot;, &quot;hiiiii owo&quot;],
     [&quot;swifterSnackrifice&quot;, &quot;hi selkie!&quot;],
     [&quot;stummyLiker&quot;, &quot;HIII&quot;],
+    [&quot;ginnyTonic&quot;, &quot;hi!&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;hell-o! :)&quot;],
     [&quot;narrowPantheon&quot;, &quot;hiya!&quot;],
     [&quot;disasterPiece&quot;, &quot;good evening!&quot;],
@@ -2468,7 +2484,7 @@ With a smirk, She lifts a polished white skull of her desk.
 
 &lt;%= T.chat([
     [&quot;swifterSnackrifice&quot;, &quot;poor little lucy!&quot;],
-    [&quot;exelenciaRodentia&quot;, &quot;lucyyyy&quot;],
+    [&quot;excelenciaRodentia&quot;, &quot;lucyyyy&quot;],
     [&quot;disasterPiece&quot;, &quot;goodbye, Lucy.&quot;],
     [&quot;awfulDenise&quot;, &quot;lucy was such a kind soul and a great rp partner&quot;],
     [&quot;riskySecret&quot;, &quot;:33&quot;],
@@ -2482,7 +2498,7 @@ With a smirk, She lifts a polished white skull of her desk.
     [&quot;bellicoseDinosaur&quot;, &quot;poor SD ;w;&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;i didn&#39;t really know her but i saw her in chat a lot&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;she seemed cool&quot;],
-    [&quot;exelenciaRodentia&quot;, &quot;didn&#39;t RS buy it?&quot;],
+    [&quot;excelenciaRodentia&quot;, &quot;didn&#39;t RS buy it?&quot;],
     [&quot;pleadingPeristalsis&quot;, &quot;bye lucy!&quot;],
     [&quot;disasterPiece&quot;, &quot;fuck thqt&#39;s so hot&quot;],
     [&quot;ginnyTonic&quot;, &quot;me next!!&quot;],
@@ -2506,12 +2522,12 @@ With a smirk, She lifts a polished white skull of her desk.
     [&quot;ginnyTonic&quot;, &quot;donated $50 for &lt;b&gt;plz write my name (junie) on ur gut!&lt;/b&gt;&quot;, true]
 ]) %&gt;
 
-&quot;Oh, thanks for the fifty, GT!&quot; Selkie grins, pulls out a marker and carefully writes *juniper alexis greenall* right below her belly button. &quot;It&#39;s perfectly natural to feel envious of Lucy, but there&#39;s plenty of room in this gut! Hlaaaaaaaah!&quot; She opens wide and flashes her uvula.
+&quot;Oh, thanks for the fifty, GT! You&#39;ve earned a spot riiiiiiight here!&quot; Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. &quot;It&#39;s perfectly natural to feel envious of Lucy, but there&#39;s plenty of room in this gut! Hlaaaaaaaah!&quot; She opens wide and flashes her uvula.
 
 
 &lt;%= T.chat([
     [&quot;ginnyTonic&quot;, &quot;ashdkfahsdfkjh&quot;],
-    [&quot;ginnyTonic&quot;, &quot;NOO THAT&#39;S MY FULL NAME hfalkdsfhjasdhf&quot;],
+    [&quot;ginnyTonic&quot;, &quot;NOO WTF THAT&#39;S MY FULL NAME hfalkdsfhjasdhf&quot;],
     [&quot;skippableFeline&quot;, &quot;awww hehe&quot;],
     [&quot;carneusCalcified&quot;, &quot;y&#39;know GT selkie isn&#39;t the only pred...&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;;3&quot;],
@@ -2520,14 +2536,16 @@ With a smirk, She lifts a polished white skull of her desk.
 ])
 %&gt;
 
-She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. &quot;Getting pretty hungry too...&quot;
+&quot;Fufufu.&quot; She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. &quot;Getting pretty hungry too...&quot;
 
 &lt;%= T.chat([
     [&quot;awfulDenise&quot;, &quot;hungry hungry hippo!&quot;],
+    [&quot;grumbleGeek&quot;, &quot;love the tummy mic!&quot;],
+    [&quot;bellicoseDinosaur&quot;, &quot;:S&quot;],
     [&quot;riskySecret&quot;, &quot;bring out this week&#39;s bowel movement!&quot;],
 ]) %&gt;
 
-* [[Welcome tonight&#39;s guest.]]</tw-passagedata><tw-passagedata pid="35" name="Welcome tonight&#39;s guest." tags="" position="600,475" size="100,100">&quot;You all know him as calorimeterMathematic.  You&#39;ll soon know him as &quot;more of Selkie&#39;s ass. Please put paws, hooves, and claws together, and welcome to the stream... Matty!&quot;
+* [[Welcome tonight&#39;s guest.]]</tw-passagedata><tw-passagedata pid="35" name="Welcome tonight&#39;s guest." tags="stream" position="600,475" size="100,100">&quot;You all know him as calorimeterMathematic.  You&#39;ll soon know him as &quot;more of Selkie&#39;s ass. Please put paws, hooves, and claws together, and welcome to the stream... Matty!&quot;
 
 A shy dog boy (what species? imagining a black and white one) wearing nothing but underwear inches into the frame and waves. His face is fixed in a guilty blush.
 
@@ -2539,15 +2557,15 @@ She grabs him into a side hug, squeezing cheek against her gut.
 
 He stammers, &quot;Hi Selkie, hi chat! I&#39;m.... ohgods... I&#39;m so excited to be hippo food. I hope you all enjoy watching!&quot;
 
-* [[Hi Matty!]]</tw-passagedata><tw-passagedata pid="36" name="Hi Matty!" tags="" position="725,475" size="100,100">Chat says hi.
+* [[Hi Matty!]]</tw-passagedata><tw-passagedata pid="36" name="Hi Matty!" tags="stream" position="725,475" size="100,100">Chat says hi.
 
-* [[Declare consent.]]</tw-passagedata><tw-passagedata pid="37" name="Declare consent." tags="" position="850,475" size="100,100">She hands him a card, &quot;And, what would you like to say the nice people of Chompstr.tv&#39;s Moderation and Legal Team?&quot;
+* [[Declare consent.]]</tw-passagedata><tw-passagedata pid="37" name="Declare consent." tags="stream" position="850,475" size="100,100">She hands him a card, &quot;And, what would you like to say the nice people of Chompstr.tv&#39;s Moderation and Legal Team?&quot;
 
 He reads off the card, &quot;Um, I, Matthew Kurtis, being of sound mind, declare exclusive and irrevocable informed consent to be devoured, digested, and killed. I have, to the best of my ability, recorded and filed all required legal forms of consent with the State Court of South California. I wish to cede all rights to my body, remains, and likeness to SelkieSwallows to enjoy for the duration of this stream and... gulp... in perpetuity. Now I&#39;m just food, poop, and pudge.&quot;
 
 &quot;Don&#39;t sue me, but I added that last part,&quot; she stage-whispers and winks, like she does every stream. &quot;Whoever said a little bureaucracy couldn&#39;t be fun? Now, let&#39;s get this pup warmed up, shall we?&quot;
 
-* [[Cuddle him.]]</tw-passagedata><tw-passagedata pid="38" name="Cuddle him." tags="" position="975,475" size="100,100">they cuddle in bed. matty humps her gut gently, then resigns to hump her thigh while sniffing her sweaty gut and dickbulge. chat thinks this is very cute.
+* [[Cuddle him.]]</tw-passagedata><tw-passagedata pid="38" name="Cuddle him." tags="stream" position="975,475" size="100,100">they cuddle in bed. matty humps her gut gently, then resigns to hump her thigh while sniffing her sweaty gut and dickbulge. chat thinks this is very cute.
 
 She mugs to camera, &quot;Ready to get started, pudge?&quot;
 
@@ -2555,7 +2573,7 @@ He nuzzles her gut; sniffing and enjoying. &quot;It&#39;s so soft... C-can I get
 
 Her tummy growls and he visibly shudders. 
 
-* [[Pressure him.]]</tw-passagedata><tw-passagedata pid="39" name="Pressure him." tags="" position="1100,475" size="100,100">&quot;We don&#39;t wanna keep the nice audience waiting now, do we?&quot;
+* [[Pressure him.]]</tw-passagedata><tw-passagedata pid="39" name="Pressure him." tags="stream" position="1100,475" size="100,100">&quot;We don&#39;t wanna keep the nice audience waiting now, do we?&quot;
 
 &quot;I-I- thought you said you&#39;d take it a little slower with me this time...&quot;
 
@@ -2629,7 +2647,7 @@ rodentia donated $1 for **me too sorgy**
 
 with your ham in your sandwich also eager to watch what happens, you do something you might regret.
 
-* [[Donate $300]]</tw-passagedata><tw-passagedata pid="40" name="Donate $300." tags="" position="1225,475" size="100,100">You donate to push selkie over.
+* [[Donate $300]]</tw-passagedata><tw-passagedata pid="40" name="Donate $300." tags="stream" position="1225,475" size="100,100">You donate to push selkie over.
 
 She hits the goal with huge fanfare. &quot;FUCK yeah. Thanks DisasterPiece, you just earned yourself an hour of 1:1 discord chat.&quot; She places her hands on her wildly kicking bulge, &quot;But first, let&#39;s churn... this... fucking... pup!!!&quot;
 
