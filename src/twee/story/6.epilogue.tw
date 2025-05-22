@@ -1,6 +1,6 @@
 :: Chapter 6
 
-<%= T.chat([
+<%= T.streamChat([
 ["disasterPiece", " where am i"],
 ["disasterPiece", " i can't feel anything"],
 ["disasterPiece", " i'm so warm. and wet."],

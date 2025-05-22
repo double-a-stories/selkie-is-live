@@ -110,3 +110,10 @@ body[data-tags~="stream"] {
   --light: #AB6EB440;
   --color: hsl(270, 45%, 20%);
 }
+
+body[data-tags~="discord"] {
+  --background: #1e2124;
+  --light: 	#424549;
+  --color: #fff;
+}
+

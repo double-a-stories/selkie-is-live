@@ -2,9 +2,9 @@
 
 You sit back on the couch, pick up your laptop and open Chompstr.
 
-<span class="icon-recording"></span> **Monthly vore stream! Eating a cutie!**
+<span class="icon-recording"></span> **Weekly vore stream! Eating a cutie!**
 
-SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0/2000 goal
+SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0/2000 goal
 
 <small>#oralvore #fatal #noescape #cruel #nudity #donationdrive</small>
 
@@ -16,10 +16,10 @@ SelkieSlurps 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • $0
 
 The stream window says "STARTING SOON".
 
-<%= T.chat([
-    ["SelkieSlurps", "The fun will be starting soon! Stay tuned cuties!"],
-    ["SelkieSlurps", "Type /rules for rules"],
-    ["SelkieSlurps", "Goal: Crush the cutie! ($0/2000)"],
+<%= T.streamChat([
+    ["SelkieSwallows", "The fun will be starting soon! Stay tuned cuties!"],
+    ["SelkieSwallows", "Type /rules for rules"],
+    ["SelkieSwallows", "Goal: Crush the cutie! ($0/2000)"],
     ["excelenciaRodentia", "hi all!"],
     ["grumbleGeek", "first!"],
     ["exelenciaRodentia", "?rules"],
@@ -28,13 +28,13 @@ The stream window says "STARTING SOON".
     ["stummyLiker", "bagooga"],
     ["bellicoseDinosaur", "yayy! selkie's live!"],
     ["excelenciaRodentia", "/rules"],
-    ["SelkieSlurps", "Chat rules: No predshaming. No doxxing. No recording."],
-    ["SelkieSlurps", "Donation tiers:"],
-    ["SelkieSlurps", "🥉 $20 = shoutout."],
-    ["SelkieSlurps", "🥈 $50 = name written on gut."],
-    ["SelkieSlurps", "🥇 $300 = private dm :3"],
-    ["SelkieSlurps", "🦴 first $500 = souvenir. (+shipping)"],
-    ["SelkieSlurps", "👑 $5000 = be my next guest <3"],
+    ["SelkieSwallows", "Chat rules: No predshaming. No doxxing. No recording."],
+    ["SelkieSwallows", "Donation tiers:"],
+    ["SelkieSwallows", "🥉 $20 = shoutout."],
+    ["SelkieSwallows", "🥈 $50 = name written on gut."],
+    ["SelkieSwallows", "🥇 $300 = private dm :3"],
+    ["SelkieSwallows", "🦴 first $500 = souvenir. (+shipping)"],
+    ["SelkieSwallows", "👑 $5000 = be my next guest <3"],
     ["disasterPiece", "good evening all!"],
     ["awfulDenise", "hi disasterpiece!"],
     ["skippableFeline", "purr, hi!"],
@@ -46,7 +46,7 @@ The stream window says "STARTING SOON".
     ["disasterPiece", "😵‍💫"],
     ["stummyLiker", "notice me selkie"],
     ["carneusCalcified", "greetings, pitiful morsels"],
-    ["grumbleGeek", "i wonder who the lucky guest is this month"],
+    ["grumbleGeek", "i wonder who the lucky guest is this week"],
     ["ginnyTonic", "eeehehehehe"],
     ["jamesStryker", "Hi everyone! First time watching"],
     ["pleadingPeristalsis", "welcome james! ur in for a great show!"],
@@ -67,8 +67,8 @@ The stream window says "STARTING SOON".
 
 :: Start stream. [stream]
 
-<%= T.chat([
-    ["SelkieSlurps", "Let's get started ;3 You all ready to meet tonight's meat?"],
+<%= T.streamChat([
+    ["SelkieSwallows", "Let's get started ;3 You all ready to meet tonight's meat?"],
     ["grumbleGeek", "YSE"],
     ["grumbleGeek", "YES"],
     ["narrowPantheon", "YA!"],
@@ -77,7 +77,7 @@ The stream window says "STARTING SOON".
     ["disasterPiece", "💯"],
     ["riskySecret", "YESSSS"],
     ["awfulDenise", "can't friggin wait"],
-    ["SelkieSlurps", "Showtime."],
+    ["SelkieSwallows", "Showtime."],
 ]) %>
 
 With a colorful wipe transition, the stream opens to the bedroom-slash-dungeon-slash-studio of Selkie Exotix, professional pred streamer.
@@ -94,7 +94,7 @@ From the right of the frame, a hippo woman enters and plops down in her gaming c
 
 "Hello cuties!" she beams at the chat, with a low sultry voice, "Thanks for tuning in."
 
-<%= T.chat([
+<%= T.streamChat([
     ["excelenciaRodentia", "hiiiii owo"],
     ["swifterSnackrifice", "hi selkie!"],
     ["stummyLiker", "HIII"],
@@ -116,9 +116,9 @@ With a smirk, She lifts a polished white skull of her desk.
 
 :: Show off skull. [stream]
 
-"As always, we'll start the night off by bidding a heartful farewell to last month's guest." The hippo brandishes the skull to the camera. You recognize it as a whitetail deer, mostly because you watched one die last week.
+"As always, we'll start the night off by bidding a heartful farewell to last week's guest." The hippo brandishes the skull to the camera. You recognize it as a whitetail deer, mostly because you watched one die last week.
 
-<%= T.chat([
+<%= T.streamChat([
     ["riskySecret", "oh nooo, scrumply! }:)"],
     ["swifterSnackrifice", "SKULL"],
     ["skippableFeline", "owo!"],
@@ -133,7 +133,7 @@ With a smirk, She lifts a polished white skull of her desk.
     ["skippableFeline", "bonezzzzz :3"],
 ]) %>
 
-"You regulars will surely remember Lucy, a.k.a, scrumplyDelucious, our sweet little deer girl, a long time platinum subscriber to the channel.. Last month, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!"
+"You regulars will surely remember Lucy, a.k.a, scrumplyDelucious, our sweet little deer girl, a long time platinum subscriber to the channel.. Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!"
 
 * [[Goodbye, Lucy.]]
 
@@ -141,7 +141,7 @@ With a smirk, She lifts a polished white skull of her desk.
 
 "Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's just more hippo pudge. Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and wiggles her gut.
 
-<%= T.chat([
+<%= T.streamChat([
     ["swifterSnackrifice", "poor little lucy!"],
     ["excelenciaRodentia", "lucyyyy"],
     ["disasterPiece", "goodbye, Lucy."],
@@ -174,7 +174,7 @@ Selkie places the skull inside a small cardboard box.
 
 "As the first $500 donor from last stream, this beautiful skull of hers will be once again adding to the collection of riskySecret! Thanks risky! It's fans like you who make this show possible."
 
-<%= T.chat([
+<%= T.streamChat([
     ["riskySecret", ":33"],
     ["riskySecret", "got myself a nice bathroom decoration"],
     ["ginnyTonic", "shoulda been me :3"],
@@ -188,7 +188,7 @@ Selkie places the skull inside a small cardboard box.
 "Oh, thanks for the fifty, GT! You've earned a spot riiiiiiight here!" Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. "It's perfectly natural to feel envious of Lucy, but there's plenty of room in this gut! Hlaaaaaaaah!" She opens wide and flashes her uvula.
 
 
-<%= T.chat([
+<%= T.streamChat([
     ["ginnyTonic", "ashdkfahsdfkjh"],
     ["ginnyTonic", "NOO WTF THAT'S MY FULL NAME hfalkdsfhjasdhf"],
     ["skippableFeline", "awww hehe"],
@@ -201,7 +201,7 @@ Selkie places the skull inside a small cardboard box.
 
 "Fufufu." She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic positioned specifically to capture them. "Getting pretty hungry too..."
 
-<%= T.chat([
+<%= T.streamChat([
     ["awfulDenise", "hungry hungry hippo!"],
     ["grumbleGeek", "love the tummy mic!"],
     ["bellicoseDinosaur", ":S"],
@@ -209,152 +209,3 @@ Selkie places the skull inside a small cardboard box.
 ]) %>
 
 * [[Welcome tonight's guest.]]
-
-:: Welcome tonight's guest. [stream]
-
-"You all know him as calorimeterMathematic.  You'll soon know him as "more of Selkie's ass. Please put paws, hooves, and claws together, and welcome to the stream... Matty!"
-
-A shy dog boy (what species? imagining a black and white one) wearing nothing but underwear inches into the frame and waves. His face is fixed in a guilty blush.
-
-"Dont be shy now, pup! This cutie here made a generous private donation to the channel, and will shortly be making a generous donation to my hips!"
-
-She grabs him into a side hug, squeezing cheek against her gut.
-
-"You can already see the resemblance. Say hi to the nice chat, puppydog!"
-
-He stammers, "Hi Selkie, hi chat! I'm.... ohgods... I'm so excited to be hippo food. I hope you all enjoy watching!"
-
-* [[Hi Matty!]]
-
-:: Hi Matty! [stream]
-
-Chat says hi.
-
-* [[Declare consent.]]
-
-:: Declare consent. [stream]
-
-She hands him a card, "And, what would you like to say the nice people of Chompstr.tv's Moderation and Legal Team?"
-
-He reads off the card, "Um, I, Matthew Kurtis, being of sound mind, declare exclusive and irrevocable informed consent to be devoured, digested, and killed. I have, to the best of my ability, recorded and filed all required legal forms of consent with the State Court of South California. I wish to cede all rights to my body, remains, and likeness to SelkieSwallows to enjoy for the duration of this stream and... gulp... in perpetuity. Now I'm just food, poop, and pudge."
-
-"Don't sue me, but I added that last part," she stage-whispers and winks, like she does every stream. "Whoever said a little bureaucracy couldn't be fun? Now, let's get this pup warmed up, shall we?"
-
-* [[Cuddle him.]]
-
-:: Cuddle him. [stream]
-they cuddle in bed. matty humps her gut gently, then resigns to hump her thigh while sniffing her sweaty gut and dickbulge. chat thinks this is very cute.
-
-She mugs to camera, "Ready to get started, pudge?"
-
-He nuzzles her gut; sniffing and enjoying. "It's so soft... C-can I get another minute just to uhmm. stay here?"
-
-Her tummy growls and he visibly shudders. 
-
-* [[Pressure him.]]
-
-:: Pressure him. [stream]
-
-"We don't wanna keep the nice audience waiting now, do we?"
-
-"I-I- thought you said you'd take it a little slower with me this time..."
-
-"I say a lot of things, hon." She grabs him, and fear enters his eyes. Chat loves it. "You wanna be good food; don't you?"
-
-He breathes heavily and crumples into her gut. "Eep, I... I want to! it's just... so much more than I thought. I need a second."
-
-"Hear that, chat? Sounds like my meal is getting a bit nervous. Why don't you help encourage him?"
-
-She hands him her phone and lets him watch the chat go by. He clutches her hand.
-
-risky donated $7 for **gulp that nerd!**
-
-denise donated $5 for **get his ass!**
-
-excelenciaRodentia donated $20 for **swallow that dork**
-
-carneusCalcified donated $15 **girl food girl food**
-
-Matty curls up on the bed. "I think I'm having a panic attack. I can't... breathe"
-
-chat: include a realistic portrayal of a panic attack joke
-
-Selkie is clearly a bit impatient. "Well, I don't have all night, but there's a nice cozy spot where you can cool down." She turns to chat, lifts the pup squirming up. "Enjoy the view, hon. You paid a pretty penny for it, and you're not gonna get another chance."
-
-chat: god she is so fucking heartless
-chat: it's so hot
-chat: is this allowed
-
-Matty tries to use the safe word. "n-no no wait!! b-bananas! banan-" GULP
-
-chat: hopy shit
-
-graphic description of the whole swallowing process but it's entirely from admiring chat's POV
-
-risky donated $7 for **fuckkkkkkk**
-
-denise donated $5 for **oh my god**
-
-rodentia donated $5 for **oh my fuck**
-
-big fat belly bulge now.
-
-"Hlaaaaaaah. There we go. Much better, huh Matty?"
-
-Mmmmph! Matty squirms!
-
-"Ahhh, what a lovely sound. Yes, you'll be feeling muuuch calmer shortly."
-
-MMMMMPH! nhh i'm nhh!!!
-
-"Gosh, you're a big-un, huh. Not a lot of room to speak in there, let alone struggle... I should eat someone smaller next." She winks at cam.
-
-""
-
-continues. Matty's struggles slowly wane over the course of an hour. selkie starts jerking off, and her cruelty builds in intensity.
-
-the preds in chat then tease you by paying to have your name written as well, to see your reaction. youre flustered and keymash.
-
-they pressure you into paying the sum to be next. selkie joins in. you say you can't, you have work tomorrow. oh well, she'll getcha someday.
-
-Matty is really fighting for his life now. The stream is at $1731 of $2000.
-
-She's ice cold now and desperate to cum. "Oh fuck. You sweet fucking freaks. We're so close. Please get me to the stream goal so I can crunch this little loser and cumm!!!."
-
-Matty: "Mmmph!! Nhh, plhhh dhhhn't!"
-
-risky sorry i kinda hit my limit for the week
-
-rodentia donated $1 for **me too sorgy**
-
-with your ham in your sandwich also eager to watch what happens, you do something you might regret.
-
-* [[Donate $300.]]
-
-:: Donate $300. [stream]
-
-You donate to push selkie over.
-
-She hits the goal with huge fanfare. "FUCK yeah. Thanks DisasterPiece, you just earned yourself an hour of 1:1 discord chat." She places her hands on her wildly kicking bulge, "But first, let's churn... this... fucking... pup!!!"
-
-With a grizzly crunch, his protestations cease. "Yeah, there you go. Finally fucking settled... fuck!"
-
-Matty dies.
-
-She cums.
-
-You cum.
-
-Chat cums.
-
-After a moment to catch her breath, she snaps back to her sweet and demure persona, gently addressing the former pup in her gut, and promising to post pics soon. Big smile for the camera, wave bye-bye!
-
-And DP, I look forward to talking to you :3
-
-You blush.
-
-Stream off, leaving you alone in your apartment and panting.
-
-## End of Chapter 1
-
-* [[Title Screen]]

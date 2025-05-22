@@ -80,9 +80,13 @@ const manyCommands = (passages, finalText) => {
   return passage.render(output);
 }
 
-const chatOverrides = {
+// STREAM CHAT (for Chompstr)
+
+const streamChatOverrides = {
+  "DisasterPiece": { color: "#AAA", ornament: "🐰" },
   "disasterPiece": { color: "#888", ornament: "🐰" },
-  "SelkieSlurps": { color: "#FF0000", ornament: "👑" },
+  "Selkie the Hippo": { color: "#FF4444", ornament: "👑" },
+  "SelkieSwallows": { color: "#FF0000", ornament: "👑" },
   "riskySecret": { color: "#005682", ornament: "🫐" },
   "excelenciaRodentia": { color: "#848", ornament: "" },
   "bellicoseDinosaur": { color: "orange", ornament: "" },
@@ -92,8 +96,8 @@ const chatOverrides = {
   "ginnyTonic": { color: "#C22", ornament: "🍸" },
 }
 
-const getChatParams = (name) => {
-  let params = chatOverrides[name] ?? {};
+const streamChatParams = (name) => {
+  let params = streamChatOverrides[name] ?? {};
 
   const range = function(hash, min, max) {
       var diff = max - min;
@@ -120,26 +124,89 @@ const getChatParams = (name) => {
 }
 
 
-const chat = (messages) => {
+const streamChat = (messages) => {
   let output = '<div class="chompchat">';
   
   for (const [name, message, isAction, emoji] of messages) {
     output += `<p class="chompchat_entry">`;
-    output += chatEntry(name, message, isAction, emoji);
+    output += streamChatEntry(name, message, isAction, emoji);
     output += `</p>`;
   }
   output += '</div>';
   return output;
 }
   
-const chatEntry = (name, message, isAction, emoji) => {
-  const {color, ornament} = getChatParams(name);
+const streamChatEntry = (name, message, isAction, emoji) => {
+  const {color, ornament} = streamChatParams(name);
   emoji = emoji ?? ornament;
+
   if (isAction) {
     return `<i>${emoji} <span class="chompchat_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span> ${message}</i>`;
   } else {
     return `${emoji} <span class="chompchat_entry_name ${name.toLowerCase()}" style="color: ${color}">${name}</span>: ${message}`;
   }
+}
+
+const groupAdjacent = (arr, keyFunction) => {
+  const result = [];
+  let current = [];
+  let previousKey = keyFunction(arr[0]);
+
+  for (const a of arr) {
+    let currentKey = keyFunction(a);
+    if (currentKey != previousKey) {
+      result.push(current);
+      current = [];
+    }
+    current.push(a);
+    previousKey = currentKey;
+  }
+  if (current.length > 0) {
+    result.push(current);
+  }
+
+  return result;
+}
+
+const coalesceConsecutiveMessages = (arr) => {
+  const result = [];
+  const grouped = groupAdjacent(arr, a => a[0]);
+  for (const g of grouped) {
+    const name = g[0][0];
+    result.push([name, g.map(a => a[1]).join('<br>')]);
+  }
+  return result;
+}
+
+
+const discordChat = (messages) => {
+  let output = '<div class="discordchat">';
+
+  // handle repeated messages from same usr
+  const coalesced = coalesceConsecutiveMessages(messages);
+  
+  for (const [name, message] of coalesced) {
+    output += discordChatEntry(name, message);
+  }
+  output += '</div>';
+  return output;
+}
+  
+const discordChatEntry = (name, message) => {
+  const {color } = streamChatParams(name);
+
+  message = message.replaceAll(/:([a-z_]+):/g, (_, a) => 
+    `<img class="discordchat_emote" src="assets/img/discord/emote/${a}.png" alt="${a}">`
+  )
+
+  return `<div class="discordchat_entry">
+    <img class="discordchat_img" src="assets/img/discord/${name}.png" />
+    <div class="discordchat_message">
+      <span class="discordchat_entry_name ${name.toLowerCase()}" 
+      style="color: ${color}">${name}</span><br>
+      ${message}
+    </div>
+  </div>`;
 }
 
 
@@ -157,6 +224,7 @@ const chatEntry = (name, message, isAction, emoji) => {
     minutesAgo,
     socialMediaCard,
     manyCommands,
-    chat
+    streamChat,
+    discordChat
   });
 }
