@@ -1,0 +1,115 @@
+:: Chapter 4
+
+Monday.
+
+You don't go into work today. How could you? You're too excited. You lie in bed.
+
+At 10 AM, your boss texts you about your deadlines.
+
+<pre>
+
+(["B", "aster"],
+["J", "Good morning."],
+["B", "you missed the 9 AM stand-up."],
+["B", "where are you with that login page bug i gave you on thursday"],
+["B", "y'know, the thing with the background image"],
+["B", "this is critical. client needs it today."],
+["J", "Not done yet."],
+["B", "i told you to drop everything and work on it."],
+["J", "But then on Friday you said to drop everything to work on the checkout flow."],
+["B", "obviously i meant work on both."],
+["J", "I prioritized the checkout thing. I finished that on Friday like you asked."],
+["B", "they're both critical."],
+["B", "come on aster, what am i supposed to tell the client"])
+
+</pre>
+
+* [[Jess: Fuck you I quit.]]
+
+:: Jess: Fuck you I quit.
+
+<pre>
+
+([
+["J", "That I'm a programmer, not a fucking miracle worker!"],
+["B", "i'm sorry?"],
+["J", "They can take the stupid login page and shove it up their stupid ungrateful asses."],
+["J", "I quit!"],
+["B", "be serious, aster."],
+["B", "you can't quit. you didn't give your week's notice."],
+["B", "we need to hire a replacement, and you need to KT to your replacement."],
+["J", "Well, I'll be dead next week"],
+["J", "so you can pry your KT off my cold dead skeleton."],
+["B", "what?"],
+["J", "I'm travelling to SoCal to get digested on a vore stream on Friday."],
+["J", "Consider this cashing in my PTO."],
+["B", "no you're not."],
+["B", "don't bullshit me"],
+["J", "Is it so hard to believe I'd rather kill myself in a gut than spend another minute on this shitty fucking project appeasing your shitty requests for the shitty client!"],
+["B", "sigh."],
+["B", "this is what's wrong with your generation."],
+["B", "nobody wants to work anymore."],
+["B", "fuck you aster!"],
+["B", "can't wait until i can replace you with a chatbot"],
+["J", "When you put it that way I can't imagine why."],
+["B", "why are you making this so hard?"],
+["B", "do you want a raise? is that it?"],
+["B", "i know you were pissed when X got that promotion instead of you"],
+["B", "what do i have to do make you stay?"],
+["J", "Bite me."],
+["B", "i would, but HR would kill me."],
+["B", "what about a pizza party? whole office."],
+["B", "good pizza too, not that shitty stuff we usually give out."],
+["B", "hello?"],
+["B", "aster?"],
+["B", "aster?"]
+])
+
+</pre>
+
+
+You tell him to fuck off, you quit. Oh god, it feels so fucking good. (reuse the text widget from LoTP)
+
+You didn't have a lot of money when you needed to live for another month, but now that you don't plan to survive past this week, it's like you have a TON of money.
+
+:: Splurge on delivery.
+
+6 PM you order yourself a shit ton of expensive takeout, just blowing all your savings.
+
+Driver knocks on your door. It's a squirrel girl named Piper. She's trembling and is so fucking relieved that just this once you're not someone who's trying to eat them. She comments that your place is pretty big for a bunny. Yeah, you used to live with a saint bernard. Oh, she says, a little 
+
+You're still powertripping, so you offer her $2000 to skip the rest of their deliveries and hang out with you and get drunk. They think you're cute, and accept. You both feast on the remaining doordash orders.
+
+This rules.
+
+You message Selkie and say you made a friend and you're having a great time. She asks if you're having second thoughts about killing yourself. No no, you still are gonna do that.
+
+You take a selfie with your friend and send it along. She teases you both and says she's open to eating you both. Doordasher says they can't, they have to work tomorrow.
+
+You snuggle or fuck and fall asleep. You pass out, and wake up a hours later and they're gone. They leave a note about how they had fun but are uncomfortable that you're friends with predators.
+
+You confide in Selkie about being a little hurt by this rejection.
+
+<%= T.discordChat([
+["Selkie the Hippo", "Is ur friend still there?"],
+["DisasterPiece", "No, they actually slipped out while I was asleep?"],
+["Selkie the Hippo", "Easy come, easy go."],
+["DisasterPiece", "idk. it made me feel like i was just paying them to be my friend"],
+["Selkie the Hippo", "You know you're you're also paying *me* to be your friend"],
+["DisasterPiece", "Huh, I guess you're right."],
+["DisasterPiece", "damn, I sort of feel worse now"],
+["DisasterPiece", "sorry for venting on you..."],
+["Selkie the Hippo", "It's cool, I don't mind."],
+["Selkie the Hippo", "Do you still wanna kill yourself?"],
+["DisasterPiece", "I... I guess?"],
+["DisasterPiece", "Yes. I do."],
+["Selkie the Hippo", "Cool, glad to hear it."],
+["Selkie the Hippo", "I like to wait at least 24 hours to be sure you're not just horny out of your mind."],
+["Selkie the Hippo", "I'll send over some info."],
+["Selkie the Hippo", "Have a nice day, rabbit."],
+["DisasterPiece", "you too"]
+]) %>
+
+### End of Chapter 4.
+
+* [[Title screen]]
