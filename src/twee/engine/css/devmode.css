@@ -1,7 +1,7 @@
 .dev-info {
     background-color: white;
     bottom: 0;
-    color: #333;
+    color: #333 !important;
     font-family: monospace;
     font-size: 60%;
     padding: 1rem;
@@ -26,4 +26,8 @@
 .dev-info dd::after {
     content: '';
     display: block;
+}
+
+.dev-info a {
+  color: #000;
 }

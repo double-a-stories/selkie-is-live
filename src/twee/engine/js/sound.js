@@ -44,7 +44,7 @@ class SoundInstance {
       this.playing = false;
       this.howl.once("fade", () => {
         this.playing = false;
-        this.howl.pause(this.id);
+        this.howl.stop(this.id);
       }, this.id);
     }
   }
@@ -52,8 +52,8 @@ class SoundInstance {
 
 }
 
-const SOUNDS_PATH = "assets/sound/";
-const MUSIC_PATH = "assets/music/";
+const SOUNDS_PATH = "assets/sound";
+const MUSIC_PATH = "assets/music";
 
 /**
  * On each passage load, checks if the predicate returns true, and the
@@ -103,33 +103,9 @@ const AmbientSounds = window.AmbientSounds = {
     volume: 0.1,
     loop: true
   }),
-  zenMusic: new Howl({
+  stream1: new Howl({
     ...howlDefaults,
-    src: [`${MUSIC_PATH}/Vylet Pony - Super Pony World- Fairytails - 18 Dance of the Macabre.mp3`],
-    volume: 1.0,
-    loop: true
-  }),
-  crowdChatterClose: new Howl({
-    ...howlDefaults,
-    src: [`${SOUNDS_PATH}/chatter-close.mp3`],
-    volume: 0.2,
-    loop: true
-  }),
-  crowdChatterQuiet: new Howl({
-    ...howlDefaults,
-    src: [`${SOUNDS_PATH}/chatter-far.mp3`],
-    volume: 0.1,
-    loop: true
-  }),
-  dubstep: new Howl({
-    ...howlDefaults,
-    src: [`${MUSIC_PATH}/Vylet Pony - Invasion (ft. L.M.).mp3`],
-    volume: 0.2,
-    loop: true
-  }),
-  stream: new Howl({
-    ...howlDefaults,
-    src: [`${MUSIC_PATH}/only-in-the-milky-way/dreams.mp3`],
+    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/creature-comforts.mp3`],
     volume: 0.2,
     loop: true
   }),
@@ -146,13 +122,42 @@ const SoundEffects = window.SoundEffects = {
 ambienceOnPassageTag(AmbientSounds.birds, "morning");
 ambienceOnPassageTag(AmbientSounds.gurgle, "vore");
 ambienceOnPassageTag(AmbientSounds.crickets, "outside");
-ambienceOnPassageTag(AmbientSounds.zenMusic, "zen");
-ambienceOnPassageTag(AmbientSounds.crowdChatterClose, "party", "dubstep");
-ambienceOnPassageTag(AmbientSounds.crowdChatterQuiet, "party_far", "drunk");
-ambienceOnPassageTag(AmbientSounds.dubstep, "dubstep");
-ambienceOnPassageTag(AmbientSounds.stream, "stream");
+// ambienceOnPassageTag(AmbientSounds.stream, "stream");
 
+story.state.nowPlaying = null;
+let nowPlaying = null;
+const cdChanger = {};
+
+setup.refreshMusic = () => {
+  if (story.state.nowPlaying === nowPlaying) {
+    return; // already playing. noop
+  }
+  for (const s of Object.values(cdChanger)) {
+    s.fadeOut();
+  }
+  const name = story.state.nowPlaying;
+  nowPlaying = story.state.nowPlaying;
+  if (name != undefined && AmbientSounds[name] != undefined) {
+    cdChanger[name] ??= new SoundInstance(AmbientSounds[name]);
+    let soundInstance = cdChanger[name];
+    soundInstance.fadeIn();
+  }
+}
+
+setup.startMusic = (name) => {
+  story.state.nowPlaying = name;
+  setup.refreshMusic();
+}
+
+setup.stopMusic = () => {
+  story.state.nowPlaying = null;
+  setup.refreshMusic();
+}
 
 setup.playAchievementSound = () => {
   SoundEffects.achievementGet.play();
 }
+
+$(window).on("sm.passage.shown", (_, { passage }) => {
+  setup.refreshMusic();
+})

@@ -1,5 +1,7 @@
 :: Watch the stream. [stream]
 
+<% setup.startMusic("stream1") %>
+
 You sit back on the couch, pick up your laptop and open Chompstr.
 
 <span class="icon-recording"></span> **Weekly vore stream! Eating a cutie!**
@@ -10,8 +12,6 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
 
 * [[Show chat.]]
 
-*Music: [Dreams](https://holiznaroyaltyfree.bandcamp.com/album/only-in-the-milky-way) by Holizna*
-
 :: Show chat. [stream]
 
 The stream window says "STARTING SOON".
@@ -19,22 +19,13 @@ The stream window says "STARTING SOON".
 <%= T.streamChat([
     ["SelkieSwallows", "The fun will be starting soon! Stay tuned cuties!"],
     ["SelkieSwallows", "Type /rules for rules"],
-    ["SelkieSwallows", "Goal: Crush the cutie! ($0/2000)"],
+    ["SelkieSwallows", "Goal: Crush em! ($0/2000)"],
     ["excelenciaRodentia", "hi all!"],
     ["grumbleGeek", "first!"],
-    ["exelenciaRodentia", "?rules"],
     ["grumbleGeek", "yesss selkie stream selkie stream"],
     ["stummyLiker", "selkie streammmm!"],
     ["stummyLiker", "bagooga"],
     ["bellicoseDinosaur", "yayy! selkie's live!"],
-    ["excelenciaRodentia", "/rules"],
-    ["SelkieSwallows", "Chat rules: No predshaming. No doxxing. No recording."],
-    ["SelkieSwallows", "Donation tiers:"],
-    ["SelkieSwallows", "🥉 $20 = shoutout."],
-    ["SelkieSwallows", "🥈 $50 = name written on gut."],
-    ["SelkieSwallows", "🥇 $300 = private dm :3"],
-    ["SelkieSwallows", "🦴 first $500 = souvenir. (+shipping)"],
-    ["SelkieSwallows", "👑 $5000 = be my next guest <3"],
     ["disasterPiece", "good evening all!"],
     ["awfulDenise", "hi disasterpiece!"],
     ["skippableFeline", "purr, hi!"],
@@ -44,7 +35,16 @@ The stream window says "STARTING SOON".
     ["riskySecret", "i'll dono 50 bits if selkie eats dp"],
     ["awfulDenise", "yess they'd look so good as hippo fat"],
     ["disasterPiece", "😵‍💫"],
+    ["jamesStryker", "?rules"],
     ["stummyLiker", "notice me selkie"],
+    ["jamesStryker", "/rules"],
+    ["SelkieSwallows", "Chat rules: No predshaming. No doxxing. No recording."],
+    ["SelkieSwallows", "Donation tiers:"],
+    ["SelkieSwallows", "🥉 $20 = shoutout."],
+    ["SelkieSwallows", "🥈 $50 = name written on gut."],
+    ["SelkieSwallows", "🥇 $100 = souvenir. (+shipping)"],
+    ["SelkieSwallows", "💎 $300 = private dm :3"],
+    ["SelkieSwallows", "👑 $999 = be my next guest <3"],
     ["carneusCalcified", "greetings, pitiful morsels"],
     ["grumbleGeek", "i wonder who the lucky guest is this week"],
     ["ginnyTonic", "eeehehehehe"],
@@ -141,7 +141,7 @@ With a smirk, She lifts a polished white skull of her desk.
 
 :: Goodbye, Lucy. [stream]
 
-"Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's just more hippo pudge. Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and wiggles her gut.
+"Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's just more hippo pudge! Her scrumptious little squeaks will be sorely missed, but she's in a much better place now." She smirks and wiggles her gut.
 
 <%= T.streamChat([
     ["swifterSnackrifice", "poor little lucy!"],

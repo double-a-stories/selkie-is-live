@@ -51,11 +51,7 @@ The company operates the service in Houston, TZ, and complies with all applicabl
 
 User interactions **MAY BE RECORDED** and used by the company in perpetuity for any purpose, including advertisement, engagement analytics, and law enforcement.
 
-<label><input type="checkbox"> I agree.</label>
-</div>
-
-<!-- TODO: actually require this to be checked. -->
-* [[Continue.|Warranty disclaimer]]
+* [[I agree.|Warranty disclaimer]]
 
 :: Warranty disclaimer [no_command]
 
@@ -72,7 +68,7 @@ The service contains **GRAPHIC ACTS** which may be offensive to some viewers, in
 
 <!-- TODO: actually require this to be checked. -->
 
-* [[Continue.|Non-disclosure agreement]]
+* [[I agree.|Non-disclosure agreement]]
 
 :: Non-disclosure agreement [no_command]
 
@@ -88,7 +84,7 @@ By signing your full legal name, you are legally bound to a perpetual agreement 
 </div>
 
 
-* [[Continue.|Age verification]]
+* [[I agree.|Age verification]]
 
 :: Age verification
 
@@ -116,14 +112,13 @@ Please verify your age by attaching a photo of your national ID card, driver's l
 <%= story.render("Age verification inner") %>
 
 
-<p class="legalese"><b>Preview:</b><br>
+#### Preview
 
 <img src="assets/img/driverslicense.jpg" alt="The driver's license of Jessamine Dogwood Aster" style="width: 300px">
-</p>
 
 </div>
 
-* [[Continue.|Welcome to Chompstr.tv]]
+* [[I agree.|Welcome to Chompstr.tv]]
 
 :: Welcome to Chompstr.tv [no_command]
 

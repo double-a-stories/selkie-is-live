@@ -1,5 +1,6 @@
 :: Title screen [no_heading]
 
+<% setup.startMusic("title"); %>
 
 <div class="logo">
 <img class="logo__img w-100" src="assets/img/logo.png">
@@ -11,6 +12,6 @@
 
 * [[Chapter 1]]
 
-</div>
-
 * [[Content warning]]
+
+</div>
