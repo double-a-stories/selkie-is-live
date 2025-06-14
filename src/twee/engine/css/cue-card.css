@@ -1,0 +1,8 @@
+.cue-card {
+    background-image: url('assets/img/cuecard.jpg');
+    width: 8in;
+    height: 5in;
+    text-align: center;
+    padding: 1in;
+    box-sizing: border-box;
+}
