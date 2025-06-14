@@ -149,7 +149,7 @@ Matty tries to use the safe word. "n-no no wait!! b-bananas! banan-" GULP
 
 * [[Selkie: Swallow.]]
 
-:: Selkie: Swallow.
+:: Selkie: Swallow. [stream]
 
 graphic description of the whole swallowing process but it's entirely from admiring chat's POV
 
@@ -165,7 +165,7 @@ graphic description of the whole swallowing process but it's entirely from admir
 ["ginnyTonic", "donated $39 <b>nnnnnhh</b>", true, "🥉"],
 ["excelenciaRodentia", "oh my gods, he's really gonna die in there...", true],
 ["awfulDenise", "donated $17 for <b>just a big fat hippo belly bulge now.</b>", true],
-["excelenciaRodentia", "i'm so mad he didn't even tell me.", true],
+["excelenciaRodentia", "i'm so mad he didn't even tell me.", true]
 ]) %>
 
 "Hlaaaaaah. Much better." She lets out a fat belch.
@@ -195,9 +195,9 @@ MMMMMPH! nhh i'm nhh!!!
     ["awfulDenise", "nothin beats boa coils"],
     ["riskySecret", "dw, you'll get the next one."],
     ["riskySecret", "maybe it'll even be DP or ginny ;3"],
-    ["disasterPiece", "!!!"]
+    ["disasterPiece", "!!!"],
     ["awfulDenise", "selkie wants smaller prey, right?"]
-])>
+]) %>
 
 the preds in chat then tease you by paying to have your name written as well, to see your reaction. youre flustered and keymash.
 
