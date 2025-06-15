@@ -44,7 +44,7 @@ The stream window says "STARTING SOON".
 :: Show chat 2. [stream]
 
 <%= T.streamChat([
-    ["disasterPiece", s.asterSays],
+    s.asterSays,
     ["awfulDenise", "hi disasterpiece!"],
     ["skippableFeline", "purr, hi!"],
     ["riskySecret", "sup DP"],
@@ -146,7 +146,7 @@ She clears her throat.
 :: Show off skull. [stream]
 With a smirk, She lifts a polished white skull of her desk.
 
-<span.q-selkie>As always, we'll start the night off by bidding a heartful farewell to last week's guest.</span> The hippo brandishes the skull to the camera. You recognize it as a whitetail deer, mostly because you watched one die last week.
+<span.q-selkie>As always, we'll start the night off by bidding a heartful farewell to last week's guest.</span> The hippo brandishes the skull to the camera. You recognize it as belonging to a whitetail deer, mostly because you watched her be digested on stream last week.
 
 <%= T.streamChat([
     ["riskySecret", "oh nooo, scrumply! }:)"],
@@ -160,10 +160,10 @@ With a smirk, She lifts a polished white skull of her desk.
     ["excelenciaRodentia", "btw is CM in chat?"],
     ["ginnyTonic", "hot"],
     ["disasterPiece", "ER u mean caliMath? nah haven't seen him"],
-    ["skippableFeline", "bonezzzzz :3"],
+    ["skippableFeline", "girl skullzzzzz :3"],
 ]) %>
 
-<span.q-selkie>You regulars will surely remember Lucy, a.k.a, scrumplyDelucious, our sweet little deer girl, a long time platinum subscriber to the channel.. Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!</span>
+<span.q-selkie>You regulars will surely remember sweet little Lucy, a.k.a, scrumplyDelucious, who was a long time platinum subscriber to the channel.</span><span.q-selkie>Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!</span>
 
 * <%= T.asterSays("Goodbye, Lucy.", "Aster: Goodbye Lucy.", "goodbye, lucy.") %>
 * <%= T.asterSays("Goodbye, Lucy.", "Aster: R.I.P.", "rip") %>
@@ -175,7 +175,7 @@ With a smirk, She lifts a polished white skull of her desk.
 <%= T.streamChat([
     ["swifterSnackrifice", "poor little lucy!"],
     ["excelenciaRodentia", "lucyyyy"],
-    ["disasterPiece", s.asterSays],
+    s.asterSays,
     ["riskySecret", ":33"],
     ["awfulDenise", "lucy was such a kind soul and a great rp partner"],
     ["excelenciaRodentia", "byeeee x3"],

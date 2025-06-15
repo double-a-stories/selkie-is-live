@@ -1,9 +1,9 @@
 /* Story Styles (using passage tags) */
 
 :root {
-  --stream-accent: #AB6EB4;
-  --stream-light: #AB6EB440;
-  --stream-lighter: #AB6EB420;
+  --stream-accent: hsl(292, 50%, 57%);
+  --stream-light: hsla(292, 50%, 57%, 0.251);
+  --stream-lighter: hsla(292, 50%, 90%, 0.13);
 }
 
 body[data-tags~="vore"] {
@@ -123,3 +123,48 @@ body[data-tags~="discord"] {
   --color: #fff;
 }
 
+@media screen and (min-width: 80rem) {
+  body[data-tags~="stream"] {
+    padding: 0;
+  }
+  body[data-tags~="stream"] .topbar {
+    margin-bottom: unset;
+  }
+  body[data-tags~="stream"] tw-story {
+    display: grid;
+    grid-template-areas: 'header header' 'video passage' 'x passage';
+    align-self: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    height: 99vh;
+  }
+  body[data-tags~="stream"] tw-story::before {
+    content: '';
+    grid-area: video;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-image: url('assets/img/stream_ui.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 1rem;
+    opacity: 10%;
+    aspect-ratio: 1054 / 1053;
+    box-sizing: border-box;
+  }
+  body[data-tags~="stream"] #header-container {
+    grid-area: header;
+  }
+  body[data-tags~="stream"] tw-passage {
+    grid-area: passage;
+    margin: unset;
+    max-width: unset;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}

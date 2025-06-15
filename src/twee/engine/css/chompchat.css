@@ -10,7 +10,7 @@
 }
 
 .chompchat_entry:nth-child(odd) {
-    background: #AB6EB420
+    background: var(--stream-lighter)
 }
 
 .chompchat_entry_name {

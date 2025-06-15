@@ -3,12 +3,12 @@
 }
 
 .q-selkie {
-    --streamtalk-bg: hsl(300, 100%, 98%);
+    --streamtalk-bg: hsla(300, 100%, 25%, 4%);
     --streamtalk-text: hsl(300, 100%, 25%);
 }
 
 .q-matty {
-    --streamtalk-bg: hsl(0, 100%, 98%);
+    --streamtalk-bg: hsla(0, 100%, 50%, 4%);
     --streamtalk-text: hsl(0, 100%, 30%);
 }
 
@@ -19,9 +19,7 @@
     background-color: var(--streamtalk-bg);
     padding-block: 1rem;
     padding-inline-start: 2.5rem;
-    margin-inline-start: -2.5rem;
     padding-inline-end: 1rem;
-    margin-inline-end: -1rem;
     position: relative;
 }
 
