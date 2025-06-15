@@ -191,7 +191,7 @@ const Achievements = window.Achievements = class Achievements {
 */
 const StoryFlags = window.StoryFlags = class StoryFlags {
   /** Get all flags which are set.
-  * @returns {object} Returns an object { [flagName]: count, ... }
+  * @returns {object} Returns an object { [flagName]: value, ... }
   */
   static getAll() {
     return Lockr.get("flags", {});
@@ -199,28 +199,29 @@ const StoryFlags = window.StoryFlags = class StoryFlags {
 
   /**
   * @param {string} name The flag to check
-  * @returns {boolean} Wether a flag is set to a non-zero value
+  * @returns {boolean} Whether a flag is set to a non-zero value
   */
   static isSet(name) {
-    return !!Lockr.get("flags", {})[name];
+    const flags = Lockr.get("flags", {});
+    return !!flags[name];
   }
 
-  /** Gets the count of a flag
+  /** Gets the value of a flag
   * @param {string} name The name of the flag to check
-  * @returns {number} The number of times the flag was set
+  * @returns {string|number|boolean}
   */
   static get(name) {
-    let flags = Lockr.get("flags", {});
-    return +flags[name] | 0;
+    const flags = Lockr.get("flags", {});
+    return flags[name];
   }
 
   /**
   * @param {string} name The flag to set
-  * @param {number} count The number to set it to (integer >= 0)
+  * @param {string|number|boolean} value The number to set it to (integer >= 0)
   */
-  static set(name, count = 1) {
-    let flags = Lockr.get("flags", {});
-    flags[name] = Math.max(0, +count | 0); // increment
+  static set(name, value) {
+    const flags = Lockr.get("flags", {});
+    flags[name] = value;
     Lockr.set("flags", flags);
   }
 
@@ -230,7 +231,7 @@ const StoryFlags = window.StoryFlags = class StoryFlags {
   * @param {number} amt An integer number to add/subtract
   */
   static increment(name, amt = 1) {
-    let count = this.get(name);
+    let count = this.get(name) | 0;
     count = Math.max(0, (count + +amt) | 0); // increment
     this.set(name, count);
   }
