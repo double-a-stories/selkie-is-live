@@ -38,10 +38,11 @@ He shuts his eyes and stammers out, "Hi Selkie, hi chat! I'm.... ohgods... I'm s
 
 <%= T.streamChat([
 ["carneusCalcified", "heh, poor thing looks pretty nervous"],
+["awfulDenise", "donated $3 for <b>hiii cutie!</b>", true],
 ["ginnyTonic", "MATTY! hii!! i'm so excited to watch you die tonight!"],
 ["bellicoseDinosaur", "X_X hottt"],
-["riskySecret", "keheheh, look at it squirm!"],
 ["disasterPiece", "hot!!"],
+["riskySecret", "keheheh, look at it squirm!"],
 ["bellicoseDinosaur", "i would be too!"],
 ["ginnyTonic", "who wouldn't? teehee"],
 ["jamesStryker", "...i don't get this"],

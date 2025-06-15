@@ -25,7 +25,8 @@ Please think carefully before continuing.
 
 
 <div.legalese>
-[banner: Welcome to Chompstr.tv!]
+
+<img style="max-width: 50%;" src="assets/img/chompstr_dark.svg" alt="Chompstr.tv logo">
 
 Chompstr.tv is a video streaming service for vore enthusiasts and performers to meet and share their original content. By using it, you agree to the following guidelines:
 
@@ -118,11 +119,13 @@ Please verify your age by attaching a photo of your national ID card, driver's l
 
 </div>
 
-* [[I agree.|Welcome to Chompstr.tv]]
+* [[I agree.|Welcome!]]
 
-:: Welcome to Chompstr.tv [no_command]
+:: Welcome! [no_command]
 
 <% StoryFlags.set("completedOnboarding") %>
+
+<img class="chompstr-logo w-100" src="assets/img/chompstr.svg" alt="Chompstr.tv logo">
 
 Please enjoy responsibly.
 
