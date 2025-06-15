@@ -46,9 +46,15 @@ if (StoryFlags.isSet("devmode") && !$(".dev-info")[0]) {
     <li><a href="javascript:void(0)"  onclick="window.location.hash = '';">Clear save data</a></li>
     </ul>`);
 
+  if (StoryFlags.isSet("devModeLastPassage")) {
+    const x = StoryFlags.get("devModeLastPassage");
+    setTimeout(() => story.show(x), 1);
+  }
+
   $(window).on("sm.passage.shown", (ev, { passage }) => {
     $devInfoList.find("[data-exec]").each((i, el) => {
       $(el).text(JSON.stringify(eval($(el).attr("data-exec")), null, 2));
     });
+    StoryFlags.set("devModeLastPassage", window.passage.name);
   });
 }
