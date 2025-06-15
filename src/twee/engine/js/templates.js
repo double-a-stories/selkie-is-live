@@ -147,6 +147,15 @@ const streamChatEntry = (name, message, isAction, emoji) => {
   }
 }
 
+const asterSays = (passage, innerHTML, chatMessage) => {
+  const a = document.createElement("a");
+  a.setAttribute("href", "javascript:void(0)");
+  a.setAttribute("data-passage", passage);
+  a.innerHTML = innerHTML;
+  a.setAttribute("onclick", `story.state.asterSays = ${JSON.stringify(chatMessage)}`);
+  return a.outerHTML;
+}
+
 const groupAdjacent = (arr, keyFunction) => {
   const result = [];
   let current = [];
@@ -225,6 +234,7 @@ const discordChatEntry = (name, message) => {
     socialMediaCard,
     manyCommands,
     streamChat,
-    discordChat
+    discordChat,
+    asterSays
   });
 }

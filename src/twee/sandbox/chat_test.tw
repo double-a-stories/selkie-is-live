@@ -1,0 +1,22 @@
+:: Chatlog Test [stream]
+
+<%= T.streamChat([
+    ["stummyLiker", "(stream regular, not too bright)"],
+    ["skippableFeline", "(scipi! met lucy at a con. soft and fuzzy)"],
+    ["riskySecret", "(vriska! predator, stream regular. collects lucy's skull)"],
+    ["awfulDenise", "(predator, stream regular. likes collecting skulls and squashing them)"],
+    ["adiposeAccumulator", "(horny voyeur)"],
+    ["carneusCalcified", "(an edgy wannabe dommy pred)"],
+    ["jamesStryker", "(impressionable first-time viewer)"],
+    ["pleadingPeristalsis", "(stream regular)"],
+    ["excelenciaRodentia", "(mousey!)"],
+    ["swifterSnackrifice", "(horny voyeur, prey)"],
+    ["ginnyTonic", "(envious prey girl! donor to the stream)"],
+    ["bellicoseDinosaur", "(belle! a nerdy shy dinosaur gal)"],
+    ["grumbleGeek", "(horny voyeur, not too bright)"],
+    ["narrowPantheon", "(horny voyeur, stream regular)"],
+
+    ["disasterPiece", "(you! nerdy suicidal bunny)"],
+    ["calorimeterMathematics", "(tonight's victim)"],
+    ["scrumplyDelucious", "(last week's victim)"],
+]) %>

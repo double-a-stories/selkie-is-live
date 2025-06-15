@@ -1,5 +1,11 @@
 /* Story Styles (using passage tags) */
 
+:root {
+  --stream-accent: #AB6EB4;
+  --stream-light: #AB6EB440;
+  --stream-lighter: #AB6EB420;
+}
+
 body[data-tags~="vore"] {
   --background: #400;
   --light: #fff4;
@@ -107,7 +113,7 @@ body[data-tags~="mirror_bottom"]::before {
 
 body[data-tags~="stream"] {
   --background: #fff;
-  --light: #AB6EB440;
+  --light: var(--stream-light);
   --color: hsl(270, 45%, 20%);
 }
 
