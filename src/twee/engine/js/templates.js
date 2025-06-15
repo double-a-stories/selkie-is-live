@@ -147,12 +147,14 @@ const streamChatEntry = (name, message, isAction, emoji) => {
   }
 }
 
-const asterSays = (passage, innerHTML, chatMessage) => {
+const asterSays = (passage, innerHTML, chatMessage, isAction, emoji) => {
   const a = document.createElement("a");
   a.setAttribute("href", "javascript:void(0)");
   a.setAttribute("data-passage", passage);
   a.innerHTML = innerHTML;
-  a.setAttribute("onclick", `story.state.asterSays = ${JSON.stringify(chatMessage)}`);
+  const message = ["disasterPiece", chatMessage, isAction, emoji];
+
+  a.setAttribute("onclick", `story.state.asterSays = ${JSON.stringify(message)}`);
   return a.outerHTML;
 }
 

@@ -2,16 +2,30 @@
 
 }
 
-.selkie, .matty {
+.q-selkie {
+    --streamtalk-bg: hsl(300, 100%, 98%);
+    --streamtalk-text: hsl(300, 100%, 25%);
+}
+
+.q-matty {
+    --streamtalk-bg: hsl(0, 100%, 98%);
+    --streamtalk-text: hsl(0, 100%, 30%);
+}
+
+.q-selkie, .q-matty {
     display: block;
+    margin-block: 1rem;
     color: var(--streamtalk-text);
     background-color: var(--streamtalk-bg);
     padding-block: 1rem;
-    padding-inline: 1rem;
-    margin-inline: -1rem;
+    padding-inline-start: 2.5rem;
+    margin-inline-start: -2.5rem;
+    padding-inline-end: 1rem;
+    margin-inline-end: -1rem;
+    position: relative;
 }
 
-/* .selkie::before, .matty::before {
+/* .q-selkie::before, .q-matty::before {
     content: '';
     background-color: var(--stream-light);
     background-size: 32px 32px;
@@ -23,12 +37,12 @@
     align-self: first-baseline;
 } */
 
-.selkie {
-    --streamtalk-bg: hsl(300, 100%, 96%);
-    --streamtalk-text: hsl(300, 100%, 30%);
+.q-selkie::before, .q-matty::before {
+     content: '“';
+     position: absolute;
+     left: 1rem;
+     top: 0.5em;
+     font-size: 2rem;
+     font-weight: bold;
 }
 
-.matty {
-    --streamtalk-bg: hsl(0, 81%, 90%);
-    --streamtalk-text: hsl(0, 81%, 30%);
-}
