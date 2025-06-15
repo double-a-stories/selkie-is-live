@@ -12,7 +12,7 @@
     "proof:illume": "npm run build:twee -- -f illume -o proofing/illume.html",
     "proof:dotgraph": "npm run build:twee -- -f dotgraph-2-offline -o proofing/dotgraph.html",
     "watch": "run-p -lr watch:*",
-    "watch:serve": "light-server -s dist -w 'dist/*.html' -o",
+    "watch:serve": "light-server -s dist -w 'dist/*.html'",
     "watch:twee": "npm run build:twee -- -w",
     "publish-stable": "gh-pages -a -d dist",
     "publish-indev": "gh-pages -a -d dist -e indev/"
