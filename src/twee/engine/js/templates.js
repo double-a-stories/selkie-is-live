@@ -127,7 +127,7 @@ const streamChatParams = (name) => {
 const streamChat = (messages) => {
   let output = '<div class="chompchat">';
   
-  for (const [name, message, isAction, emoji] of messages) {
+  for (const [name, message, isAction, emoji] of messages.filter(m => m)) {
     output += `<p class="chompchat_entry">`;
     output += streamChatEntry(name, message, isAction, emoji);
     output += `</p>`;
@@ -156,6 +156,17 @@ const asterSays = (passage, innerHTML, chatMessage, isAction, emoji) => {
 
   a.setAttribute("onclick", `story.state.asterSays = ${JSON.stringify(message)}`);
   return a.outerHTML;
+}
+
+const moneyFormatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
+
+const donation = (name, amount, message, emoji) => {
+  const {color, ornament} = streamChatParams(name);
+  
+  return `<p class="donation">${ornament} <span style="color: ${color}">${name}</span> sent ${moneyFormatter.format(amount)} for <b>"${message}"</b></p>`
 }
 
 const groupAdjacent = (arr, keyFunction) => {
@@ -237,6 +248,7 @@ const discordChatEntry = (name, message) => {
     manyCommands,
     streamChat,
     discordChat,
-    asterSays
+    asterSays,
+    donation
   });
 }

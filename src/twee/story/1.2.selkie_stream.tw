@@ -22,8 +22,9 @@ The stream window says "STARTING SOON".
     ["SelkieSwallows", "Goal: Crush em! ($0/1000)"],
     ["excelenciaRodentia", "hi all!"],
     ["grumbleGeek", "first!"],
-    ["grumbleGeek", "yesss selkie stream selkie stream"],
+    ["riskySecret", "yesss selkie stream selkie stream"],
     ["stummyLiker", "selkie streammmm!"],
+    ["jamesStryker", "Hi everyone! First time watching"],
     ["stummyLiker", "bagooga"],
     ["bellicoseDinosaur", "yayy! selkie's live!"],
     ["jamesStryker", "?rules"],
@@ -38,12 +39,14 @@ The stream window says "STARTING SOON".
     ["SelkieSwallows", "👑 $699 = be my next guest <3"]
 ]) %>
 
-* <%= T.asterSays("Show chat 2.", "Aster: Good evening all!", "good evening all!") %>
-* <%= T.asterSays("Show chat 2.", "Aster: Hi everyone!", "hi everyone!") %>
-* <%= T.asterSays("Show chat 2.", "Aster: Hello!!", "hello!") %>
+* <%= T.asterSays("Show chat 2.", "Good evening all!", "good evening all!") %>
+* <%= T.asterSays("Show chat 2.", "Hi everyone!", "hi everyone!") %>
+* <%= T.asterSays("Show chat 2.", "Hello!!", "hello!") %>
 :: Show chat 2. [stream]
 
 <%= T.streamChat([
+    ["carneusCalcified", "greetings, pitiful morsels"],
+    ["grumbleGeek", "i wonder who the lucky guest is this week"],
     s.asterSays,
     ["awfulDenise", "hi disasterpiece!"],
     ["skippableFeline", "purr, hi!"],
@@ -53,12 +56,9 @@ The stream window says "STARTING SOON".
     ["riskySecret", "i'll dono 50 bits if selkie eats dp"],
     ["awfulDenise", "yess they'd look so good as hippo fat"],
     ["disasterPiece", "😵‍💫"],
-    ["carneusCalcified", "greetings, pitiful morsels"],
-    ["grumbleGeek", "i wonder who the lucky guest is this week"],
     ["ginnyTonic", "eeehehehehe"],
-    ["jamesStryker", "Hi everyone! First time watching"],
     ["pleadingPeristalsis", "welcome james! ur in for a great show!"],
-    ["jamesStryker", "Is this a gentle stream? I can't stand digestion"],
+    ["jamesStryker", "Is this a gentle stream?"],
     ["stummyLiker", "lolno"],
     ["riskySecret", "dw james she's super gentle. endo only"],
     ["jamesStryker", "Oh good, that's a relief"],
@@ -71,9 +71,9 @@ The stream window says "STARTING SOON".
 ])
 %>
 
-* [[Start stream.]]
+* [[Stream: Start.]]
 
-:: Start stream. [stream]
+:: Stream: Start. [stream]
 
 <%= T.streamChat([
     ["SelkieSwallows", "Let's get started ;3 You all ready to meet tonight's meat?"],
@@ -107,20 +107,26 @@ From the right of the frame, a hippo woman enters and plops down in her gaming c
 She beams at the chat, speaking with a sultry voice, 
 <span.q-selkie>Hi cuties, it's Selkie! Welcome to this week's stream! I hope you're all ready for a rousing evening.</span>
 
+* <%= T.asterSays("Chat 3", "Hi Selkie!", "hi selkie! happy friday!") %>
+* <%= T.asterSays("Chat 3", "Aaaaa beautiful hippo woman!", "aaaaa beautiful hippo woman!!") %>
+* <%= T.asterSays("Chat 3", "Eat me plz!", "eat me plz OxO") %>
+
+:: Chat 3 [stream]
+
 <%= T.streamChat([
+    s.asterSays,
     ["excelenciaRodentia", "hiiiii owo"],
     ["swifterSnackrifice", "hi selkie!"],
     ["stummyLiker", "HIII"],
     ["ginnyTonic", "hi!"],
     ["bellicoseDinosaur", "hell-o! :)"],
     ["narrowPantheon", "hiya!"],
-    ["disasterPiece", "good evening!"],
     ["skippableFeline", "purr, hi selkie!"],
     ["pleadingPeristalsis", "hiii!"],
     ["grumbleGeek", "HI SELKIE"],
-    ["riskySecret", "donated $20 for <b>Love u selkie!</b>", true, "🥉"],
 ]) %>
 
+<%= T.donation("riskySecret", "20", "Love u selkie!", "🥉") %>
 <span.q-selkie>Ooh, we're starting off strong tonight! Thanks for the twenty, Risky! Always nice to have you in the chat.</span>
 
 Selkie blows a little kiss at the camera, and gropes her gut.
@@ -165,8 +171,8 @@ With a smirk, She lifts a polished white skull of her desk.
 
 <span.q-selkie>You regulars will surely remember sweet little Lucy, a.k.a, scrumplyDelucious, who was a long time platinum subscriber to the channel.</span><span.q-selkie>Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!</span>
 
-* <%= T.asterSays("Goodbye, Lucy.", "Aster: Goodbye Lucy.", "goodbye, lucy.") %>
-* <%= T.asterSays("Goodbye, Lucy.", "Aster: R.I.P.", "rip") %>
+* <%= T.asterSays("Goodbye, Lucy.", "Goodbye Lucy.", "goodbye, lucy.") %>
+* <%= T.asterSays("Goodbye, Lucy.", "R.I.P.", "rip") %>
 
 :: Goodbye, Lucy. [stream]
 
@@ -213,8 +219,8 @@ Selkie places the skull inside a small cardboard box.
     ["carneusCalcified", "she definitely had it coming"],
     ["awfulDenise", "lucky you got her first"],
     ["awfulDenise", "i love crushing them"],
-    ["ginnyTonic", "donated $50 for <b>plz write my name (junie) on ur gut!</b>", true]
 ]) %>
+<%= T.donation("ginnyTonic", "50", "plz write my name (junie) on ur gut!", "") %>
 
 <span.q-selkie>Oh, thanks for the fifty, GT! You've earned a spot riiiiiiight here!</span> Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. <span.q-selkie>It's perfectly natural to feel envious of Lucy, but there's plenty of room in this gut! Hlaaaaaaaah!</span> She opens wide and flashes her uvula.
 

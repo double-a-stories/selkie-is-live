@@ -34,3 +34,57 @@
 }
 
 .disasterPiece { font-weight: bold; }
+
+.q-selkie {
+    --streamtalk-bg: hsla(300, 100%, 25%, 4%);
+    --streamtalk-text: hsl(300, 100%, 25%);
+}
+
+.q-matty {
+    --streamtalk-bg: hsla(0, 100%, 50%, 4%);
+    --streamtalk-text: hsl(0, 100%, 30%);
+}
+
+.q-selkie, .q-matty {
+    display: block;
+    margin-block: 1rem;
+    color: var(--streamtalk-text);
+    background-color: var(--streamtalk-bg);
+    padding-block: 1rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 1rem;
+    position: relative;
+}
+
+.donation {
+    display: block;
+    margin-block: 1rem;
+    background-color: #ffeecd;
+    padding-inline: 1rem;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    position: relative;
+    font-size: 90%;
+}
+
+/* .q-selkie::before, .q-matty::before {
+    content: '';
+    background-color: var(--stream-light);
+    background-size: 32px 32px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    box-sizing: border-box;
+    width: 4px;
+    flex-shrink: 0;
+    align-self: first-baseline;
+} */
+
+.q-selkie::before, .q-matty::before {
+     content: '“';
+     position: absolute;
+     left: 1rem;
+     top: 0.5em;
+     font-size: 2rem;
+     font-weight: bold;
+}
+

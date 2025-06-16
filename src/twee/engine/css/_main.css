@@ -31,7 +31,6 @@ body {
   font: clamp(1rem, 3vw, 1.2rem) / 1.6 var(--font-stack);
   margin: 0;
   padding: 0;
-  padding-bottom: 5rem;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: opacity 1s, background-color 2s;
@@ -53,6 +52,7 @@ tw-passage {
   margin: 0 auto;
   /* padding-bottom: 4rem; */
   max-width: 35em;
+  padding-bottom: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6, p {

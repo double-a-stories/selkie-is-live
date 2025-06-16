@@ -219,7 +219,7 @@ const StoryFlags = window.StoryFlags = class StoryFlags {
   * @param {string} name The flag to set
   * @param {string|number|boolean} value The number to set it to (integer >= 0)
   */
-  static set(name, value) {
+  static set(name, value = 1) {
     const flags = Lockr.get("flags", {});
     flags[name] = value;
     Lockr.set("flags", flags);
