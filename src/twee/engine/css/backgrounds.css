@@ -118,12 +118,12 @@ body[data-tags~="stream"] {
 }
 
 body[data-tags~="discord"] {
-  --background: #1e2124;
+  --background: #323339;
   --light: 	#424549;
   --color: #fff;
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 70rem) {
   body[data-tags~="stream"] {
     padding: 0;
   }
@@ -147,7 +147,7 @@ body[data-tags~="discord"] {
     background-image: url('assets/img/stream_ui.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 4rem;
     margin-right: 1rem;
     opacity: 10%;
@@ -158,12 +158,61 @@ body[data-tags~="discord"] {
     grid-area: header;
   }
   body[data-tags~="stream"] tw-passage {
+    box-sizing: border-box;
     grid-area: passage;
     margin: unset;
     max-width: unset;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 4rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  body[data-tags~="discord"] {
+    padding: 0;
+  }
+  body[data-tags~="discord"] .topbar {
+    margin-bottom: unset;
+  }
+  body[data-tags~="discord"] tw-story {
+    /* stupid hack... full height minus header height */
+    grid-template-columns: calc((100vh) * (724 / 1703) - 58.15px) 1fr;
+    display: grid;
+    grid-template-areas: 'header header' 'sidebar passage';
+    align-self: start;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+  body[data-tags~="discord"] tw-story::before {
+    content: '';
+    grid-area: sidebar;
+    background-image: url('assets/img/discord_sidebar.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    opacity: 100%;
+    min-width: auto;
+    padding-bottom: 253%;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #2C2D32;
+    align-self: stretch;
+    aspect-ratio: 724 / 1703;
+  }
+  body[data-tags~="discord"] #header-container {
+    grid-area: header;
+  }
+  body[data-tags~="discord"] tw-passage {
+    grid-area: passage;
+    margin: unset;
+    max-width: unset;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 
     overflow-y: scroll;
     overflow-x: hidden;
   }
