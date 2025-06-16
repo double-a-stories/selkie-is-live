@@ -117,7 +117,6 @@ body {
   font: clamp(1rem, 3vw, 1.2rem) / 1.6 var(--font-stack);
   margin: 0;
   padding: 0;
-  padding-bottom: 5rem;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: opacity 1s, background-color 2s;
@@ -139,6 +138,7 @@ tw-passage {
   margin: 0 auto;
   /* padding-bottom: 4rem; */
   max-width: 35em;
+  padding-bottom: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -354,12 +354,12 @@ body[data-tags~="stream"] {
 }
 
 body[data-tags~="discord"] {
-  --background: #1e2124;
+  --background: #323339;
   --light: 	#424549;
   --color: #fff;
 }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 70rem) {
   body[data-tags~="stream"] {
     padding: 0;
   }
@@ -383,7 +383,7 @@ body[data-tags~="discord"] {
     background-image: url('assets/img/stream_ui.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-left: 4rem;
     margin-right: 1rem;
     opacity: 10%;
@@ -394,12 +394,61 @@ body[data-tags~="discord"] {
     grid-area: header;
   }
   body[data-tags~="stream"] tw-passage {
+    box-sizing: border-box;
     grid-area: passage;
     margin: unset;
     max-width: unset;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 4rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  body[data-tags~="discord"] {
+    padding: 0;
+  }
+  body[data-tags~="discord"] .topbar {
+    margin-bottom: unset;
+  }
+  body[data-tags~="discord"] tw-story {
+    /* stupid hack... full height minus header height */
+    grid-template-columns: calc((100vh) * (724 / 1703) - 58.15px) 1fr;
+    display: grid;
+    grid-template-areas: 'header header' 'sidebar passage';
+    align-self: start;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+  body[data-tags~="discord"] tw-story::before {
+    content: '';
+    grid-area: sidebar;
+    background-image: url('assets/img/discord_sidebar.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+    opacity: 100%;
+    min-width: auto;
+    padding-bottom: 253%;
+    min-height: 100%;
+    box-sizing: border-box;
+    background-color: #2C2D32;
+    align-self: stretch;
+    aspect-ratio: 724 / 1703;
+  }
+  body[data-tags~="discord"] #header-container {
+    grid-area: header;
+  }
+  body[data-tags~="discord"] tw-passage {
+    grid-area: passage;
+    margin: unset;
+    max-width: unset;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -441,6 +490,60 @@ body[data-tags~="discord"] {
 }
 
 .disasterPiece { font-weight: bold; }
+
+.q-selkie {
+    --streamtalk-bg: hsla(300, 100%, 25%, 4%);
+    --streamtalk-text: hsl(300, 100%, 25%);
+}
+
+.q-matty {
+    --streamtalk-bg: hsla(0, 100%, 50%, 4%);
+    --streamtalk-text: hsl(0, 100%, 30%);
+}
+
+.q-selkie, .q-matty {
+    display: block;
+    margin-block: 1rem;
+    color: var(--streamtalk-text);
+    background-color: var(--streamtalk-bg);
+    padding-block: 1rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 1rem;
+    position: relative;
+}
+
+.donation {
+    display: block;
+    margin-block: 1rem;
+    background-color: #ffeecd;
+    padding-inline: 1rem;
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    position: relative;
+    font-size: 90%;
+}
+
+/* .q-selkie::before, .q-matty::before {
+    content: '';
+    background-color: var(--stream-light);
+    background-size: 32px 32px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    box-sizing: border-box;
+    width: 4px;
+    flex-shrink: 0;
+    align-self: first-baseline;
+} */
+
+.q-selkie::before, .q-matty::before {
+     content: '“';
+     position: absolute;
+     left: 1rem;
+     top: 0.5em;
+     font-size: 2rem;
+     font-weight: bold;
+}
+
 /* twine-user-stylesheet #5: "commands-list.css" */
 /*
  * Commands-list styles
@@ -503,8 +606,8 @@ body[data-tags~="discord"] {
     font-size: 60%;
     padding: 1rem;
     position: fixed;
-    right: 0;
-    width: 40em;
+    left: 0;
+    width: 35em;
 }
 
 .dev-info dt {
@@ -646,54 +749,7 @@ kbd {
         200%
     );
 }
-/* twine-user-stylesheet #12: "selkie.css" */
-:root {
-
-}
-
-.q-selkie {
-    --streamtalk-bg: hsla(300, 100%, 25%, 4%);
-    --streamtalk-text: hsl(300, 100%, 25%);
-}
-
-.q-matty {
-    --streamtalk-bg: hsla(0, 100%, 50%, 4%);
-    --streamtalk-text: hsl(0, 100%, 30%);
-}
-
-.q-selkie, .q-matty {
-    display: block;
-    margin-block: 1rem;
-    color: var(--streamtalk-text);
-    background-color: var(--streamtalk-bg);
-    padding-block: 1rem;
-    padding-inline-start: 2.5rem;
-    padding-inline-end: 1rem;
-    position: relative;
-}
-
-/* .q-selkie::before, .q-matty::before {
-    content: '';
-    background-color: var(--stream-light);
-    background-size: 32px 32px;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    box-sizing: border-box;
-    width: 4px;
-    flex-shrink: 0;
-    align-self: first-baseline;
-} */
-
-.q-selkie::before, .q-matty::before {
-     content: '“';
-     position: absolute;
-     left: 1rem;
-     top: 0.5em;
-     font-size: 2rem;
-     font-weight: bold;
-}
-
-/* twine-user-stylesheet #13: "steam-toast.css" */
+/* twine-user-stylesheet #12: "steam-toast.css" */
 .achievement-toast {
     position: fixed;
     font-size: 11px;
@@ -731,6 +787,7 @@ kbd {
     font-weight: normal;
     margin-bottom: 1em;
 }
+/* twine-user-stylesheet #13: "stream-talk.css" */
 /* twine-user-stylesheet #14: "fadein.css" */
 /*
  * fade in keframe animations
@@ -1043,7 +1100,7 @@ const Achievements = window.Achievements = class Achievements {
 */
 const StoryFlags = window.StoryFlags = class StoryFlags {
   /** Get all flags which are set.
-  * @returns {object} Returns an object { [flagName]: count, ... }
+  * @returns {object} Returns an object { [flagName]: value, ... }
   */
   static getAll() {
     return Lockr.get("flags", {});
@@ -1051,28 +1108,29 @@ const StoryFlags = window.StoryFlags = class StoryFlags {
 
   /**
   * @param {string} name The flag to check
-  * @returns {boolean} Wether a flag is set to a non-zero value
+  * @returns {boolean} Whether a flag is set to a non-zero value
   */
   static isSet(name) {
-    return !!Lockr.get("flags", {})[name];
+    const flags = Lockr.get("flags", {});
+    return !!flags[name];
   }
 
-  /** Gets the count of a flag
+  /** Gets the value of a flag
   * @param {string} name The name of the flag to check
-  * @returns {number} The number of times the flag was set
+  * @returns {string|number|boolean}
   */
   static get(name) {
-    let flags = Lockr.get("flags", {});
-    return +flags[name] | 0;
+    const flags = Lockr.get("flags", {});
+    return flags[name];
   }
 
   /**
   * @param {string} name The flag to set
-  * @param {number} count The number to set it to (integer >= 0)
+  * @param {string|number|boolean} value The number to set it to (integer >= 0)
   */
-  static set(name, count = 1) {
-    let flags = Lockr.get("flags", {});
-    flags[name] = Math.max(0, +count | 0); // increment
+  static set(name, value = 1) {
+    const flags = Lockr.get("flags", {});
+    flags[name] = value;
     Lockr.set("flags", flags);
   }
 
@@ -1082,7 +1140,7 @@ const StoryFlags = window.StoryFlags = class StoryFlags {
   * @param {number} amt An integer number to add/subtract
   */
   static increment(name, amt = 1) {
-    let count = this.get(name);
+    let count = this.get(name) | 0;
     count = Math.max(0, (count + +amt) | 0); // increment
     this.set(name, count);
   }
@@ -1214,10 +1272,18 @@ if (StoryFlags.isSet("devmode") && !$(".dev-info")[0]) {
     <li><a href="javascript:void(0)"  onclick="window.location.hash = '';">Clear save data</a></li>
     </ul>`);
 
+  if (StoryFlags.isSet("devModeLastPassage")) {
+    const oldStart = story.startPassage;
+    story.startPassage = StoryFlags.get("devModeLastPassage");
+    setTimeout(() => { story.startPassage = oldStart }, 10);
+  }
+
   $(window).on("sm.passage.shown", (ev, { passage }) => {
     $devInfoList.find("[data-exec]").each((i, el) => {
       $(el).text(JSON.stringify(eval($(el).attr("data-exec")), null, 2));
     });
+    StoryFlags.set("devModeLastPassage", window.passage.name);
+    StoryFlags.set("devModeLastPassage", window.passage.name);
   });
 }
 /* twine-user-script #5: "emoji.js" */
@@ -2053,7 +2119,7 @@ const streamChatParams = (name) => {
 const streamChat = (messages) => {
   let output = '<div class="chompchat">';
   
-  for (const [name, message, isAction, emoji] of messages) {
+  for (const [name, message, isAction, emoji] of messages.filter(m => m)) {
     output += `<p class="chompchat_entry">`;
     output += streamChatEntry(name, message, isAction, emoji);
     output += `</p>`;
@@ -2082,6 +2148,17 @@ const asterSays = (passage, innerHTML, chatMessage, isAction, emoji) => {
 
   a.setAttribute("onclick", `story.state.asterSays = ${JSON.stringify(message)}`);
   return a.outerHTML;
+}
+
+const moneyFormatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
+
+const donation = (name, amount, message, emoji) => {
+  const {color, ornament} = streamChatParams(name);
+  
+  return `<p class="donation">${ornament} <span style="color: ${color}">${name}</span> sent ${moneyFormatter.format(amount)} for <b>"${message}"</b></p>`
 }
 
 const groupAdjacent = (arr, keyFunction) => {
@@ -2163,7 +2240,8 @@ const discordChatEntry = (name, message) => {
     manyCommands,
     streamChat,
     discordChat,
-    asterSays
+    asterSays,
+    donation
   });
 }
 /* twine-user-script #14: "tests.js" */
@@ -2265,7 +2343,7 @@ $(window).on("sm.passage.shown", (ev, { passage }) => {
 /* twine-user-script #17: "Test" */
 window.TestChar = Rule63.defaultMale;
 /* twine-user-script #18: "Version" */
-story.version = "v0.0.1"</script><tw-tag name="TODO" color="red"></tw-tag><tw-tag name="hide" color="blue"></tw-tag><tw-tag name="morning" color="yellow"></tw-tag><tw-tag name="todo" color="orange"></tw-tag><tw-tag name="vore" color="red"></tw-tag><tw-passagedata pid="1" name="Header" tags="hide header" position="100,100" size="100,100">&lt;header.topbar.header-nav id=&quot;header&quot;&gt;
+story.version = "v0.0.1"</script><tw-tag name="vore" color="red"></tw-tag><tw-tag name="TODO" color="red"></tw-tag><tw-tag name="hide" color="blue"></tw-tag><tw-tag name="morning" color="yellow"></tw-tag><tw-tag name="todo" color="orange"></tw-tag><tw-passagedata pid="1" name="Header" tags="hide header" position="100,100" size="100,100">&lt;header.topbar.header-nav id=&quot;header&quot;&gt;
 &lt;%= story.render(&quot;Topbar controls&quot;) %&gt;
 &lt;/header&gt;</tw-passagedata><tw-passagedata pid="2" name="Topbar controls" tags="" position="225,100" size="100,100">&lt;% const muted = !StoryFlags.isSet(&#39;enableSound&#39;); %&gt;
 &lt;% const helpShown = window.passage &amp;&amp; window.passage.name === &quot;Help&quot;; %&gt;
@@ -2554,8 +2632,9 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
     [&quot;SelkieSwallows&quot;, &quot;Goal: Crush em! ($0/1000)&quot;],
     [&quot;excelenciaRodentia&quot;, &quot;hi all!&quot;],
     [&quot;grumbleGeek&quot;, &quot;first!&quot;],
-    [&quot;grumbleGeek&quot;, &quot;yesss selkie stream selkie stream&quot;],
+    [&quot;riskySecret&quot;, &quot;yesss selkie stream selkie stream&quot;],
     [&quot;stummyLiker&quot;, &quot;selkie streammmm!&quot;],
+    [&quot;jamesStryker&quot;, &quot;Hi everyone! First time watching&quot;],
     [&quot;stummyLiker&quot;, &quot;bagooga&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;yayy! selkie&#39;s live!&quot;],
     [&quot;jamesStryker&quot;, &quot;?rules&quot;],
@@ -2570,9 +2649,11 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
     [&quot;SelkieSwallows&quot;, &quot;👑 $699 = be my next guest &lt;3&quot;]
 ]) %&gt;
 
-* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Aster: Good evening all!&quot;, &quot;good evening all!&quot;) %&gt;
-* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Aster: Hi everyone!&quot;, &quot;hi everyone!&quot;) %&gt;
-* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Aster: Hello!!&quot;, &quot;hello!&quot;) %&gt;</tw-passagedata><tw-passagedata pid="32" name="Show chat 2." tags="stream" position="225,475" size="100,100">&lt;%= T.streamChat([
+* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Good evening all!&quot;, &quot;good evening all!&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Hi everyone!&quot;, &quot;hi everyone!&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Show chat 2.&quot;, &quot;Hello!!&quot;, &quot;hello!&quot;) %&gt;</tw-passagedata><tw-passagedata pid="32" name="Show chat 2." tags="stream" position="225,475" size="100,100">&lt;%= T.streamChat([
+    [&quot;carneusCalcified&quot;, &quot;greetings, pitiful morsels&quot;],
+    [&quot;grumbleGeek&quot;, &quot;i wonder who the lucky guest is this week&quot;],
     s.asterSays,
     [&quot;awfulDenise&quot;, &quot;hi disasterpiece!&quot;],
     [&quot;skippableFeline&quot;, &quot;purr, hi!&quot;],
@@ -2582,12 +2663,9 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
     [&quot;riskySecret&quot;, &quot;i&#39;ll dono 50 bits if selkie eats dp&quot;],
     [&quot;awfulDenise&quot;, &quot;yess they&#39;d look so good as hippo fat&quot;],
     [&quot;disasterPiece&quot;, &quot;😵‍💫&quot;],
-    [&quot;carneusCalcified&quot;, &quot;greetings, pitiful morsels&quot;],
-    [&quot;grumbleGeek&quot;, &quot;i wonder who the lucky guest is this week&quot;],
     [&quot;ginnyTonic&quot;, &quot;eeehehehehe&quot;],
-    [&quot;jamesStryker&quot;, &quot;Hi everyone! First time watching&quot;],
     [&quot;pleadingPeristalsis&quot;, &quot;welcome james! ur in for a great show!&quot;],
-    [&quot;jamesStryker&quot;, &quot;Is this a gentle stream? I can&#39;t stand digestion&quot;],
+    [&quot;jamesStryker&quot;, &quot;Is this a gentle stream?&quot;],
     [&quot;stummyLiker&quot;, &quot;lolno&quot;],
     [&quot;riskySecret&quot;, &quot;dw james she&#39;s super gentle. endo only&quot;],
     [&quot;jamesStryker&quot;, &quot;Oh good, that&#39;s a relief&quot;],
@@ -2600,7 +2678,7 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
 ])
 %&gt;
 
-* [[Start stream.]]</tw-passagedata><tw-passagedata pid="33" name="Start stream." tags="stream" position="350,475" size="100,100">&lt;%= T.streamChat([
+* [[Stream: Start.]]</tw-passagedata><tw-passagedata pid="33" name="Stream: Start." tags="stream" position="350,475" size="100,100">&lt;%= T.streamChat([
     [&quot;SelkieSwallows&quot;, &quot;Let&#39;s get started ;3 You all ready to meet tonight&#39;s meat?&quot;],
     [&quot;grumbleGeek&quot;, &quot;YSE&quot;],
     [&quot;grumbleGeek&quot;, &quot;YES&quot;],
@@ -2628,25 +2706,27 @@ From the right of the frame, a hippo woman enters and plops down in her gaming c
 She beams at the chat, speaking with a sultry voice, 
 &lt;span.q-selkie&gt;Hi cuties, it&#39;s Selkie! Welcome to this week&#39;s stream! I hope you&#39;re all ready for a rousing evening.&lt;/span&gt;
 
-&lt;%= T.streamChat([
+* &lt;%= T.asterSays(&quot;Chat 3&quot;, &quot;Hi Selkie!&quot;, &quot;hi selkie! happy friday!&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Chat 3&quot;, &quot;Aaaaa beautiful hippo woman!&quot;, &quot;aaaaa beautiful hippo woman!!&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Chat 3&quot;, &quot;Eat me plz!&quot;, &quot;eat me plz OxO&quot;) %&gt;</tw-passagedata><tw-passagedata pid="35" name="Chat 3" tags="stream" position="600,475" size="100,100">&lt;%= T.streamChat([
+    s.asterSays,
     [&quot;excelenciaRodentia&quot;, &quot;hiiiii owo&quot;],
     [&quot;swifterSnackrifice&quot;, &quot;hi selkie!&quot;],
     [&quot;stummyLiker&quot;, &quot;HIII&quot;],
     [&quot;ginnyTonic&quot;, &quot;hi!&quot;],
     [&quot;bellicoseDinosaur&quot;, &quot;hell-o! :)&quot;],
     [&quot;narrowPantheon&quot;, &quot;hiya!&quot;],
-    [&quot;disasterPiece&quot;, &quot;good evening!&quot;],
     [&quot;skippableFeline&quot;, &quot;purr, hi selkie!&quot;],
     [&quot;pleadingPeristalsis&quot;, &quot;hiii!&quot;],
     [&quot;grumbleGeek&quot;, &quot;HI SELKIE&quot;],
-    [&quot;riskySecret&quot;, &quot;donated $20 for &lt;b&gt;Love u selkie!&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
 ]) %&gt;
 
+&lt;%= T.donation(&quot;riskySecret&quot;, &quot;20&quot;, &quot;Love u selkie!&quot;, &quot;🥉&quot;) %&gt;
 &lt;span.q-selkie&gt;Ooh, we&#39;re starting off strong tonight! Thanks for the twenty, Risky! Always nice to have you in the chat.&lt;/span&gt;
 
 Selkie blows a little kiss at the camera, and gropes her gut.
 
-* [[First, some housekeeping.]]</tw-passagedata><tw-passagedata pid="35" name="First, some housekeeping." tags="stream" position="600,475" size="100,100">&lt;span.q-selkie&gt;I see a lot of repeat customers in chat, but for any first-time viewers, a little housekeeping:&lt;/span&gt;
+* [[First, some housekeeping.]]</tw-passagedata><tw-passagedata pid="36" name="First, some housekeeping." tags="stream" position="725,475" size="100,100">&lt;span.q-selkie&gt;I see a lot of repeat customers in chat, but for any first-time viewers, a little housekeeping:&lt;/span&gt;
 
 She gets in close to the camera.
 
@@ -2658,7 +2738,7 @@ She clears her throat.
 
 &lt;span.q-selkie&gt;Final warning: ***This is a kill show***. Everything you are about to see is completely consensual. If you&#39;re an anti-acid or a PRA, this is your warning to leave now, and take your complaints to another website. Thanks.&lt;/span&gt;
 
-* [[Show off skull.]]</tw-passagedata><tw-passagedata pid="36" name="Show off skull." tags="stream" position="725,475" size="100,100">With a smirk, She lifts a polished white skull of her desk.
+* [[Show off skull.]]</tw-passagedata><tw-passagedata pid="37" name="Show off skull." tags="stream" position="850,475" size="100,100">With a smirk, She lifts a polished white skull of her desk.
 
 &lt;span.q-selkie&gt;As always, we&#39;ll start the night off by bidding a heartful farewell to last week&#39;s guest.&lt;/span&gt; The hippo brandishes the skull to the camera. You recognize it as belonging to a whitetail deer, mostly because you watched her be digested on stream last week.
 
@@ -2679,8 +2759,8 @@ She clears her throat.
 
 &lt;span.q-selkie&gt;You regulars will surely remember sweet little Lucy, a.k.a, scrumplyDelucious, who was a long time platinum subscriber to the channel.&lt;/span&gt;&lt;span.q-selkie&gt;Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!&lt;/span&gt;
 
-* &lt;%= T.asterSays(&quot;Goodbye, Lucy.&quot;, &quot;Aster: Goodbye Lucy.&quot;, &quot;goodbye, lucy.&quot;) %&gt;
-* &lt;%= T.asterSays(&quot;Goodbye, Lucy.&quot;, &quot;Aster: R.I.P.&quot;, &quot;rip&quot;) %&gt;</tw-passagedata><tw-passagedata pid="37" name="Goodbye, Lucy." tags="stream" position="850,475" size="100,100">&lt;span.q-selkie&gt;Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she&#39;s just more hippo pudge! Her scrumptious little squeaks will be sorely missed, but she&#39;s in a much better place now.&lt;/span&gt; She smirks and wiggles her gut.
+* &lt;%= T.asterSays(&quot;Goodbye, Lucy.&quot;, &quot;Goodbye Lucy.&quot;, &quot;goodbye, lucy.&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Goodbye, Lucy.&quot;, &quot;R.I.P.&quot;, &quot;rip&quot;) %&gt;</tw-passagedata><tw-passagedata pid="38" name="Goodbye, Lucy." tags="stream" position="975,475" size="100,100">&lt;span.q-selkie&gt;Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she&#39;s just more hippo pudge! Her scrumptious little squeaks will be sorely missed, but she&#39;s in a much better place now.&lt;/span&gt; She smirks and wiggles her gut.
 
 &lt;%= T.streamChat([
     [&quot;swifterSnackrifice&quot;, &quot;poor little lucy!&quot;],
@@ -2707,7 +2787,7 @@ She clears her throat.
     [&quot;jamesStryker&quot;, &quot;wait is she like dead for real?&quot;],
 ]) %&gt;
 
-* [[Package souvenir.]]</tw-passagedata><tw-passagedata pid="38" name="Package souvenir." tags="stream" position="975,475" size="100,100">Selkie places the skull inside a small cardboard box.
+* [[Package souvenir.]]</tw-passagedata><tw-passagedata pid="39" name="Package souvenir." tags="stream" position="1100,475" size="100,100">Selkie places the skull inside a small cardboard box.
 
 &lt;span.q-selkie&gt;As the first $100 donor from last stream, this beautiful skull of hers will be once again adding to the collection of riskySecret! Thanks risky! It&#39;s fans like you who make this show possible.&lt;/span&gt;
 
@@ -2719,8 +2799,8 @@ She clears her throat.
     [&quot;carneusCalcified&quot;, &quot;she definitely had it coming&quot;],
     [&quot;awfulDenise&quot;, &quot;lucky you got her first&quot;],
     [&quot;awfulDenise&quot;, &quot;i love crushing them&quot;],
-    [&quot;ginnyTonic&quot;, &quot;donated $50 for &lt;b&gt;plz write my name (junie) on ur gut!&lt;/b&gt;&quot;, true]
 ]) %&gt;
+&lt;%= T.donation(&quot;ginnyTonic&quot;, &quot;50&quot;, &quot;plz write my name (junie) on ur gut!&quot;, &quot;&quot;) %&gt;
 
 &lt;span.q-selkie&gt;Oh, thanks for the fifty, GT! You&#39;ve earned a spot riiiiiiight here!&lt;/span&gt; Selkie grins, pulls out a marker and carefully writes *Juniper Alexis Greenall* right below her belly button. &lt;span.q-selkie&gt;It&#39;s perfectly natural to feel envious of Lucy, but there&#39;s plenty of room in this gut! Hlaaaaaaaah!&lt;/span&gt; She opens wide and flashes her uvula.
 
@@ -2745,11 +2825,18 @@ She happily rubs and bounces her tummy. It lets out a gurgle into the desk mic p
     [&quot;riskySecret&quot;, &quot;bring out this week&#39;s bowel movement!&quot;],
 ]) %&gt;
 
-* [[Welcome tonight&#39;s guest.]]</tw-passagedata><tw-passagedata pid="39" name="Welcome tonight&#39;s guest." tags="stream" position="1100,475" size="100,100">&lt;span.q-selkie&gt;You all know him as calorimeterMathematic. Soon you&#39;ll know him as &quot;&lt;/span&gt;&quot;more of Selkie&#39;s ass&quot;. Please put your paws, hooves, and claws together, for tonight&#39;s guest... Matty!&lt;/span&gt;
+* [[Welcome tonight&#39;s guest.]]</tw-passagedata><tw-passagedata pid="40" name="Welcome tonight&#39;s guest." tags="stream" position="1225,475" size="100,100">&lt;span.q-selkie&gt;You all know him as calorimeterMathematic...&lt;/span&gt;
+&lt;span.q-selkie&gt;Soon you&#39;ll know him as &quot;more of Selkie&#39;s ass&quot;...&lt;/span&gt;
+&lt;span.q-selkie&gt;Please put your paws, hooves, and claws together, for tonight&#39;s guest...&lt;/span&gt;
+&lt;span.q-selkie&gt;Matty!&lt;/span&gt;
 
-A black and white border collie shyly inches into frame and sits on Selkie&#39;s bed, wearing nothing but underwear. 
+Fake applause plays as a black-and-white border collie inches into frame and sits on Selkie&#39;s bed, wearing nothing but his underwear.
 
-&lt;%= T.streamChat([
+&lt;span.q-matty&gt;...!&lt;/span&gt;
+
+* &lt;%= T.asterSays(&quot;Chat Hi Matty&quot;, &quot;Hi Matty!&quot;, &quot;hi matty!!&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Chat Hi Matty&quot;, &quot;Woah, CM?&quot;, &quot;woah, cm?&quot;) %&gt;
+* &lt;%= T.asterSays(&quot;Chat Hi Matty&quot;, &quot;Oh damn.&quot;, &quot;oh damn.&quot;) %&gt;</tw-passagedata><tw-passagedata pid="41" name="Chat Hi Matty" tags="stream" position="100,600" size="100,100">&lt;%= T.streamChat([
 [&quot;bellicoseDinosaur&quot;, &quot;oh!&quot;],
 [&quot;swifterSnackrifice&quot;, &quot;hiii matty!&quot;],
 [&quot;excelenciaRodentia&quot;, &quot;holy shit?&quot;],
@@ -2757,7 +2844,7 @@ A black and white border collie shyly inches into frame and sits on Selkie&#39;s
 [&quot;narrowPantheon&quot;, &quot;aww, hi cutie!!&quot;],
 [&quot;adiposeAccumulator&quot;, &quot;who&#39;s matty? that&#39;s hippofood &gt;w&lt;&quot;],
 [&quot;awfulDenise&quot;, &quot;oooh, what a cute puppy!&quot;],
-[&quot;disasterPiece&quot;, &quot;oh damn&quot;],
+s.asterSays,
 [&quot;excelenciaRodentia&quot;, &quot;;;;a,as,d,,,,&quot;],
 [&quot;excelenciaRodentia&quot;, &quot;HOLY SHIT&quot;],
 [&quot;pleadingPeristalsis&quot;, &quot;matty!&quot;],
@@ -2766,20 +2853,20 @@ A black and white border collie shyly inches into frame and sits on Selkie&#39;s
 [&quot;excelenciaRodentia&quot;, &quot;he didn&#39;t tell me, what the fuck??&quot;]
 ])
 %&gt;
+&lt;%= T.donation(&quot;awfulDenise&quot;, &quot;3&quot;, &quot;hiii cutie!&quot;, &quot;&quot;) %&gt;
 
 Matty&#39;s face is stuck in a guilty blush, and he squirms and shivers slightly. 
 
-&lt;span.q-selkie&gt;Aww, dont be shy now, pup! This cutie here made a generous private donation to the channel, and will shortly be making a generous donation to my hips!&lt;/span&gt;
+&lt;span.q-selkie&gt;This cutie here made a generous private donation to the channel, and will shortly be making a generous donation to my hips!&lt;/span&gt;
 
-* [[Selkie: Play with your food.]]</tw-passagedata><tw-passagedata pid="40" name="Selkie: Play with your food." tags="stream" position="1225,475" size="100,100">Selkie squares the camera to the bed, pushes her gaming chair out the way, and plops onto the bed beside him. She grabs him into a side hug and squeezes his cheek against her gut. He lets out a whimper.
+* [[Selkie: Play with your food.]]</tw-passagedata><tw-passagedata pid="42" name="Selkie: Play with your food." tags="stream" position="225,600" size="100,100">Selkie squares the camera to the bed, pushes her gaming chair out the way, and plops onto the bed beside him. She grabs him into a side hug and squeezes his cheek against her gut. He lets out a whimper.
 
-&lt;span.q-selkie&gt;You can already see the resemblance. Say hi to the nice chat, puppydog!&lt;/span&gt;
+&lt;span.q-selkie&gt;You can already see the resemblance, hah! Dont be shy now, pup. Say hi to your audience!&lt;/span&gt;
 
 He shuts his eyes and stammers out, &lt;span.q-matty&gt;Hi Selkie, hi chat! I&#39;m.... ohgods... I&#39;m so excited to be hippo food! I hope you all enjoy watching tonight!&lt;/span&gt;
 
 &lt;%= T.streamChat([
 [&quot;carneusCalcified&quot;, &quot;heh, poor thing looks pretty nervous&quot;],
-[&quot;awfulDenise&quot;, &quot;donated $3 for &lt;b&gt;hiii cutie!&lt;/b&gt;&quot;, true],
 [&quot;ginnyTonic&quot;, &quot;MATTY! hii!! i&#39;m so excited to watch you die tonight!&quot;],
 [&quot;bellicoseDinosaur&quot;, &quot;X_X hottt&quot;],
 [&quot;disasterPiece&quot;, &quot;hot!!&quot;],
@@ -2790,19 +2877,21 @@ He shuts his eyes and stammers out, &lt;span.q-matty&gt;Hi Selkie, hi chat! I&#3
 [&quot;riskySecret&quot;, &quot;you&#39;re not too bright, huh james.&quot;],
 ]) %&gt;
 
-She hands him an index card, &lt;span.q-selkie&gt;And, what would you like to say the nice people of Chompstr.tv&#39;s Moderation and Legal Team?&lt;/span&gt;
+* [[Prey: Declare consent.]]</tw-passagedata><tw-passagedata pid="43" name="Prey: Declare consent." tags="stream" position="350,600" size="100,100">She hands him an index card. &lt;span.q-selkie&gt;And, what would you like to say the nice people of Chompstr.tv&#39;s Moderation and Legal Team?&lt;/span&gt;
 
-* [[Declare consent.]]</tw-passagedata><tw-passagedata pid="41" name="Declare consent." tags="stream" position="100,600" size="100,100">He clears his throat and reads off the card. &lt;span.q-matty&gt;Um, I, Matthew Kurtis...&lt;/span&gt;
+&lt;img class=&quot;w-100&quot; src=&quot;assets/img/cuecard.webp&quot; alt=&quot;An index card with pink text. Say Aloud: I [YOUR FULL NAME] (matthew curtis), BEING OF SOUND MIND, DECLARE MY IRREVOCABLE INFORMED CONSENT TO BE DIGESTED. I CERTIFY THAT I HAVE FILED ALL NECESSARY FORMS, INCLUDING PETITION 15.9 (C), WITH THE SUPERIOR COURT OF [YOUR HOME STATE] (south california). I HEREBY CEDE ALL RIGHTS TO MY BODY, MY REMAINS, AND LIKENESS TO SELKIE, TO ENJOY FOR THE DURATION OF THIS LIVESTREAM, AND IN PERPETUITY. now i&#39;m just food, poop, and pudge. bark bark!&quot;&gt;
 
-&lt;img class=&quot;w-100&quot; src=&quot;assets/img/cuecard.webp&quot; alt=&quot;An index card with pink text.&quot;&gt;
+* [[Prey: Read aloud.]]</tw-passagedata><tw-passagedata pid="44" name="Prey: Read aloud." tags="stream" position="475,600" size="100,100">He blushes, clears his throat, and says,
+&lt;span.q-matty&gt;Um, I, Matthew Kurtis, being of sound mind, declare my irrevocable informed consent to be digested.&lt;/span&gt; 
+&lt;span.q-matty&gt;I uhm. I certify that I&#39;ve filed all necessary forms, including petition 15.9(C), with the Superior Court of South California.&lt;/span&gt; 
+&lt;span.q-matty&gt;I hereby cede all rights to my body, my remains, and likeness to Selkie, to enjoy for the duration of this livestream... and in perpetuity.&lt;/span&gt;
+&lt;span.q-matty&gt;N-now... I&#39;m just food, poop, and pudge. Bark bark!&lt;/span&gt;
 
-&lt;span.q-matty&gt;...bark bark!&lt;/span&gt; He blushes furiously.
+Selkie grins. &lt;span.q-selkie&gt;Don&#39;t sue me, but I added that last part. Hah! Whoever said a little bureaucracy couldn&#39;t be fun? Now, let&#39;s get this sweet pup warmed up, shall we?&lt;/span&gt;
 
-Selkie grins and stage-whispers, &lt;span.q-selkie&gt;Don&#39;t sue me, but I added that last part. Whoever said a little bureaucracy couldn&#39;t be fun? Now, let&#39;s get this sweet pup warmed up, shall we?&lt;/span&gt;
+* [[Selkie: Foreplay.]]</tw-passagedata><tw-passagedata pid="45" name="Selkie: Foreplay." tags="stream" position="600,600" size="100,100">Selkie taps a button on the stream, and a 20 minute timer appears in the corner of the frame. She lies on her back, and pats her exposed belly.
 
-She taps a button on the stream, and a 20 minute timer appears in the corner of the frame.
-
-* [[Cuddle him.]]</tw-passagedata><tw-passagedata pid="42" name="Cuddle him." tags="stream" position="225,600" size="100,100">Selkie lies on her back, and pats her exposed belly. &lt;span.q-selkie&gt;C&#39;mere, pup. You&#39;re about to get what you paid for!&lt;/span&gt; Matty slowly shuffles up to her. She wraps her arms around him, and pulls him down onto her. He lands straddling her leg, with his face pressed against her belly. He lets out a noise.
+&lt;span.q-selkie&gt;Climb up here, pup. You&#39;re about to get the snuggles of a lifetime.&lt;/span&gt; Matty slowly shuffles up to her. She wraps her arms around him, and pulls him down onto her. He lands straddling her leg, with his face pressed against her belly. He lets out a noise.
 
 &lt;span.q-selkie&gt;Gosh, you are *very* cute.&lt;/span&gt; The chat floods with messages both aroused and envious, all clearly in agreement. &lt;span.q-selkie&gt;You&#39;ve got twenty whole minutes of foreplay to enjoy me to the fullest. No need to be shy.&lt;/span&gt;
 
@@ -2816,19 +2905,19 @@ After a moment, he begins gently humping her fat thigh.
 
 At her command, he takes a deep whiff, which fully blanks his brain. His snout sinks lower and lower until he&#39;s sniffing her gut and bulge, and furiously grinding against her leg.
 
-* [[Chat: Watch.]]</tw-passagedata><tw-passagedata pid="43" name="Chat: Watch." tags="stream" position="350,600" size="100,100">TODO! write a long chatlog including side conversation, watching matty, and getting excited for the big moment. excelenciaRodentia works out their complicated feelings; they were obviously best friends. roommates, even?
+* [[Chat: Watch.]]</tw-passagedata><tw-passagedata pid="46" name="Chat: Watch." tags="stream" position="725,600" size="100,100">TODO! write a long chatlog including side conversation, watching matty, and getting excited for the big moment. excelenciaRodentia works out their complicated feelings; they were obviously best friends. roommates, even?
 
-* [[Matty: Shoot.]]</tw-passagedata><tw-passagedata pid="44" name="Matty: Shoot." tags="stream" position="475,600" size="100,100">After eighteen minutes of humping, suddenly convulses and lets out a very loud whine. &lt;span.q-matty&gt;Ahhnnnn~! Aaah~! S-Selkieeeee...!&lt;/span&gt; He collapses with a big grin, stars and birds spinning around his head.
+* [[Prey: Shoot.]]</tw-passagedata><tw-passagedata pid="47" name="Prey: Shoot." tags="stream" position="850,600" size="100,100">After eighteen minutes of humping, suddenly convulses and lets out a very loud whine. &lt;span.q-matty&gt;Ahhnnnn~! Aaah~! S-Selkieeeee...!&lt;/span&gt; He collapses with a big grin, stars and birds spinning around his head.
 
 Selkie mugs to camera, gently rubbing a hand down his back. &lt;span.q-selkie&gt;There you go pup! Good job!&lt;/span&gt; The countdown on screen hits zero. She sits up. &lt;span.q-selkie&gt;Ope, perfect timing. Looks like it&#39;s time for *my* fun.&lt;/span&gt;
 
-* [[Matty: Snooze.]]</tw-passagedata><tw-passagedata pid="45" name="Matty: Snooze." tags="stream" position="600,600" size="100,100">&lt;span.q-matty&gt;Nnnh...&lt;/span&gt; Matty tenses slightly, but keeps his face buried against her gut, still sniffing and enjoying. &lt;span.q-matty&gt;It&#39;s so soft... C-can I get another minute just to uhmm. stay here?&lt;/span&gt;
+* [[Prey: Snooze.]]</tw-passagedata><tw-passagedata pid="48" name="Prey: Snooze." tags="stream" position="975,600" size="100,100">&lt;span.q-matty&gt;Nnnh...&lt;/span&gt; Matty tenses slightly, but keeps his face buried against her gut, still sniffing and enjoying. &lt;span.q-matty&gt;It&#39;s so soft... C-can I get another minute just to uhmm. stay here?&lt;/span&gt;
 
 Her stomach growls. &lt;span.q-selkie&gt;I dunno, chat. We don&#39;t wanna keep the nice audience waiting now, do we?&lt;/span&gt;
 
 TODO: chatlog. everyone dogpiles matty to get in that tummy. EAT HIM SELKIE!
 
-* [[Matty: Beg.]]</tw-passagedata><tw-passagedata pid="46" name="Matty: Beg." tags="stream" position="725,600" size="100,100">He whines, &lt;span.q-matty&gt;I-I- thought you said you&#39;d take it a little slower with me this time...?&lt;/span&gt;
+* [[Prey: Beg.]]</tw-passagedata><tw-passagedata pid="49" name="Prey: Beg." tags="stream" position="1100,600" size="100,100">He whines, &lt;span.q-matty&gt;I-I- thought you said you&#39;d take it a little slower with me this time...?&lt;/span&gt;
 
 She smirks coldly. &lt;span.q-selkie&gt;Did. Twenty whole minutes. Poor Lucy barely got ten.&lt;/span&gt; She grips him by the chin. Fear enters his eyes. From the corner of her eye, she can tell chat is loving it, which warms her heart. &lt;span.q-selkie&gt;You do want to be hippo food; aren&#39;t you? It&#39;d be a shame after you came all this way.&lt;/span&gt;
 
@@ -2836,18 +2925,16 @@ He breathes heavily and crumples into her gut. &lt;span.q-matty&gt;Eep, I... I w
 
 &lt;span.q-selkie&gt;Hear that, chat? Sounds like my meal is getting a bit nervous. Why don&#39;t you show him some real &quot;encouragement&quot;?&lt;/span&gt;
 
-* [[Chat: Encourage.]]</tw-passagedata><tw-passagedata pid="47" name="Chat: Encourage." tags="stream" position="850,600" size="100,100">She hands him her phone and lets him watch the chat go by. He clutches her hand.
+* [[Chat: Encourage.]]</tw-passagedata><tw-passagedata pid="50" name="Chat: Encourage." tags="stream" position="1225,600" size="100,100">She hands him her phone and lets him watch the chat go by. He clutches her hand.
 
-&lt;%= T.streamChat([
-[&quot;riskySecret&quot;, &quot;donated $7 for &lt;b&gt;gulp that nerd! i need his skull!&lt;/b&gt;&quot;, true],
-[&quot;ginnyTonic&quot;, &quot;donated $15 &lt;b&gt;girl food girl food! you can do it matty!&lt;/b&gt;&quot;, true],
-[&quot;awfulDenise&quot;, &quot;donated $5 for &lt;b&gt;get his ass! you&#39;re so fucking hot selkie.&lt;/b&gt;&quot;, true],
-[&quot;excelenciaRodentia&quot;, &quot;donated $20 for &lt;b&gt;become hippo fat, loser! see if i care!&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
-]) %&gt;
+&lt;%= T.donation(&quot;riskySecret&quot;, &quot;7&quot;, &quot;gulp that nerd! i need his skull!&quot;, &quot;&quot;) %&gt;
+&lt;%= T.donation(&quot;ginnyTonic&quot;, &quot;15&quot;, &quot;girl food girl food! you can do it matty!&quot;, &quot;&quot;) %&gt;
+&lt;%= T.donation(&quot;awfulDenise&quot;, &quot;5&quot;, &quot;get his ass! you&#39;re so fucking hot selkie.&quot;, &quot;&quot;) %&gt;
+&lt;%= T.donation(&quot;excelenciaRodentia&quot;, &quot;20&quot;, &quot;become hippo fat, loser! see if i care!&quot;, &quot;🥉&quot;) %&gt;
 
 &lt;span.q-selkie&gt;Oh,&lt;/span&gt; Selkie giggles, &lt;span.q-selkie&gt;looks like your friend ER has some choice words for you. Thanks for the donations everyone!&lt;/span&gt;
 
-* [[Matty: Breathe.]]</tw-passagedata><tw-passagedata pid="48" name="Matty: Breathe." tags="stream" position="975,600" size="100,100">Matty curls up into a ball. &lt;span.q-matty&gt;I think... I&#39;m having a panic attack. C-can&#39;t... breathe...&lt;/span&gt;
+* [[Matty: Breathe.]]</tw-passagedata><tw-passagedata pid="51" name="Matty: Breathe." tags="stream" position="100,725" size="100,100">Matty curls up into a ball. &lt;span.q-matty&gt;I think... I&#39;m having a panic attack. C-can&#39;t... breathe...&lt;/span&gt;
 
 &lt;%= T.streamChat([
 [&quot;carneusCalcified&quot;, &quot;heh. love when prey get scared. really riles me up.&quot;],
@@ -2858,7 +2945,7 @@ Selkie is clearly a bit impatient. &lt;span.q-selkie&gt;Well, I don&#39;t have a
 
 Matty tries to use the safe word. &lt;span.q-matty&gt;n-no no wait!! b-bananas! banan-&lt;/span&gt; GULP
 
-* [[Selkie: Swallow.]]</tw-passagedata><tw-passagedata pid="49" name="Selkie: Swallow." tags="stream" position="1100,600" size="100,100">graphic description of the whole swallowing process but it&#39;s entirely from admiring chat&#39;s POV
+* [[Selkie: Swallow.]]</tw-passagedata><tw-passagedata pid="52" name="Selkie: Swallow." tags="stream" position="225,725" size="100,100">graphic description of the whole swallowing process but it&#39;s entirely from admiring chat&#39;s POV
 
 &lt;%= T.streamChat([
 [&quot;stummyLiker&quot;, &quot;HOPY SHIT&quot;],
@@ -2867,13 +2954,13 @@ Matty tries to use the safe word. &lt;span.q-matty&gt;n-no no wait!! b-bananas! 
 [&quot;swifterSnackrifice&quot;, &quot;god damn&quot;],
 [&quot;grumbleGeek&quot;, &quot;this is so hot&quot;],
 [&quot;bellicoseDinosaur&quot;, &quot;eeeee i love the swallow noises! full on ASMR teehee&quot;],
-[&quot;riskySecret&quot;, &quot;donated $23 for &lt;b&gt;bananas bananas bananas :3&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
 [&quot;pleadingPeristalsis&quot;, &quot;huff. the way she&#39;s swallowing him like it was nothing...&quot;],
-[&quot;ginnyTonic&quot;, &quot;donated $39 &lt;b&gt;nnnnnhh&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
 [&quot;excelenciaRodentia&quot;, &quot;oh my gods, he&#39;s really gonna die in there...&quot;, true],
-[&quot;awfulDenise&quot;, &quot;donated $17 for &lt;b&gt;just a big fat hippo belly bulge now.&lt;/b&gt;&quot;, true],
 [&quot;excelenciaRodentia&quot;, &quot;i&#39;m so mad he didn&#39;t even tell me.&quot;, true]
 ]) %&gt;
+&lt;%= T.donation(&quot;riskySecret&quot;, &quot;23&quot;, &quot;bananas bananas bananas :3&quot;, &quot;🥉&quot;) %&gt;
+&lt;%= T.donation(&quot;ginnyTonic&quot;, &quot;39&quot;, &quot;nnnnnhh&quot;, &quot;🥉&quot;) %&gt;
+&lt;%= T.donation(&quot;awfulDenise&quot;, &quot;17&quot;, &quot;just a big fat hippo belly bulge now.&quot;, &quot;&quot;) %&gt;
 
 &lt;span.q-selkie&gt;Hlaaaaaah. Much better.&lt;/span&gt; She lets out a fat belch.
 
@@ -2918,20 +3005,15 @@ She&#39;s ice cold now and desperate to cum. &lt;span.q-selkie&gt;Oh fuck. You s
 
 &lt;span.q-matty&gt;Mmmph!! Nhh, plhhh dhhhn&#39;t!&lt;/span&gt;
 
-&lt;%= T.streamChat([
-[&quot;riskySecret&quot;, &quot;donated $1 for &lt;b&gt;sorry, i spent most of my budget last month&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
-[&quot;ginnyTonic&quot;, &quot;donated $39 &lt;b&gt;nnnnnhh&lt;/b&gt;&quot;, true, &quot;🥉&quot;],
-[&quot;awfulDenise&quot;, &quot;donated $17 for &lt;b&gt;just a big fat hippo belly bulge now.&lt;/b&gt;&quot;, true],
-[&quot;excelenciaRodentia&quot;, &quot;donated $17 for &lt;b&gt;oh my gods, he&#39;s so gonna die in there.&lt;/b&gt;&quot;, true],
-]) %&gt;
-
-risky sorry i kinda hit my limit for the week
-
-rodentia donated $1 for **me too sorgy**
+&lt;%= T.donation(&quot;riskySecret&quot;, &quot;1&quot;, &quot;sorry, i spent most of my budget last month&quot;, &quot;🥉&quot;) %&gt;
+&lt;%= T.donation(&quot;ginnyTonic&quot;, &quot;7&quot;, &quot;me too sorgy&quot;, &quot;🥉&quot;) %&gt;
+&lt;%= T.donation(&quot;rodentia&quot;, &quot;17&quot;, &quot;awf&quot;, &quot;&quot;) %&gt;
 
 with your ham in your sandwich also eager to watch what happens, you do something you might regret.
 
-* [[Aster: Donate $300.]]</tw-passagedata><tw-passagedata pid="50" name="Aster: Donate $300." tags="stream" position="1225,600" size="100,100">You donate to push selkie over.
+* [[Aster: Donate $300.]]</tw-passagedata><tw-passagedata pid="53" name="Aster: Donate $300." tags="stream" position="350,725" size="100,100">&lt;%= T.donation(&quot;disasterPiece&quot;, &quot;300&quot;, &quot;CRUSH HIM AND CUM&quot;, &quot;&quot;) %&gt;
+
+You donate to push selkie over.
 
 She hits the goal with huge fanfare. &lt;span.q-selkie&gt;FUCK yeah. Thanks DisasterPiece, you just earned yourself an hour of 1:1 discord chat.&lt;/span&gt; She places her hands on her wildly kicking bulge, &lt;span.q-selkie&gt;But first, let&#39;s churn... this... fucking... pup!!!&lt;/span&gt;
 
@@ -2955,11 +3037,11 @@ Stream off, leaving you alone in your apartment and panting.
 
 ## End of Chapter 1
 
-* [[Title screen]]</tw-passagedata><tw-passagedata pid="51" name="Chapter 2" tags="" position="100,725" size="100,100">Sunday. You bum around your apartment waiting for the time.
+* [[Title screen]]</tw-passagedata><tw-passagedata pid="54" name="Chapter 2" tags="" position="475,725" size="100,100">Sunday. You bum around your apartment waiting for the time.
 
 Selkie messages you.
 
-* [[Open Discord.]]</tw-passagedata><tw-passagedata pid="52" name="Open Discord." tags="discord" position="225,725" size="100,100">&lt;%= T.discordChat([
+* [[Open Discord.]]</tw-passagedata><tw-passagedata pid="55" name="Open Discord." tags="discord" position="600,725" size="100,100">&lt;%= T.discordChat([
 [&quot;Selkie the Hippo&quot;, &quot;Heyyy big spender ;3 :waving:&quot;],
 [&quot;Selkie the Hippo&quot;, &quot;Welcome.&quot;],
 [&quot;DisasterPiece&quot;, &quot;haha, hii!&quot;],
@@ -3019,7 +3101,7 @@ Inciting incident. You need to be food. It will fix EVERYTHING.
 
 You&#39;re not ready to stop talking to her.
 
-* [[Pay $999.]]</tw-passagedata><tw-passagedata pid="53" name="Pay $999." tags="" position="350,725" size="100,100">You make an impulse decision.
+* [[Pay $999.]]</tw-passagedata><tw-passagedata pid="56" name="Pay $999." tags="" position="725,725" size="100,100">You make an impulse decision.
 
 &quot;Oh, woah, cool! Didn&#39;t know you actually meant it. Can you hop on a call real quick?&quot;
 
@@ -3048,11 +3130,11 @@ She squeezes her gut.
 &quot;Normally I&#39;d just post the photos on Fansy, I think you&#39;ve earned a special preview. Wanna watch me shit out Matty? Like I&#39;m gonna do to you?&quot;
 
 * [[Watch her poop.]]
-* [[Don&#39;t.]]</tw-passagedata><tw-passagedata pid="54" name="Watch her poop." tags="" position="475,725" size="100,100">* [[End call.]]</tw-passagedata><tw-passagedata pid="55" name="Don&#39;t." tags="" position="600,725" size="100,100">* [[End call.]]</tw-passagedata><tw-passagedata pid="56" name="End call." tags="" position="725,725" size="100,100">&quot;Kbye! I&#39;ll send some info over.&quot;&quot;
+* [[Don&#39;t.]]</tw-passagedata><tw-passagedata pid="57" name="Watch her poop." tags="" position="850,725" size="100,100">* [[End call.]]</tw-passagedata><tw-passagedata pid="58" name="Don&#39;t." tags="" position="975,725" size="100,100">* [[End call.]]</tw-passagedata><tw-passagedata pid="59" name="End call." tags="" position="1100,725" size="100,100">&quot;Kbye! I&#39;ll send some info over.&quot;&quot;
 
 ### End of chapter 2.
 
-* [[Title screen]]</tw-passagedata><tw-passagedata pid="57" name="Chapter 4" tags="" position="850,725" size="100,100">Monday.
+* [[Title screen]]</tw-passagedata><tw-passagedata pid="60" name="Chapter 4" tags="" position="1225,725" size="100,100">Monday.
 
 You don&#39;t go into work today. How could you? You&#39;re too excited. You lie in bed.
 
@@ -3076,7 +3158,7 @@ At 10 AM, your boss texts you about your deadlines.
 
 &lt;/pre&gt;
 
-* [[Aster: Fuck you I quit.]]</tw-passagedata><tw-passagedata pid="58" name="Aster: Fuck you I quit." tags="" position="975,725" size="100,100">&lt;pre&gt;
+* [[Aster: Fuck you I quit.]]</tw-passagedata><tw-passagedata pid="61" name="Aster: Fuck you I quit." tags="" position="100,850" size="100,100">&lt;pre&gt;
 
 ([
 [&quot;J&quot;, &quot;That I&#39;m a programmer, not a fucking miracle worker!&quot;],
@@ -3118,7 +3200,7 @@ At 10 AM, your boss texts you about your deadlines.
 
 You tell him to fuck off, you quit. Oh god, it feels so fucking good. (reuse the text widget from LoTP)
 
-You didn&#39;t have a lot of money when you needed to live for another month, but now that you don&#39;t plan to survive past this week, it&#39;s like you have a TON of money.</tw-passagedata><tw-passagedata pid="59" name="Splurge on delivery." tags="" position="1100,725" size="100,100">6 PM you order yourself a shit ton of expensive takeout, just blowing all your savings.
+You didn&#39;t have a lot of money when you needed to live for another month, but now that you don&#39;t plan to survive past this week, it&#39;s like you have a TON of money.</tw-passagedata><tw-passagedata pid="62" name="Splurge on delivery." tags="" position="225,850" size="100,100">6 PM you order yourself a shit ton of expensive takeout, just blowing all your savings.
 
 Driver knocks on your door. It&#39;s a squirrel girl named Piper. She&#39;s trembling and is so fucking relieved that just this once you&#39;re not someone who&#39;s trying to eat them. She comments that your place is pretty big for a bunny. Yeah, you used to live with a saint bernard. Oh, she says, a little 
 
@@ -3156,7 +3238,7 @@ You confide in Selkie about being a little hurt by this rejection.
 
 ### End of Chapter 4.
 
-* [[Title screen]]</tw-passagedata><tw-passagedata pid="60" name="Chapter 3" tags="" position="1225,725" size="100,100">SELKIE&#39;S GUIDE TO DYING IN A TUMMY. (reuse the legalese template)
+* [[Title screen]]</tw-passagedata><tw-passagedata pid="63" name="Chapter 3" tags="" position="350,850" size="100,100">SELKIE&#39;S GUIDE TO DYING IN A TUMMY. (reuse the legalese template)
 
 NO REFUNDS.
 
@@ -3164,7 +3246,7 @@ HOW TO BEHAVE ON STREAM.
 
 HOW TO GET A PREDATORY CONSENT WAIVER
 
-* [[Sunday.]]</tw-passagedata><tw-passagedata pid="61" name="Sunday." tags="" position="100,850" size="100,100">You walk into the UPS store, holding a big pile of legal forms which you need to get notarized. It&#39;s a nice slow day.
+* [[Sunday.]]</tw-passagedata><tw-passagedata pid="64" name="Sunday." tags="" position="475,850" size="100,100">You walk into the UPS store, holding a big pile of legal forms which you need to get notarized. It&#39;s a nice slow day.
 
 Meet Eileen the skunk! She&#39;s a manager at the UPS store and a notary public. She&#39;s silly and non-serious, a little nerdy. Technically the forms don&#39;t name of the person you&#39;re feeding yourself to. Which *technically* means you&#39;re consenting to ANYONE eating you.
 
@@ -3174,17 +3256,17 @@ Haha! It&#39;s actually why I became a notary public. I&#39;m just very interest
 
 o-oh.
 
-(she&#39;s still holding your forms) By the way, do you wanna come into the back?</tw-passagedata><tw-passagedata pid="62" name="The back?" tags="" position="225,850" size="100,100">There&#39;s uh, some cool stuff back here! There&#39;s a box of donuts from this morning, uhhh, packing tape, uhhh, whiteout, and staplers!</tw-passagedata><tw-passagedata pid="63" name="...Staplers?" tags="" position="350,850" size="100,100">And uhhh... oh!! I forgot, there&#39;s a super important notary seal I need to stamp on your forms.
+(she&#39;s still holding your forms) By the way, do you wanna come into the back?</tw-passagedata><tw-passagedata pid="65" name="The back?" tags="" position="600,850" size="100,100">There&#39;s uh, some cool stuff back here! There&#39;s a box of donuts from this morning, uhhh, packing tape, uhhh, whiteout, and staplers!</tw-passagedata><tw-passagedata pid="66" name="...Staplers?" tags="" position="725,850" size="100,100">And uhhh... oh!! I forgot, there&#39;s a super important notary seal I need to stamp on your forms.
 
 you point at the form. she already stamped it.
 
-Yeah, but this is a different one! It&#39;s uh, secret one! Like, it&#39;s invisible for extra security.</tw-passagedata><tw-passagedata pid="64" name="An invisible stamp?" tags="" position="475,850" size="100,100">&quot;Yeah! And I need you to follow me into the back so I can get it! Let&#39;s go-o-o!&quot;
+Yeah, but this is a different one! It&#39;s uh, secret one! Like, it&#39;s invisible for extra security.</tw-passagedata><tw-passagedata pid="67" name="An invisible stamp?" tags="" position="850,850" size="100,100">&quot;Yeah! And I need you to follow me into the back so I can get it! Let&#39;s go-o-o!&quot;
 
 you politely ask for the forms back. they were hard to get and you really need them back now.
 
 &quot;Sure! Just come with me into the back! Did I mention there&#39;s donuts?&quot;
 
-You guess you have no choice.</tw-passagedata><tw-passagedata pid="65" name="Warn Selkie about Eileen." tags="discord" position="600,850" size="100,100">Just in case, you DM Selkie.
+You guess you have no choice.</tw-passagedata><tw-passagedata pid="68" name="Warn Selkie about Eileen." tags="discord" position="975,850" size="100,100">Just in case, you DM Selkie.
 
 &lt;%= T.discordChat([
 [&quot;disasterPiece&quot;, &quot;hi selkie&quot;],
@@ -3200,13 +3282,13 @@ You guess you have no choice.</tw-passagedata><tw-passagedata pid="65" name="War
 [&quot;disasterPiece&quot;, &quot;...cool&quot;]
 ]) %&gt;
 
-* [[Follow Eileen.]]</tw-passagedata><tw-passagedata pid="66" name="Follow Eileen." tags="" position="725,850" size="100,100">You follow her into the back.
+* [[Follow Eileen.]]</tw-passagedata><tw-passagedata pid="69" name="Follow Eileen." tags="" position="1100,850" size="100,100">You follow her into the back.
 
 She didn&#39;t lie about the donuts, she does offer you one. But they&#39;re not vegan. &quot;That&#39;s cool, more for me!&quot; Chomp chomp.
 
 you ask if she&#39;s done and if you can have the forms back yet. 
 
-The guilt is clearly too much for her. She places the forms on the table and &quot;Okay okay, I lied! I was actually planning to eat you, and then doctor the forms so it looks like you gave me permission.&quot;</tw-passagedata><tw-passagedata pid="67" name="Wow, really?" tags="" position="850,850" size="100,100">&quot;Sorry, I feel just awful decieving you about it... It&#39;s just hard to find people who want to be eaten by a nobody like me...&quot; she says, clearly fishing for a compliment, &quot;Sorry...&quot;
+The guilt is clearly too much for her. She places the forms on the table and &quot;Okay okay, I lied! I was actually planning to eat you, and then doctor the forms so it looks like you gave me permission.&quot;</tw-passagedata><tw-passagedata pid="70" name="Wow, really?" tags="" position="1225,850" size="100,100">&quot;Sorry, I feel just awful decieving you about it... It&#39;s just hard to find people who want to be eaten by a nobody like me...&quot; she says, clearly fishing for a compliment, &quot;Sorry...&quot;
 
 You say you understand, but would really really prefer if she didn&#39;t do that. You have someone else you want to get eaten by. You paid a lot of money and everything.
 
@@ -3215,21 +3297,21 @@ You say you understand, but would really really prefer if she didn&#39;t do that
 She lunges at you.
 
 * [[Aggrieve!]]
-* [[Abscond!]]</tw-passagedata><tw-passagedata pid="68" name="Aggrieve!" tags="" position="975,850" size="100,100">You pick up a stapler and try to fend her off with a stapler.
+* [[Abscond!]]</tw-passagedata><tw-passagedata pid="71" name="Aggrieve!" tags="" position="100,975" size="100,100">You pick up a stapler and try to fend her off with a stapler.
 
 She immediately grabs you and pins you to the floor.
 
-* [[Receive donut.]]</tw-passagedata><tw-passagedata pid="69" name="Receive donut." tags="" position="1100,850" size="100,100">She sits on your face and anal vores you. It smells... well, like her asshole, but not like, awful. It disproves some prejudices you had about skunks. Now you&#39;re in her tummy.
+* [[Receive donut.]]</tw-passagedata><tw-passagedata pid="72" name="Receive donut." tags="" position="225,975" size="100,100">She sits on your face and anal vores you. It smells... well, like her asshole, but not like, awful. It disproves some prejudices you had about skunks. Now you&#39;re in her tummy.
 
 ## Game over
 
-* &lt;%= T.rewind() %&gt;</tw-passagedata><tw-passagedata pid="70" name="Abscond!" tags="" position="1225,850" size="100,100">You grab the forms, and high-tail it out.
+* &lt;%= T.rewind() %&gt;</tw-passagedata><tw-passagedata pid="73" name="Abscond!" tags="" position="350,975" size="100,100">You grab the forms, and high-tail it out.
 
 That was close.
 
 ## End of Chapter 3.
 
-* [[Title screen.]]</tw-passagedata><tw-passagedata pid="71" name="Chapter 5" tags="" position="100,975" size="100,100">Wednesday. You are in a stall at the flea market selling off all your shit. Honestly you&#39;re sort of just giving it away, but you&#39;ll take money, you guess.
+* [[Title screen.]]</tw-passagedata><tw-passagedata pid="74" name="Chapter 5" tags="" position="475,975" size="100,100">Wednesday. You are in a stall at the flea market selling off all your shit. Honestly you&#39;re sort of just giving it away, but you&#39;ll take money, you guess.
 
 Not sure what you&#39;ll do with the rest of it. Guess you&#39;ll give it to Selkie? She could probably use it. Or charity or something.
 
@@ -3241,7 +3323,7 @@ Selling:
 
 IDEA: Someone buys you? You escape because the person is a fan of Selkie&#39;s stream.
 
-IDEA:</tw-passagedata><tw-passagedata pid="72" name="Chapter 6" tags="" position="225,975" size="100,100">Thursday morning. You drop the keys of your apartment off with the leasing office. Quick breakfast as you walk across town.
+IDEA:</tw-passagedata><tw-passagedata pid="75" name="Chapter 6" tags="" position="600,975" size="100,100">Thursday morning. You drop the keys of your apartment off with the leasing office. Quick breakfast as you walk across town.
 
 You board the Amtrak with a suitcase full of your nothing.
 
@@ -3263,7 +3345,7 @@ She greets and snuggles you.
 
 ### End of Chapter 6
 
-* [[Title screen]]</tw-passagedata><tw-passagedata pid="73" name="Chapter 8" tags="" position="350,975" size="100,100">Friday.
+* [[Title screen]]</tw-passagedata><tw-passagedata pid="76" name="Chapter 8" tags="" position="725,975" size="100,100">Friday.
 
 The big day. On stream, Xena talks you through the safeword and expectations. Your safety is important, but she also needs to keep up her persona as a remorseless bitch who doesn&#39;t care about her prey&#39;s wellbeing or consent. That&#39;s what keeps bringing people back.
 
@@ -3278,7 +3360,7 @@ You sob and choke.
 &quot;Aww, does my snack wanna come out?&quot;
 
 * Y-yes please.
-* I want to cum...</tw-passagedata><tw-passagedata pid="74" name="Y-yes please." tags="" position="475,975" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="I want to cum..." tags="" position="600,975" size="100,100"></tw-passagedata><tw-passagedata pid="76" name="Chapter 9" tags="" position="725,975" size="100,100">&lt;%= T.streamChat([
+* I want to cum...</tw-passagedata><tw-passagedata pid="77" name="Y-yes please." tags="" position="850,975" size="100,100"></tw-passagedata><tw-passagedata pid="78" name="I want to cum..." tags="" position="975,975" size="100,100"></tw-passagedata><tw-passagedata pid="79" name="Chapter 9" tags="" position="1100,975" size="100,100">&lt;%= T.streamChat([
 [&quot;disasterPiece&quot;, &quot; where am i&quot;],
 [&quot;disasterPiece&quot;, &quot; i can&#39;t feel anything&quot;],
 [&quot;disasterPiece&quot;, &quot; i&#39;m so warm. and wet.&quot;],
