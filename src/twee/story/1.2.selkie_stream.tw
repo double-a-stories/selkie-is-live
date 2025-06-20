@@ -17,7 +17,7 @@ SelkieSwallows 🏳️‍⚧️☠️ • 5,591 subscribers • 68 watching • 
 The stream window says "STARTING SOON".
 
 <%= T.streamChat([
-    ["SelkieSwallows", "The fun will be starting soon! Stay tuned lovelies!"],
+    ["SelkieSwallows", "The fun will be starting soon! Stay tuned, my darlings dearest!"],
     ["SelkieSwallows", "Type /rules for rules"],
     ["SelkieSwallows", "Goal: Crush em! ($0/1000)"],
     ["excelenciaRodentia", "hi all!"],
@@ -29,7 +29,7 @@ The stream window says "STARTING SOON".
     ["stummyLiker", "bagooga"],
     ["awfulDenise", "rissky! how was ur week!"],
     ["riskySecret", "about to get a whole lot better }:)"],
-    ["DiamondiqueDisciple", "Hello lovelies! I'll be your moderator this evening."],
+    ["DiamondiqueDisciple", "Hello darlings dearest! I'll be your moderator this evening."],
     ["DiamondiqueDisciple", "Please be on your best behavior for mistress Selkie."],
     ["bellicoseDinosaur", "yayy! selkie's live!"],
     ["jamesStryker", "?rules"],
@@ -136,7 +136,7 @@ One more skull sits on her desk, just slightly out of frame.
 From the right of the frame, a hippopotamus enters and plops down in her gaming chair. She's wearing purple gym shorts and a tank-top, leaving her huge, squishy stomach exposed and conspicuously in frame.
 
 She beams at the chat, licks her lips, and says with a low, sultry voice, 
-<span.q-selkie>Hello lovelies, it's Selkie. Thanks for joining me on tonight's stream. I hope you're all ready for a rousing evening.</span>
+<span.q-selkie>Hello darlings dearest, it's Selkie. Thanks for joining me on tonight's stream. I hope you're all ready for a rousing evening.</span>
 
 * <%= T.asterSays("Chat 3", "Hi Selkie!", "hi selkie!") %>
 * <%= T.asterSays("Chat 3", "Happy Friday!", "happy friday!") %>
