@@ -6,23 +6,20 @@ You don't go into work today. How could you? You're too excited. You lie in bed.
 
 At 10 AM, your boss texts you about your deadlines.
 
-<pre>
-
-(["B", "aster"],
-["J", "Good morning."],
+<%= T.textChat(["B", "aster"],
+["A", "Good morning."],
 ["B", "you missed the 9 AM stand-up."],
 ["B", "where are you with that login page bug i gave you on thursday"],
 ["B", "y'know, the thing with the background image"],
 ["B", "this is critical. client needs it today."],
-["J", "Not done yet."],
+["A", "Not done yet."],
 ["B", "i told you to drop everything and work on it."],
-["J", "But then on Friday you said to drop everything to work on the checkout flow."],
+["A", "And on Friday you said to drop everything to work on the checkout flow."],
 ["B", "obviously i meant work on both."],
-["J", "I prioritized the checkout thing. I finished that on Friday like you asked."],
 ["B", "they're both critical."],
-["B", "come on aster, what am i supposed to tell the client"])
-
-</pre>
+["A", "I prioritized the checkout thing. I finished that on Friday like you asked."],
+["B", "sigh"],
+["B", "come on aster, what am i supposed to tell the client"]) %>
 
 * [[Aster: Fuck you I quit.]]
 
@@ -30,33 +27,33 @@ At 10 AM, your boss texts you about your deadlines.
 
 <pre>
 
-([
-["J", "That I'm a programmer, not a fucking miracle worker!"],
+<%= T.textChat(([
+["A", "Tell em I'm a programmer, not a fucking miracle worker!"],
 ["B", "i'm sorry?"],
-["J", "They can take the stupid login page and shove it up their stupid ungrateful asses."],
-["J", "I quit!"],
+["A", "They can take the stupid login page and shove it up their stupid ungrateful asses."],
+["A", "I quit!"],
 ["B", "be serious, aster."],
 ["B", "you can't quit. you didn't give your week's notice."],
 ["B", "we need to hire a replacement, and you need to KT to your replacement."],
-["J", "Well, I'll be dead next week"],
-["J", "so you can pry your KT off my cold dead skeleton."],
+["A", "Well, I'll be dead next week"],
+["A", "so you can pry your KT off my cold dead skeleton."],
 ["B", "what?"],
-["J", "I'm travelling to SoCal to get digested on a vore stream on Friday."],
-["J", "Consider this cashing in my PTO."],
+["A", "I'm travelling to SoCal to get digested on a vore stream on Friday."],
+["A", "Consider this cashing in my PTO."],
 ["B", "no you're not."],
 ["B", "don't bullshit me"],
-["J", "Is it so hard to believe I'd rather kill myself in a gut than spend another minute on this shitty fucking project appeasing your shitty requests for the shitty client!"],
+["A", "Is it so hard to believe I'd rather kill myself in a gut than spend another minute on this shitty fucking project appeasing your shitty requests for the shitty client!"],
 ["B", "sigh."],
 ["B", "this is what's wrong with your generation."],
 ["B", "nobody wants to work anymore."],
 ["B", "fuck you aster!"],
 ["B", "can't wait until i can replace you with a chatbot"],
-["J", "When you put it that way I can't imagine why."],
+["A", "When you put it that way I can't imagine why."],
 ["B", "why are you making this so hard?"],
 ["B", "do you want a raise? is that it?"],
 ["B", "i know you were pissed when X got that promotion instead of you"],
 ["B", "what do i have to do make you stay?"],
-["J", "Bite me."],
+["A", "Bite me."],
 ["B", "i would, but HR would kill me."],
 ["B", "what about a pizza party? whole office."],
 ["B", "good pizza too, not that shitty stuff we usually give out."],

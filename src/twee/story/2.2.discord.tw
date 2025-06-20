@@ -1,5 +1,17 @@
 :: Open Discord. [discord]
 
+TODO: Blah, kind of aimless let's try rewriting this convo from scratch.
+
+Selkie wants to tease and arouse the bunny as a thanks for the big donation. Aster is down for that teasing, but really wants a friend right now.
+
+Selkie is too good at enforcing her boundaries to let herself become their therapist or vent dump, but gently encourages them toward help. Aster is a too depressed/horny for that.
+
+Selkie off-handedly about the thing she *can* do for Aster, which is kill them. Their ears instantly perk up.
+
+Maybe this could be a good chance for branching paths.
+
+
+
 <%= T.discordChat([
 ["Selkie the Hippo", "Heyyy big spender ;3 :waving:"],
 ["Selkie the Hippo", "Welcome."],
@@ -11,7 +23,7 @@
 ["DisasterPiece", "i'm aster"],
 ["DisasterPiece", "jess aster. like disaster"],
 ["Selkie the Hippo", "Ohhh, haha, cute pun."],
-["Selkie the Hippo", "Nice to meet you, Aster Aster"],
+["Selkie the Hippo", "Nice to meet you, Aster"],
 ["Selkie the Hippo", "Tbh i don't get why all your chomphandles are so close to your IRL names"],
 ["DisasterPiece", "idk, it's just the first thing i thought of"],
 ["DisasterPiece", "are you implying your full legal name isn't selkie swallows?"],
