@@ -74,6 +74,3 @@ You've entered a time warp! This is a list of every passage in *<%= story.name %
   border-bottom: 2px solid var(--light);
   text-align: inherit;
 }
-
-:: Debug room.
-Hollis walks into the debug room, which is impossible, because there are no doors to either enter or exit the debug room. It literally does not exist.

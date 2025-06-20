@@ -1,22 +1,52 @@
 :: Chatlog Test [stream]
 
-<%= T.streamChat([
-    ["stummyLiker", "(stream regular, not too bright)"],
-    ["skippableFeline", "(scipi! met lucy at a con. soft and fuzzy)"],
-    ["riskySecret", "(vriska! predator, stream regular. collects lucy's skull)"],
-    ["awfulDenise", "(predator, stream regular. likes collecting skulls and squashing them)"],
-    ["adiposeAccumulator", "(horny voyeur)"],
-    ["carneusCalcified", "(an edgy wannabe dommy pred)"],
-    ["jamesStryker", "(impressionable first-time viewer)"],
-    ["pleadingPeristalsis", "(stream regular)"],
-    ["excelenciaRodentia", "(mousey!)"],
-    ["swifterSnackrifice", "(horny voyeur, prey)"],
-    ["ginnyTonic", "(envious prey girl! donor to the stream)"],
-    ["bellicoseDinosaur", "(belle! a nerdy shy dinosaur gal)"],
-    ["grumbleGeek", "(horny voyeur, not too bright)"],
-    ["narrowPantheon", "(horny voyeur, stream regular)"],
+You open chatlog. Everyone introduces themselves.
 
-    ["disasterPiece", "(you! nerdy suicidal bunny)"],
-    ["calorimeterMathematics", "(tonight's victim)"],
-    ["scrumplyDelucious", "(last week's victim)"],
+<%= T.streamChat([
+    ["SelkieSwallows", "I like to copy this passage and shuffle the names to write new chatlogs."],
+    ["SelkieSwallows", "These viewers are stream regulars with established rapport"],
+    ["disasterPiece", "i hate my life, i wanna die. i ain't got no iphone."],
+    ["bellicoseDinosaur", "i'm belle, a tiny dino girl! cameo!"],
+    ["skippableFeline", "i'm scipi, a fuzzy kitty girl! cameo!"],
+    ["riskySecret", "i'm risk! a spider? got lucy's skull)"],
+    ["awfulDenise", "i'm denise. a snake? i love crushing skulls. think ivy."],
+    ["ginnyTonic", "i'm juni! an envious bunnygirl! pleaz eat me ;3"],
+    ["excelenciaRodentia", "i'm ER! a mouse? matty was my friend."],
+    ["jamesStryker", "impressionable first-time viewer."],
+    ["carneusCalcified", "i'm carn. i'm an edgy wannabe dommy pred. think byron."],
+    ["pleadingPeristalsis", "lady if a man"],
+    ["stummyLiker", "tries to bother you"],
+    ["adiposeAccumulator", "you can"],
+    ["swifterSnackrifice", "think blue!"],
+    ["grumbleGeek", "count to two!"],
+    ["DiamondiqueDisciple", "and look for a red shoe!"],
 ]) %>
+
+## Screams of the Imminently Deceased
+
+<%= T.streamChat([
+    ["calorimeterMathematic", "(tonight's victim)"],
+    ["scrumplyDelucious", "(last week's victim)"],
+    ["xtalXanthamum", "it's a myserty"],
+]) %>
+
+:: Aster Chat Test [stream]
+
+Something really horny happens on the stream.
+
+* <%= T.asterSays("Aster Chat Test 2", "Mash the first row of keys.", "qweuirqu]e[") %>
+* <%= T.asterSays("Aster Chat Test 2", "Mash the second row of keys.", "akdsflj;afjldsf") %>
+* <%= T.asterSays("Aster Chat Test 2", "Mash the third row of keys.", "zmxcvb,zcxvn.") %>
+* <%= T.asterSays("Aster Chat Test 2", "/me cums and dies", "cums and dies", true, "💦") %>
+
+:: Aster Chat Test 2 [stream]
+
+You smash your keyboard.
+
+<%= T.streamChat([
+    s.asterSays,
+    ["riskySecret", "what an odd thing to say"],
+    ["awfulDenise", "you okay hon?"],
+]) %>
+
+:: Fuck Bitches

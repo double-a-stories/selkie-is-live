@@ -90,10 +90,11 @@ const streamChatOverrides = {
   "riskySecret": { color: "#005682", ornament: "🫐" },
   "excelenciaRodentia": { color: "#848", ornament: "" },
   "bellicoseDinosaur": { color: "orange", ornament: "" },
-  "awfulDenise": { color: "hsl(113, 100%, 20%)", ornament: "🐉" },
+  "awfulDenise": { color: "hsl(113, 100%, 20%)", ornament: "🐍" },
   "jamesStryker": { color: "#8B4", ornament: "🌱" },
-  "carneusCalcified": { color: "#C22", ornament: "" },
+  "carneusCalcified": { color: "#800", ornament: "" },
   "ginnyTonic": { color: "#C22", ornament: "🍸" },
+  "DiamondiqueDisciple": { color: "hsl(181, 100%, 44%)", ornament: "💠", },
 }
 
 const streamChatParams = (name) => {
@@ -226,7 +227,7 @@ const discordChatEntry = (name, message) => {
     <div class="discordchat_message">
       <span class="discordchat_entry_name ${name.toLowerCase()}" 
       style="color: ${color}">${name}</span><br>
-      ${message}
+      ${passage.render(message)}
     </div>
   </div>`;
 }

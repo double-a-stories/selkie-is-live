@@ -1,17 +1,17 @@
-:: Welcome tonight's guest. [stream]
+:: Selkie: Welcome tonight's guest. [stream]
 
-<span.q-selkie>You all know him as calorimeterMathematic...</span>
-<span.q-selkie>Soon you'll know him as "more of Selkie's ass"...</span>
-<span.q-selkie>Please put your paws, hooves, and claws together, for tonight's guest...</span>
+<span.q-selkie>You all know him as calorimeterMathematic... Soon you'll know him as "more of Selkie's ass"... Please put your paws, hooves, and claws together, for tonight's guest...</span>
+
+She clicks something which plays a fake drumroll...
+
 <span.q-selkie>Matty!</span>
 
-Fake applause plays as a black-and-white border collie inches into frame and sits on Selkie's bed, wearing nothing but his underwear.
+Fake applause plays as a black-and-white border collie inches into frame and sits on the edge of Selkie's bed, wearing nothing but his underwear and a binder.
 
 <span.q-matty>...!</span>
 
-* <%= T.asterSays("Chat Hi Matty", "Hi Matty!", "hi matty!!") %>
-* <%= T.asterSays("Chat Hi Matty", "Woah, CM?", "woah, cm?") %>
-* <%= T.asterSays("Chat Hi Matty", "Oh damn.", "oh damn.") %>
+* <%= T.asterSays("Chat Hi Matty", "Hi puppy!", "aw, hi puppy!!") %>
+* <%= T.asterSays("Chat Hi Matty", "Calimath?", "oh damn, calimath?") %>
 
 :: Chat Hi Matty [stream]
 
@@ -19,24 +19,24 @@ Fake applause plays as a black-and-white border collie inches into frame and sit
 ["bellicoseDinosaur", "oh!"],
 ["swifterSnackrifice", "hiii matty!"],
 ["excelenciaRodentia", "holy shit?"],
+s.asterSays,
 ["bellicoseDinosaur", "matty!!"],
-["narrowPantheon", "aww, hi cutie!!"],
+["DiamondiqueDisciple", "Aww, hi cutie!! Welcome to the stream!"],
 ["adiposeAccumulator", "who's matty? that's hippofood >w<"],
 ["awfulDenise", "oooh, what a cute puppy!"],
-s.asterSays,
 ["excelenciaRodentia", ";;;a,as,d,,,,"],
 ["excelenciaRodentia", "HOLY SHIT"],
 ["pleadingPeristalsis", "matty!"],
 ["stummyLiker", "MATHY"],
-["excelenciaRodentia", "CM joined stream???"],
+["excelenciaRodentia", "cali joined stream???"],
 ["excelenciaRodentia", "he didn't tell me, what the fuck??"]
 ])
 %>
-<%= T.donation("awfulDenise", "3", "hiii cutie!", "") %>
+<%= T.donation("awfulDenise", "3", "hi cali! nice to ssee you on this sside of the sscreen!", "") %>
 
-Matty's face is stuck in a guilty blush, and he squirms and shivers slightly. 
+Hisface is stuck in a guilty blush. He squirms and shivers slightly. 
 
-<span.q-selkie>This cutie here made a generous private donation to the channel, and will shortly be making a generous donation to my hips!</span>
+<span.q-selkie>This lovely puppy made a generous private donation to the channel, and will shortly be making a generous donation to my hips!</span>
 
 * [[Selkie: Play with your food.]]
 

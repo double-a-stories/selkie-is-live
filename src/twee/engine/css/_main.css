@@ -28,7 +28,7 @@ body {
   box-sizing: border-box;
   color: var(--color);
   font-smooth: never;
-  font: clamp(1rem, 3vw, 1.2rem) / 1.6 var(--font-stack);
+  font: 1rem/ 1.6 var(--font-stack);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -146,4 +146,9 @@ abbr[title]:hover {
 
 .w-100 {
   width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

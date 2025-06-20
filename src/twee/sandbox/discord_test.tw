@@ -1,0 +1,39 @@
+:: Discord Test [discord]
+
+<%= T.discordChat([
+    ["Selkie the Hippo", "Hey everyone!! It's me!!"],
+    ["Selkie the Hippo", "Everybody's favorite **#1 rated streamer**"],
+    ["Selkie the Hippo", "Selkie G. Swalton!!"],
+    ["DisasterPiece", "woah!! if it isn't a..."],
+    ["DisasterPiece", "hippopotamus! hey!!!"],
+    ["Selkie the Hippo", "Looks like you're *all alone on a late night?*"],
+    ["Selkie the Hippo", "All your friends, **abandoned you for the chyme you are**?"],
+    ["Selkie the Hippo", "Prey, gone down the drain?"],
+    ["DisasterPiece", "[Disposing] in a goddamn garbage can?"],
+    ["Selkie the Hippo", "Well have i got a special deal for lonely hearts like you!!"],
+    ["Selkie the Hippo", "if you've [lost control of your life]"],
+    ["Selkie the Hippo", "then you just gotta grab it by the [silly strings]"],
+    ["Selkie the Hippo", "Why be the [little bunny] who hates its [$4.99] life"],
+    ["Selkie the Hippo", "When you can be a"],
+    ["DisasterPiece", "[cum shot!!!]"],
+    ["DisasterPiece", "[cum shot!!!!]"],
+    ["DisasterPiece", "[cum shot!!!!!]"],
+    ["Selkie the Hippo", "that's right!! now's your chance to be a [[big shot]]!!"],
+    ["Selkie the Hippo", "and i have just."],
+    ["Selkie the Hippo", "the thing."],
+    ["Selkie the Hippo", "you need."],
+    ["Selkie the Hippo", "that's"],
+    ["Selkie the Hippo", "[[hyperlink blocked]]."],
+    ["Selkie the Hippo", "you want it."],
+    ["Selkie the Hippo", "you want [[hyperlink blocked]], don't you."],
+    ["Selkie the Hippo", "well have i got a deal for you!!"],
+    ["Selkie the Hippo", "all you have to do is show me."],
+    ["Selkie the Hippo", "your [[heartshapedobject]]."],
+    ["Selkie the Hippo", "you're light ner< aren't you?"],
+    ["Selkie the Hippo", "you've got the [[light.]]"],
+    ["Selkie the Hippo", "why don't you"],
+    ["Selkie the Hippo", "[[show it off?]]"],
+    ["Selkie the Hippo", "haeahaeahaeahaeah!!"]
+]) %>
+
+* [[Make a deal.|Debug room.]]
