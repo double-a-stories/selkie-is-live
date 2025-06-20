@@ -7,4 +7,28 @@ Your name is Aster. You are in the debug room.
 * [[Chatlog Test]]
 * [[Aster Chat Test]]
 * [[Discord Test]]
-* [[Afterlife|Chapter 9]] (spoilers!!!)
+<!-- * [[Afterlife|Chapter 9]] (spoilers!!!) -->
+
+
+<% if (!StoryFlags.isSet("devmode")) { %>
+* [[Enable Dev Mode]]
+<% } else { %>
+* [[Disable Dev Mode]]
+<% } %>
+
+* [[Reset Save Data]]
+
+:: Reset Save Data
+
+<% StoryFlags.reset(); story.state = {}; %>
+
+:: Enable Dev Mode
+<%
+StoryFlags.set("devmode"); StoryFlags.unset("devModeLastPassage"); setTimeout(() => window.location.reload(), 1000) %>
+(Refresh page)
+
+:: Disable Dev Mode
+<%
+StoryFlags.unset("devmode"); StoryFlags.unset("devModeLastPassage"); setTimeout(() => window.location.reload(), 1000) %>
+
+(Refresh page)
