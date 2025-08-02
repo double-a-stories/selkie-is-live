@@ -56,6 +56,7 @@ The stream window says "STARTING SOON".
     ["awfulDenise", "hiya DP!"],
     ["riskySecret", "sup DP"],
     ["ginnyTonic", "hii aster"],
+    ["DiamondiqueDisciple", "welcome back DP", true],
     ["riskySecret", "surprised ur still kicking lol"],
     ["grumbleGeek", "fr we gotta get DP on a show"],
     ["riskySecret", "i'll donate $300 if selkie eats dp"],
@@ -81,10 +82,12 @@ The stream window says "STARTING SOON".
     ["awfulDenise", "sselkie is the best and meanest pred on the ssite lol"],
     ["awfulDenise", "no ssafeword or nothing"],
     ["awfulDenise", "(don't tell the prey, they think there is one)"],
-    ["DiamondiqueDisciple", "This is a kill show, James. Please mind the tags."],
+    ["DiamondiqueDisciple", "Reminder: This is a kill show."],
+    ["DiamondiqueDisciple", "Tonight's guest has provided full legal consent!"],
     ["jamesStryker", "oh heavens :S"],
     ["jamesStryker", "what's that?"],
     ["riskySecret", "x3"],
+    ["awfulDenise", "he's hopeless lol"],
     ["SelkieSwallows", "Let's get started."],
     ["SelkieSwallows", "You all ready to meet tonight's meat?"],
 ])
@@ -110,6 +113,7 @@ The stream window says "STARTING SOON".
     ["riskySecret", "YESSSS"],
     ["skippableFeline", ":3 :3 :3"],
     ["carneusCalcified", "certainly."],
+    ["DiamondiqueDisciple", "Recording this stream is expressly forbidden!"],
     ["bellicoseDinosaur", "yes!!"],
     ["SelkieSwallows", "Perfect."],
     ["SelkieSwallows", "Showtime."],
@@ -118,6 +122,8 @@ The stream window says "STARTING SOON".
 * [[Stream: Start.]]
 
 :: Stream: Start. [stream]
+
+<% setup.startMusic("stream2") %>
 
 With a colorful wipe transition, the stream opens to the studio of Selkie Exotix, professional pred streamer.
 
@@ -136,7 +142,10 @@ One more skull sits on her desk, just slightly out of frame.
 From the right of the frame, a hippopotamus enters and plops down in her gaming chair. She's wearing purple gym shorts and a tank-top, leaving her huge, squishy stomach exposed and conspicuously in frame.
 
 She beams at the chat, licks her lips, and says with a low, sultry voice, 
-<span.q-selkie>Hello darlings dearest, it's Selkie. Thanks for joining me on tonight's stream. I hope you're all ready for a rousing evening.</span>
+
+<span.q-selkie>Hello darlings dearest, it's Selkie!</span>
+<span.q-selkie>Thanks for joining me on tonight's stream.</span>
+<span.q-selkie>I hope you're all ready for a *rousing* evening.</span>
 
 * <%= T.asterSays("Chat 3", "Hi Selkie!", "hi selkie!") %>
 * <%= T.asterSays("Chat 3", "Happy Friday!", "happy friday!") %>
@@ -146,11 +155,12 @@ She beams at the chat, licks her lips, and says with a low, sultry voice,
 <%= T.streamChat([
     s.asterSays,
     ["excelenciaRodentia", "hiiiii owo"],
+    ["stummyLiker", "HIPPO INCOMING"],
     ["swifterSnackrifice", "hi selkie!"],
     ["stummyLiker", "HIII"],
-    ["ginnyTonic", "hi!"],
+    ["ginnyTonic", "hii!"],
+    ["jamesStryker", "woah hippo"],
     ["bellicoseDinosaur", "hell-o! :)"],
-    ["DiamondiqueDisciple", "Hello, mistress!"],
     ["skippableFeline", "purr, hi selkie!"],
     ["pleadingPeristalsis", "hiii!"],
     ["grumbleGeek", "HI SELKIE"],
@@ -169,24 +179,27 @@ Selkie blows a little kiss at the camera, and gropes her gut.
 
 She gets in close to the camera.
 
-<span.q-selkie>I'm SelkieSwallows. Please enjoy yourselves in chat, but keep the drama to a minimum. Do not record this stream!</span>
+<span.q-selkie>I'm Selkie. Some call me "Mistress". My former guests call me "Home." You lucky lot are going to watch that happen.</span>
+
+She smiles and smacks her thigh, which jiggles softly.
 
 <span.q-selkie>Tips are highly encouraged! If we hit the $1200 goal tonight, you'll all get to enjoy watching my prey churn.</span>
 
 She clears her throat.
 
-<span.q-selkie>Final warning: ***This is a kill show***. Everything you are about to see is legal and consensual. If you're an anti-acid or a PRA, this is your warning to leave now, and take your complaints to another website.</span>
+<span.q-selkie>Final warning: ***This is a kill show***. Everything you are about to see is perfectly legal and consensual. If you're anti-acid or some easily offended PRA, this is your warning to leave now. Go bitch on some other website.</span>
 
-With a smirk, She lifts a polished white skull of her desk.
+* [[Selkie: Last week's guest...]]
 
-<span.q-selkie>As always, we'll start the night off by bidding a heartful farewell to last week's guest.</span> The hippo brandishes the skull to the camera. You recognize it as belonging to a whitetail deer, mostly because you watched her be digested on stream last week.
+:: Selkie: Last week's guest... [stream]
 
-* [[Show off skull.]]
+<span.q-selkie>As always, we'll start the night off by bidding a heartfelt farewell to last week's guest.</span>
 
-:: Show off skull. [stream]
+She lifts a polished white cervine skull off her desk, and brandishes it to the camera. You recognize it as belonging to a whitetail deer. You know because you watched her be digested on stream last week while jerking off.
 
-She shows it off to the camera.
 <span.q-selkie>You regulars will surely remember sweet little Lucy, a.k.a, scrumplyDelucious, a long time subscriber to the channel.</span>
+
+<span.q-selkie>Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!</span>
 
 <%= T.streamChat([
     ["riskySecret", "oh nooo, scrumply! }:)"],
@@ -198,22 +211,25 @@ She shows it off to the camera.
     ["bellicoseDinosaur", "just bones now..."],
     ["grumbleGeek", "pudge and bones"],
     ["excelenciaRodentia", "btw is CM in chat?"],
+    ["carneusCalcified", "yawn"],
     ["ginnyTonic", "hot"],
     ["disasterPiece", "ER u mean caliMath? nah haven't seen him"],
     ["skippableFeline", "girl skullzzzzz :3"],
 ]) %>
 
-<span.q-selkie>Last week, she made the wonderful decision to join me on stream, so she could fulfill her lifelong dream of being hippo pudge. Say goodbye, everyone!</span>
 
 * <%= T.asterSays("Goodbye, Lucy.", "Goodbye Lucy.", "goodbye, lucy.") %>
 * <%= T.asterSays("Goodbye, Lucy.", "R.I.P.", "rip") %>
 
 :: Goodbye, Lucy. [stream]
 
-<span.q-selkie>Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's just more hippo pudge! Her scrumptious little squeaks will be sorely missed, but she's in a much better place now.</span> She smirks and wiggles her gut.
+She looks affectionately at the skull, then at her exposed belly, which she jostles gently.
+
+<span.q-selkie>Yes, Lucy was a dedicated student, a loving girlfriend, and a platinum subscriber to the channel. And now, she's in a better place as my soft, jiggly fat.</span>
 
 <%= T.streamChat([
     ["swifterSnackrifice", "poor little lucy!"],
+    ["skippableFeline", "DEAD!"],
     ["excelenciaRodentia", "lucyyyy"],
     s.asterSays,
     ["riskySecret", ":33"],
@@ -246,19 +262,19 @@ Selkie places the skull inside a small cardboard box.
 <span.q-selkie>As the first $100 donor from last stream, this beautiful skull of hers will be once again adding to the private collection of riskySecret! Thanks risky! It's viewers like you who make this show possible.</span>
 
 <%= T.streamChat([
-    ["riskySecret", ":33"],
-    ["riskySecret", "got myself a nice bathroom decoration!"],
-    ["ginnyTonic", "shoulda been me"],
-    ["awfulDenise", "gonna miss the cute thing"],
-    ["riskySecret", "still can be, ginny!"],
     ["carneusCalcified", "doe slut definitely had it coming"],
     ["DiamondiqueDisciple", "Lose the misogyny, CC"],
     ["carneusCalcified", "fine."],
+    ["riskySecret", ":33"],
+    ["awfulDenise", "gonna miss the little thing"],
+    ["riskySecret", "i got myself a nice bathroom decoration!"],
+    ["ginnyTonic", "shoulda been me"],
+    ["riskySecret", "still can be, ginny!"],
     ["awfulDenise", "ur lucky you got her first rissk"],
     ["awfulDenise", "i love crushing them"],
     ["riskySecret", "you're twisted gurly x3"],
     ["awfulDenise", "no, just kinky"],
-    ["awfulDenise", "snake pun."],
+    ["awfulDenise", "(ssnake pun)"],
 ]) %>
 
 * [[Continue.|Ginny donates.]]
@@ -266,23 +282,24 @@ Selkie places the skull inside a small cardboard box.
 :: Ginny donates. [stream]
 
 <%= T.streamChat([
-    ["bellicoseDinosaur", "god this has me feeling all kinds of ways"],
+    ["bellicoseDinosaur", "gods this has me feeling all kinds of ways"],
     ["ginnyTonic", "honestly one of my favorite parts of the stream teehee..."],
     ["ginnyTonic", "uhhmm...!"],
 ]) %>
 
 <%= T.donation("ginnyTonic", "50", "plz write my name on ur gut!", "") %>
 
-<span.q-selkie>Oh, thanks for the fifty, Ginny! You've earned a spot riiiiiiight here! It's perfectly natural to feel envious of Lucy, but there's plenty of room in this fat gut!</span> Selkie takes a marker and carefully writes *Juniper Alexis Greenall* right below her belly button.
+<span.q-selkie>Oh, thanks for the fifty, Ginny! You've earned a spot riiiiiiight here! It's perfectly natural to feel envious of Lucy, but there's plenty of room in this fat gut!</span> Selkie takes a marker and carefully writes *Junie Greenall* right below her belly button.
 
 
 <%= T.streamChat([
     ["ginnyTonic", "ashdkfahsdfkjh"],
-    ["ginnyTonic", "NOO WTF THAT'S MY FULL NAME hfalkdsfhjasdhf"],
+    ["ginnyTonic", "NOO WTF THAT'S MY FULL NAME hfalkdsfhjasdhf HOW'D YoU EVEN"],
     ["skippableFeline", "awww hehe"],
     ["carneusCalcified", "y'know GT selkie isn't the only pred..."],
     ["carneusCalcified", "you can dm me if you need to get churned"],
-    ["ginnyTonic", "adjkak;"],
+    ["ginnyTonic", "djkd;ak"],
+    ["ginnyTonic", "hot,,,,"],
     ["DiamondiqueDisciple", "No poaching, CC"],
 ])
 %>
@@ -310,11 +327,11 @@ She happily massages her tummy. It lets out a loud gurgle into the desk mic posi
 
 <span.q-selkie>You all know him as calorimeterMathematic... Soon you'll know him as "more of Selkie's ass"... Please put your paws, hooves, and claws together, for tonight's guest...</span>
 
-She clicks something which plays a fake drumroll...
+Drumroll...
 
 <span.q-selkie>Matty!</span>
 
-Fake applause plays as a black-and-white border collie inches into frame and sits on the edge of Selkie's bed, wearing nothing but his underwear and a binder.
+Applause as a black-and-white border collie inches into frame and sits on the edge of Selkie's bed, wearing nothing but his underwear and a binder.
 
 <span.q-matty>...!</span>
 
@@ -323,28 +340,28 @@ Fake applause plays as a black-and-white border collie inches into frame and sit
 
 :: Chat Hi Matty [stream]
 
+<span.q-selkie>This lovely puppy made a generous private donation to the channel, and will shortly be making a generous donation to my hips!</span>
+
 <%= T.streamChat([
-["bellicoseDinosaur", "oh!"],
+["DiamondiqueDisciple", "Welcome to the stream, cutie! Let's show him a warm welcome!"],
+["bellicoseDinosaur", "oh! CM!"],
 ["swifterSnackrifice", "hiii matty!"],
 ["excelenciaRodentia", "holy shit?"],
 s.asterSays,
 ["bellicoseDinosaur", "matty!!"],
-["DiamondiqueDisciple", "Aww, hi cutie!! Welcome to the stream!"],
 ["adiposeAccumulator", "who's matty? that's hippofood >w<"],
 ["awfulDenise", "oooh, what a cute puppy!"],
 ["excelenciaRodentia", ";;;a,as,d,,,,"],
 ["excelenciaRodentia", "HOLY SHIT"],
 ["pleadingPeristalsis", "matty!"],
 ["stummyLiker", "MATHY"],
-["excelenciaRodentia", "cali joined stream???"],
+["excelenciaRodentia", "matt joined stream???"],
 ["excelenciaRodentia", "he didn't tell me, what the fuck??"]
 ])
 %>
 <%= T.donation("awfulDenise", "3", "hi cali! nice to ssee you on this sside of the sscreen!", "") %>
 
-Hisface is stuck in a guilty blush. He squirms and shivers slightly. 
-
-<span.q-selkie>This lovely puppy made a generous private donation to the channel, and will shortly be making a generous donation to my hips!</span>
+His face is stuck in a guilty blush as he watches the chat scroll by from Selkie's screen. He squirms and shivers slightly.
 
 * [[Selkie: Play with your food.]]
 
@@ -373,7 +390,7 @@ He shuts his eyes and stammers out, <span.q-matty>Hi Selkie, hi chat! I'm.... oh
 :: Prey: Declare consent. [stream]
 
 
-She hands him an index card. <span.q-selkie>And, what would you like to say the nice people of Chompstr.tv's Moderation and Legal Team?</span>
+She hands him an index card, and points her phone camera at him. <span.q-selkie>And, what would you like to say the nice people of Chompstr.tv's Moderation and Legal Team?</span>
 
 <img class="w-100" src="assets/img/cuecard.webp" alt="An index card with pink text. Say Aloud: I [YOUR FULL NAME] (matthew curtis), BEING OF SOUND MIND, DECLARE MY IRREVOCABLE INFORMED CONSENT TO BE DIGESTED. I CERTIFY THAT I HAVE FILED ALL NECESSARY FORMS, INCLUDING PETITION 15.9 (C), WITH THE SUPERIOR COURT OF [YOUR HOME STATE] (south california). I HEREBY CEDE ALL RIGHTS TO MY BODY, MY REMAINS, AND LIKENESS TO SELKIE, TO ENJOY FOR THE DURATION OF THIS LIVESTREAM, AND IN PERPETUITY. now i'm just food, poop, and pudge. bark bark!">
 
@@ -393,13 +410,15 @@ Selkie grins. <span.q-selkie>Don't sue me, but I added that last part. Hah! Whoe
 
 :: Selkie: Foreplay. [stream]
 
-Selkie taps a button on the stream, and a 20 minute timer appears in the corner of the frame. She lies on her back, and pats her exposed belly.
+The hippopotamus lies on her back, and pats her exposed belly.
 
 <span.q-selkie>Climb up here, pup. You're about to get the snuggles of a lifetime.</span> Matty slowly shuffles up to her. She wraps her arms around him, and pulls him down onto her. He lands straddling her leg, with his face pressed against her belly. He lets out a noise.
 
 <span.q-selkie>Gosh, you are *very* cute.</span> The chat floods with messages both aroused and envious, all clearly in agreement. <span.q-selkie>You've got twenty whole minutes of foreplay to enjoy me to the fullest. No need to be shy.</span>
 
-After a moment, he begins gently humping her fat thigh.
+A 20 minute timer appears in the corner of the frame. Foreplay usually only lasts for ten. He must have paid extra for the time. You feel a bit jilted, but still keep your eyes fixed. He's about to die, you suppose, so he might as well get to cum.
+
+He's hesitant at first, but after a moment, he begins gently humping her fat thigh.
 
 <span.q-selkie>Theeere you go.</span> She pulls the hem of her shorts down, exposing the hairless skin right above the soft sweaty bulge in her shorts. <span.q-selkie>In your messages you said you liked smells. Is that so?</span>
 
@@ -412,13 +431,13 @@ At her command, he takes a deep whiff, which fully blanks his brain. His snout s
 * [[Chat: Watch.]]
 :: Chat: Watch. [stream]
 
-TODO! write a long chatlog including side conversation, watching matty, and getting excited for the big moment. excelenciaRodentia works out their complicated feelings; they were obviously best friends. roommates, even?
+TODO! long chatlog including several side conversations, watching matty, and getting excited for the big moment. excelenciaRodentia works out their complicated feelings; they were obviously best friends. roommates, even?
 
 * [[Prey: Shoot.]]
 
 :: Prey: Shoot. [stream]
 
-After eighteen minutes of humping, suddenly convulses and lets out a very loud whine. <span.q-matty>Ahhnnnn~! Aaah~! S-Selkieeeee...!</span> He collapses with a big grin, stars and birds spinning around his head.
+After eighteen minutes of humping, suddenly convulses and lets out a very loud whine. <span.q-matty>Ahhnnnn\~! Aaah\~! S-Selkieeeee...!</span> He collapses with a big grin, stars and birds spinning around his head.
 
 Selkie mugs to camera, gently rubbing a hand down his back. <span.q-selkie>There you go pup! Good job!</span> The countdown on screen hits zero. She sits up. <span.q-selkie>Ope, perfect timing. Looks like it's time for *my* fun.</span>
 
@@ -436,9 +455,9 @@ TODO: chatlog. everyone dogpiles matty to get in that tummy. EAT HIM SELKIE!
 
 :: Prey: Beg. [stream]
 
-He whines, <span.q-matty>I-I- thought you said you'd take it a little slower with me this time...?</span>
+He whines, <span.q-matty>I-I- thought we agreed to take it a little slower this time...?</span>
 
-She smirks coldly. <span.q-selkie>Did. Twenty whole minutes. Poor Lucy barely got ten.</span> She grips him by the chin. Fear enters his eyes. From the corner of her eye, she can tell chat is loving it, which warms her heart. <span.q-selkie>You do want to be hippo food; aren't you? It'd be a shame after you came all this way.</span>
+She smirks coldly. <span.q-selkie>We did. Twenty whole minutes spent not eating you. Poor Lucy barely got ten.</span> She grips him by the chin which makes him flinch. Fear flashes on his face, but he tries to cover it by smiling weakly. From the corner of her eye, she can tell chat is loving it, which warms her heart. <span.q-selkie>You are hippo food, aren't you? It'd be a shame after you came all this way.</span>
 
 He breathes heavily and crumples into her gut. <span.q-matty>Eep, I... I want to! it's just... so much more than I thought. I need a second.</span>
 
@@ -455,7 +474,7 @@ She hands him her phone and lets him watch the chat go by. He clutches her hand.
 <%= T.donation("awfulDenise", "5", "get his ass! you're so fucking hot selkie.", "") %>
 <%= T.donation("excelenciaRodentia", "20", "become hippo fat, loser! see if i care!", "🥉") %>
 
-<span.q-selkie>Oh,</span> Selkie giggles, <span.q-selkie>looks like your friend ER has some choice words for you. Thanks for the donations everyone!</span>
+Selkie giggles, directing Matty's eyes to the screen. <span.q-selkie>Oh, looks like your friend ER has some choice words for you. Thanks for the donations everyone!</span>
 
 * [[Matty: Breathe.]]
 
@@ -482,7 +501,7 @@ graphic description of the whole swallowing process but it's entirely from admir
 ["stummyLiker", "HOPY SHIT"],
 ["riskySecret", "lmao. denied!"],
 ["jamesStryker", "whoa. is that even allowed?"],
-["swifterSnackrifice", "god damn"],
+["swifterSnackrifice", "godzamn"],
 ["grumbleGeek", "this is so hot"],
 ["bellicoseDinosaur", "eeeee i love the swallow noises! full on ASMR teehee"],
 ["pleadingPeristalsis", "huff. the way she's swallowing him like it was nothing..."],

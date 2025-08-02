@@ -103,9 +103,21 @@ const AmbientSounds = window.AmbientSounds = {
     volume: 0.1,
     loop: true
   }),
+  title: new Howl({
+    ...howlDefaults,
+    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/.mp3`],
+    volume: 0.2,
+    loop: true
+  }),
   stream1: new Howl({
     ...howlDefaults,
-    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/creature-comforts.mp3`],
+    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/3am.mp3`],
+    volume: 0.2,
+    loop: true
+  }),
+  stream2: new Howl({
+    ...howlDefaults,
+    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/hyper-fixation.mp3`],
     volume: 0.2,
     loop: true
   }),
@@ -118,7 +130,6 @@ const SoundEffects = window.SoundEffects = {
   })
 };
 
-// ambienceOnPassageTag(AmbientSounds.title, "menu");
 ambienceOnPassageTag(AmbientSounds.birds, "morning");
 ambienceOnPassageTag(AmbientSounds.gurgle, "vore");
 ambienceOnPassageTag(AmbientSounds.crickets, "outside");
