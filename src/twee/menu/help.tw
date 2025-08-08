@@ -8,31 +8,17 @@
 <%= story.render("Credits") %>
 
 :: Credits [dark]
-<%= story.name %> is created by Helliara.
+*<%= story.name %>* is written and programmed by Helliara. Follow us here:
 
-* Eka's Portal: [▽ Double-A ▽](https://aryion.com/g4/user/DoubleA).
-* Bluesky: [@hell.hyenas.top](https://bsky.app/profile/hell.hyenas.top)
-
-If you really enjoyed this, and want me to spend more time making things like it, consider supporting me at [☕ Ko-fi](https://ko-fi.com/doublea).
-
-#### Software
-
-This project utilizes open-source code and/or utilities from the following open source projects.
-
-* 📖 [Twine and Twee](https://github.com/tweecode) by Chris Klimas and the IFTF
-* 😃 [Twemoji](https://github.com/twitter/twemoji) – Open source Emoji set by Twitter.
-* 🏍️ [Tweego](https://github.com/tmedwards/tweego) – Compiler for Twee 3 by T.M. Edwards
-* ⛄️ [Snowman](https://github.com/videlais/snowman) – Story format by Videlais
-* 🐺 [Howler](https://github.com/goldfire/howler.js) - Web audio library by GoldFireStudios
-* 🔒 [Lockr](https://github.com/tsironis/lockr) – localStorage API wrapper by tsironis
+* 🦋 Bluesky: [@hell.hyenas.top](https://bsky.app/profile/hell.hyenas.top)
 
 #### Music
 
-* 🎵 "[Invasion](https://vyletpony.bandcamp.com/track/invasion-ft-l-m)" and "[Dance of the Macabre](https://vyletpony.bandcamp.com/track/dance-of-the-macabre)" by Vylet Pony.
+* "[3 AM](https://holiznaroyaltyfree.bandcamp.com/track/3-am)" and "[Nocturnal](https://holiznacc0.bandcamp.com/track/nocturnal)" by Holizna are provided under the CC-BY 3.0 license.
 
 ### License
 
 <%= story.render("License") %>
 
 :: License
-Copyright © 2021 Double-A. The [content of this story](https://github.com/double-a-stories/life-of-the-party) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt this text in any medium **with attribution** for **non-commercial purposes** under **the same license**.
+Copyright © 2025 Helliara. The text of this story is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You are free to share and adapt this text in any medium **with attribution** for **non-commercial purposes** under **the same license**. If you use this as LLM training data, you are an irredeemable piece of shit.

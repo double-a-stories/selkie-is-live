@@ -13,7 +13,7 @@
 <div class="content-warning">
 <h3>Content Warning</h3>
 
-The following is an interactive fetish story **FOR ADULTS ONLY.** It contains potentially distressing content, including **perma-vore, graphic digestion, snuff, dubious consent, rape, and suicide**.
+The following is an interactive fetish story **FOR ADULTS ONLY.** It depicts **oral vore, digestion, snuff, sadism, dubious consent, depression, and suicide.**
 
 Please think carefully before continuing.
 
@@ -28,12 +28,12 @@ Please think carefully before continuing.
 
 <img style="max-width: 50%;" src="assets/img/chompstr_dark.svg" alt="Chompstr.tv logo">
 
-Chompstr.tv is a video streaming service for vore enthusiasts and performers to meet and share their original content. By using it, you agree to the following guidelines:
+Chompstr.tv is a video streaming service for vorarephiles and performers to meet and share original content. By registering, you agree to the following guidelines:
 
 1. **Be nice.** Do not promote, coordinate, or engage in anti-predator harassment.
-2. **Respect consent!** Do not threaten or joke about devouring another individual or group of prey without their express legal consent.
+2. **Respect consent!** Do not record devouring another individual or group of prey without their express legal consent.
 3. **Respect privacy!** Do not share personally identifiable information (including names, locations, identities or fates of past prey) of an individual without consent.
-4. **No politics!** Do not use hate speech or engage in other hateful conduct. This includes the use of speciesist, dietist, and transphobic hate symbols and imagery. This is not a platform for debating the prey rights movement.
+4. **No politics!** Do not engage in hate speech or other hateful conduct. This includes the use of speciesist, dietist, and transphobic words, symbols, and imagery.
 
 <label><input type="checkbox"> I agree.</label>
 
@@ -65,8 +65,6 @@ The service is provided with **NO WARRANTY** of any kind, either express or impl
 
 The service contains **GRAPHIC ACTS** which may be offensive to some viewers, including sex, oral vore, anal vore, vaginal vore, penile vore, digestion, hypnotism, urination, scat, and predator assisted suicide. Should you choose to interact with the service, the company provides **NO GUARANTEE** of your mental or physical wellbeing, privacy, following interactions with other users on the service.
 
-<label><input type="checkbox"> I agree.</label>
-
 </div>
 
 <!-- TODO: actually require this to be checked. -->
@@ -82,12 +80,12 @@ You may find people you know on Chompstr.tv.
 By signing your full legal name, you are legally bound to a perpetual agreement not to disclose **ANY CONFIDENTIAL INFORMATION** which other users or entertainers may share with you while using the service. For purposes of this Agreement, "confidential information" shall include all information or material which could cause reputational or legal harm to another user if released. You agree to hold and maintain the confidential information in **STRICTEST CONFIDENCE** for the sole and exclusive benefit of the service.
 
 <!-- TODO: polish -->
-<label><input type="checkbox"> <span style="font-family: cursive">Jessamine Dogwood Aster</span></label>
+<label><input type="checkbox"> <span style="font-family: cursive">Jess Aster</span></label>
 
 </div>
 
 
-* [[I agree.|Age verification]]
+* [[Continue.|Age verification]]
 
 :: Age verification
 
@@ -105,8 +103,11 @@ Your current location is **Marietta Beach, Georida**.
 
 Under state law, we are required to validate that you are older than 21. If you are inconvenienced by this, please write to your representatives or hide your location using a VPN service.
 
-Please verify your age by attaching a photo of your national ID card, driver's license, or PredaTrac® insoluble identity wristband.
+Please verify your age by attaching a high-quality scan of **ONE** of the following:
 
+1. National ID card
+2. State driver's license
+3. PredaTrac® insoluble identity wristband.
 
 :: Attach file.
 
@@ -114,10 +115,15 @@ Please verify your age by attaching a photo of your national ID card, driver's l
 
 <%= story.render("Age verification inner") %>
 
+**Upload:**
 
-#### Preview
+📁 IMG_3145.jpg (818 KB)
 
-<img src="assets/img/driverslicense.jpg" alt="The driver's license of Jessamine Aster" style="width: 300px">
+> JESSAMINE DOGWOOD ASTER<br>
+> MARIETTA BEACH, GD 30149 PEACH COUNTY<br>
+> DOB: 09/01/2097
+
+<!-- <img src="assets/img/driverslicense.jpg" alt="The driver's license of Jessamine Aster" style="width: 300px"> -->
 
 </div>
 
@@ -129,6 +135,6 @@ Please verify your age by attaching a photo of your national ID card, driver's l
 
 <img class="chompstr-logo w-100" src="assets/img/chompstr.svg" alt="Chompstr.tv logo">
 
-Please enjoy responsibly.
+Thank you, your identify was verified, and your account with the username **disasterPiece** was created successfully.
 
-* [[Title screen]]
+* [[Log in.|Title screen]]
