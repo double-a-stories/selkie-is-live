@@ -6,9 +6,9 @@
   /* Body text color */
   --color: rgba(255, 255, 255, 0.9);
   /* Body background gradient color */
-  --background: #442663;
+  --background: #331c4a;
   /* Semi-transparent decoration color */
-  --light: rgba(255, 255, 255, 20%);
+  --light: hsl(270, 45%, 30%);
   /* Link hover color */
   --accent: #d93;
   /* Body font */
@@ -34,7 +34,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   transition: opacity 1s, background-color 2s;
-  min-height: 100%;
+  min-height: 101vh;
 }
 
 @media screen and (max-width: 700px) {
@@ -45,6 +45,7 @@ body {
 
 tw-story {
   max-width: unset;
+  line-height: inherit;
 }
 
 tw-passage {

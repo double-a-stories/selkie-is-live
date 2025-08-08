@@ -1,5 +1,5 @@
 :: StoryTitle
-Selkie is •Live
+Selkie is Live
 
 :: StoryData
 {
@@ -17,4 +17,4 @@ Selkie is •Live
 }
 
 :: Version [script]
-story.version = "v0.0.1"
+story.version = "Chapter 1 Demo"

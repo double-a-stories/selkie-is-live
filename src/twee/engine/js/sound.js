@@ -4,7 +4,7 @@
  */
 // Mute and unmute on load.
 $(document).on("sm.passage.shown", () => {
-  if (!window.StoryFlags.isSet("enableSound")) {
+  if (window.StoryFlags.isSet("disableSound")) {
     Howler.mute(true);
   } else {
     Howler.mute(false);
@@ -23,7 +23,7 @@ class SoundInstance {
     this.howl = howlObject;
     this.playing = false;
   }
-  fadeIn(duration = 1000) {
+  fadeIn(duration = 500) {
     // If sound isn't playing yet, then fade in.
     if (this.playing) {
       return;
@@ -105,20 +105,14 @@ const AmbientSounds = window.AmbientSounds = {
   }),
   title: new Howl({
     ...howlDefaults,
-    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/.mp3`],
-    volume: 0.2,
-    loop: true
-  }),
-  stream1: new Howl({
-    ...howlDefaults,
-    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/3am.mp3`],
+    src: [`${MUSIC_PATH}/holizna/3am_trimmed.mp3`],
     volume: 0.2,
     loop: true
   }),
   stream2: new Howl({
     ...howlDefaults,
-    src: [`${MUSIC_PATH}/holizna/good-reason-to-stay-inside/hyper-fixation.mp3`],
-    volume: 0.2,
+    src: [`${MUSIC_PATH}/holizna/nocturnal_trimmed.mp3`],
+    volume: 0.3,
     loop: true
   }),
 };
@@ -172,3 +166,8 @@ setup.playAchievementSound = () => {
 $(window).on("sm.passage.shown", (_, { passage }) => {
   setup.refreshMusic();
 })
+
+setTimeout(
+  setup.refreshMusic,
+  100
+);

@@ -1,7 +1,5 @@
 :: Watch the stream. [stream]
 
-<% setup.startMusic("stream1") %>
-
 <img style="max-width: 50%" src="assets/img/chompstr_dark.svg">
 
 <span class="icon-recording"></span> **Weekly vore stream! Eating a lovely meal!! KILL SHOW.**
@@ -113,7 +111,6 @@ The stream window says "STARTING SOON".
     ["riskySecret", "YESSSS"],
     ["skippableFeline", ":3 :3 :3"],
     ["carneusCalcified", "certainly."],
-    ["DiamondiqueDisciple", "Recording this stream is expressly forbidden!"],
     ["bellicoseDinosaur", "yes!!"],
     ["SelkieSwallows", "Perfect."],
     ["SelkieSwallows", "Showtime."],
@@ -487,7 +484,7 @@ Matty curls up into a ball. <span.q-matty>I think... I'm having a panic attack. 
 ["stummyLiker", "top 10 realistic portrayals"],
 ]) %>
 
-Selkie is clearly a bit impatient. <span.q-selkie>Well, I don't have all night, but there's a nice cozy spot where you can cool down.</span> She turns to chat, lifts the pup squirming up. <span.q-selkie>Enjoy the view, hon. You paid a pretty penny for it, and you're not gonna get another chance.</span>
+Selkie is clearly growing a bit impatient. <span.q-selkie>Well, I don't have all night, but there's a nice cozy spot where you can cool down.</span> She turns to chat, lifts the pup squirming up. <span.q-selkie>Enjoy the view, hon. You paid a pretty penny for it, and you're not gonna get another chance.</span>
 
 Matty tries to use the safe word. <span.q-matty>n-no no wait!! b-bananas! banan-</span> GULP
 
@@ -586,7 +583,13 @@ And DP, I look forward to talking to you :3
 
 You blush.
 
+:: Blank screen.
+
+<% setup.stopMusic() %>
+
 Stream off, leaving you alone in your apartment and panting.
+
+Hopy shit.
 
 ## End of Chapter 1
 

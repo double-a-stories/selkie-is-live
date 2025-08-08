@@ -2,8 +2,8 @@
 
 :root {
   --stream-accent: hsl(292, 50%, 57%);
-  --stream-light: hsla(292, 50%, 57%, 0.251);
-  --stream-lighter: hsla(292, 50%, 90%, 0.13);
+  --stream-light: hsla(292, 50%, 85%);
+  --stream-lighter: hsla(292, 50%, 95%);
 }
 
 body[data-tags~="vore"] {
@@ -136,18 +136,20 @@ body[data-tags~="discord"] {
     align-self: start;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    height: 99vh;
+    position: relative;
+    /* height: 99vh; */
   }
   body[data-tags~="stream"] tw-story::before {
     content: '';
     grid-area: video;
     position: sticky;
-    top: 0;
-    left: 0;
+    align-self: start;
+    top: 4rem;
+    left: 4rem;
     background-image: url('assets/img/stream_ui.svg');
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 2rem;
+    padding-top: 2rem;
     margin-left: 4rem;
     margin-right: 1rem;
     opacity: 10%;
@@ -156,6 +158,8 @@ body[data-tags~="discord"] {
   }
   body[data-tags~="stream"] #header-container {
     grid-area: header;
+    position: sticky;
+    align-self: start;
   }
   body[data-tags~="stream"] tw-passage {
     box-sizing: border-box;
@@ -165,8 +169,8 @@ body[data-tags~="discord"] {
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 4rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    align-self: start;
+    min-height: 100vh;
   }
 }
 
@@ -212,7 +216,7 @@ body[data-tags~="discord"] {
     padding-top: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
-    padding-bottom: 
+    padding-bottom: 1rem;
     overflow-y: scroll;
     overflow-x: hidden;
   }

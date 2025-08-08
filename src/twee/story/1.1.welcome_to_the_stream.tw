@@ -17,7 +17,12 @@ What will you do?
     "Cook dinner.",
 ], `Your phone pings.
 
-<span class="icon-recording"></span> **SelkieSwallows is now streaming!** <small>1m ago</small>
+<div class="chompstr-phone-notification">
+
+<img src="assets/img/phone_chompstr_notif.png" alt="iOS notification. SelkieSwallows is LIVE! Today, 7:00 PM.">
+
+</div>
+
 
 You sit back on the couch, pick up your laptop and open Chompstr.
 

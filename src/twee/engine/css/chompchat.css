@@ -1,5 +1,5 @@
 .chompchat {
-    font-size: 80%;
+    font-size: 100%;
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
@@ -19,7 +19,7 @@
 .chompchat_entry_text {}
 
 .icon-recording::before {
-    content: " ● ";
+    content: "●";
     color: red;
 }
 

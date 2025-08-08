@@ -1,0 +1,23 @@
+.chompstr-phone-notification {
+    overflow: hidden;
+}
+
+.chompstr-phone-notification img {
+  animation: appear 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  backface-visibility: hidden;
+  perspective: 300px;
+  translate: 0 -110%;
+  overflow: hidden;
+}
+
+
+@keyframes appear {
+  0% {
+    translate: 0px -110%;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}

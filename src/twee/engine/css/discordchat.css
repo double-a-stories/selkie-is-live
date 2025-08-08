@@ -22,11 +22,6 @@
 }
 .discordchat_entry_message {}
 
-.icon-recording::before {
-    content: " ● ";
-    color: red;
-}
-
 .discordchat_emote {
     width: 1rem;
     height: 1rem;

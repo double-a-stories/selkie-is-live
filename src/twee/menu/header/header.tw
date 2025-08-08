@@ -4,7 +4,7 @@
 </header>
 
 :: Topbar controls
-<% const muted = !StoryFlags.isSet('enableSound'); %>
+<% const muted = StoryFlags.isSet('disableSound'); %>
 <% const helpShown = window.passage && window.passage.name === "Help"; %>
 
 <ul.header-nav-group>
