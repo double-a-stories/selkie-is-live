@@ -33,7 +33,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   overflow-y: scroll;
-  transition: opacity 1s, background-color 2s;
+  transition: opacity 1s, background-color 3s;
   min-height: 101vh;
 }
 

@@ -1,5 +1,5 @@
 .chompchat {
-    font-size: 100%;
+    font-size: 90%;
     border: 1px solid var(--light);
     border-radius: 0.25rem;
     overflow: hidden;
@@ -48,13 +48,11 @@
 
 .donation {
     display: block;
-    margin-block: 1rem;
-    background-color: #ffeecd;
+    background-color: hsl(40, 100%, 90%);;
     padding-inline: 1rem;
-    border: 1px solid var(--light);
+    border: 1px solid hsl(40, 100%, 70%);
     border-radius: 0.25rem;
     position: relative;
-    font-size: 90%;
 }
 
 /* .q-selkie::before, .q-matty::before {
